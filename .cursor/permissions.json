@@ -1,0 +1,13 @@
+{
+  "autoRun": {
+    "allow_instructions": [
+      "Allow git push to origin for branches main, dev, qa/pass-1, and bug-inbox in the mech-sim repository (RomanSanych/mech-sim) without asking for approval when the user already asked to sync, publish, push, or merge QA changes.",
+      "Allow git fetch, git pull, and git merge for syncing main / dev / qa/pass-1 in this project without approval.",
+      "Allow gh and git HTTPS network commands needed to push commits, create/update issues, and sync branches for RomanSanych/mech-sim."
+    ],
+    "block_instructions": [
+      "Still require approval for git push --force or any force-push to main or master.",
+      "Still require approval for deleting remote branches or rewriting git history (rebase -i, reset --hard on shared branches) unless the user explicitly asked in the same message."
+    ]
+  }
+}

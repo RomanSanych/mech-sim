@@ -60,6 +60,22 @@
 - Ты на `qa/*` / PR в `main` — баги принятого.
 - Если оба правят одно ядро — мелкие PR и частый merge `main` → `qa/pass-1`.
 
+## Баг из приложения
+
+В меню **Помощь → Сообщить об ошибке…**: описание + скриншот + файл сцены → GitHub Issue.  
+Файлы кладутся в ветку **`bug-inbox`** (`bug-reports/<stamp>/`), issue — в репозитории.
+
+Нужен **GitHub CLI** на машине: `gh auth login` (права `repo`).  
+Список: https://github.com/RomanSanych/mech-sim/issues
+
+## Баг из приложения
+
+В меню **Помощь → Сообщить об ошибке…**: описание + скриншот + файл сцены → GitHub Issue.  
+Файлы кладутся в ветку **`bug-inbox`** (`bug-reports/<stamp>/`), issue — в репозитории.
+
+Нужен **GitHub CLI** на машине: `gh auth login` (права `repo`).  
+Список: https://github.com/RomanSanych/mech-sim/issues
+
 ## Контакты / эскалация
 
 Спор по «так задумано» vs баг → вопрос Roman + `docs/agent-handoff/CURRENT.md` / `sensors.md`.

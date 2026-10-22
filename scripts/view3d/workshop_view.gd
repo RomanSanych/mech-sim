@@ -874,6 +874,8 @@ func _tick_amp_btn_hold(dt: float) -> void:
 
 ## Камера в движении: мышь (orbit/look/pan) или WASD/пролёт — 3D SubViewport должен быть ALWAYS.
 func is_camera_navigating() -> bool:
+	if circuit != null and bool(circuit.block_3d_keys):
+		return false
 	if _drag in ["orbit", "look", "pan"]:
 		return true
 	if _orbit_anim_t > 0.0:
@@ -2235,6 +2237,9 @@ func _fpv_settle_height(dt: float) -> void:
 
 
 func _fpv_move(dt: float) -> void:
+	if circuit != null and bool(circuit.block_3d_keys):
+		_move_vel = Vector3.ZERO
+		return
 	var wish := Vector3.ZERO
 	if Input.is_key_pressed(KEY_W) or Input.is_key_pressed(KEY_UP):
 		wish += _look_flat()
@@ -2263,6 +2268,9 @@ func _clamp_fpv_pos() -> void:
 
 ## Пролёт: свободная камера (WASD + Q/E), без привязки к фокусу и без высоты глаз.
 func _fly_move(dt: float) -> bool:
+	if circuit != null and bool(circuit.block_3d_keys):
+		_move_vel = Vector3.ZERO
+		return false
 	var wish := Vector3.ZERO
 	var fwd: Vector3 = _look_dir()
 	var right: Vector3 = fwd.cross(Vector3.UP)
@@ -3797,8 +3805,8 @@ func _sync_hoses() -> void:
 				nshvi_flags |= 2
 		# Якоря гофры НЕ в geom_sig жил: иначе open/close дверцы → remesh всех электро-жил.
 		# Гофра — отдельный меш (_sync_door_harness_flex).
-		# route53: door-local мостик на глубине пеньков (не сквозь кнопки).
-		var sig := "%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.5f|%d|%d|%s|route53duct|%d|%s|%d" % [
+		# route54: door↔датчик (sensor mount="") тоже через дверной КК + НШВИ.
+		var sig := "%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.5f|%d|%d|%s|route54duct|%d|%s|%d" % [
 			a.x, a.y, a.z, b.x, b.y, b.z, da.x, da.y, da.z, db.x, db.y, db.z, radius, 1 if is_elec else 0, 1 if pe else 0, color_id, lane, qtag, nshvi_flags,
 		]
 		var door_span: bool = is_elec and _wire_is_door_cabinet_span(wire)
@@ -7131,11 +7139,11 @@ func _wire_is_door_cabinet_span(wire) -> bool:
 		return false
 	var ma: String = _electro_mount_of(int(wire.a_id))
 	var mb: String = _electro_mount_of(int(wire.b_id))
-	if ma == "door" and mb != "door" and mb != "":
-		return true
-	if mb == "door" and ma != "door" and ma != "":
-		return true
-	return false
+	# Дверца ↔ не-дверца: DIN, gland полевого датчика (mount="") и т.п.
+	# Раньше mb!="" отсекал датчик → жила шла напрямую в воздухе без КК/НШВИ.
+	var a_door: bool = ma == "door"
+	var b_door: bool = mb == "door"
+	return a_door != b_door
 
 
 func _wire_is_door_local(wire) -> bool:
