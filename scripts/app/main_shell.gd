@@ -1147,24 +1147,24 @@ func agent_relay_layout_probe() -> Dictionary:
 
 func _open_bug_report() -> void:
 	var BugRep = preload("res://scripts/app/bug_report.gd")
-	BugRep.show_dialog(
-		self,
-		circuit,
-		func() -> Image:
-			var tex: ViewportTexture = get_viewport().get_texture()
-			if tex == null:
-				return null
-			return tex.get_image()
-		,
-		func(path: String) -> String:
-			var extra := {}
-			if schematic:
-				extra["schematic"] = {
-					"zoom": schematic.zoom,
-					"pan": [schematic.pan.x, schematic.pan.y],
-				}
-			return circuit.save_scene_file(path, extra)
-	)
+	BugRep.show_dialog(self, circuit, _bug_report_screenshot, _bug_report_save_scene_tmp)
+
+
+func _bug_report_screenshot() -> Image:
+	var tex: ViewportTexture = get_viewport().get_texture()
+	if tex == null:
+		return null
+	return tex.get_image()
+
+
+func _bug_report_save_scene_tmp(path: String) -> String:
+	var extra := {}
+	if schematic:
+		extra["schematic"] = {
+			"zoom": schematic.zoom,
+			"pan": [schematic.pan.x, schematic.pan.y],
+		}
+	return circuit.save_scene_file(path, extra)
 
 
 func _save_scene(force_dialog: bool) -> void:
