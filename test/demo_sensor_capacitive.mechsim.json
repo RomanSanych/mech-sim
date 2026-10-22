@@ -1,0 +1,201 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Демо: ёмкостный БВ A3",
+	"note": "SQ1 ёмкостный (NPN NO, 24DC) + пластиковая цель Ц1 (detect_material=plastic) в зоне Sn + БП G1 + лампа HL1. Зоны вкл. Без Uпит — нет срабатывания.",
+	"cabinet_door_open": true,
+	"sensor_field_viz": true,
+	"next_id": 30,
+	"elements": [
+		{
+			"kind": "electro",
+			"id": 5,
+			"tag": "XS1",
+			"tag_prefix": "XS",
+			"position": [40, 40],
+			"recipe_id": "supply_1ph",
+			"electro_class": "supply",
+			"electro_mount": "none",
+			"voltage": 230.0,
+			"poles": 1,
+			"member_role": "device",
+			"group_id": -1,
+			"electro_ports": [
+				{"name": "L", "type": "source"},
+				{"name": "N", "type": "source"},
+				{"name": "PE", "type": "source"}
+			],
+			"coil_ports": [],
+			"contact_defs": [],
+			"world_pos": [0, 0, 0],
+			"auto_ground": false
+		},
+		{
+			"kind": "electro",
+			"id": 3,
+			"tag": "G1",
+			"tag_prefix": "G",
+			"position": [200, 40],
+			"recipe_id": "psu_24",
+			"electro_class": "psu",
+			"electro_mount": "din",
+			"voltage": 24.0,
+			"rating_a": 2.5,
+			"din_slot": 0,
+			"member_role": "device",
+			"group_id": -1,
+			"electro_ports": [
+				{"name": "L", "type": "line", "side": "left", "circuit": "L ~220В"},
+				{"name": "N", "type": "line", "side": "left", "circuit": "N ~220В"},
+				{"name": "PE", "type": "line", "side": "left", "circuit": "PE"},
+				{"name": "+24", "type": "source", "side": "right", "circuit": "+24В"},
+				{"name": "0", "type": "source", "side": "right", "circuit": "0В"}
+			],
+			"coil_ports": [],
+			"contact_defs": [],
+			"world_pos": [0, 0, 0],
+			"auto_ground": false
+		},
+		{
+			"kind": "electro",
+			"id": 4,
+			"tag": "HL1",
+			"tag_prefix": "HL",
+			"position": [520, 40],
+			"recipe_id": "lamp",
+			"electro_class": "lamp",
+			"electro_mount": "door",
+			"lamp_color": "green",
+			"voltage": 24.0,
+			"door_slot": 0,
+			"member_role": "device",
+			"group_id": -1,
+			"electro_ports": [
+				{"name": "X1", "type": "line"},
+				{"name": "X2", "type": "line"}
+			],
+			"coil_ports": [],
+			"contact_defs": [],
+			"world_pos": [0, 0, 0],
+			"auto_ground": false
+		},
+		{
+			"kind": "sensor",
+			"id": 1,
+			"tag": "SQ1",
+			"tag_prefix": "SQ",
+			"position": [460, 200],
+			"rotation_quad": 0,
+			"recipe_id": "capacitive_m18_12",
+			"catalog_id": "capacitive_m18_12",
+			"sensor_class": "capacitive",
+			"sensor_active": true,
+			"sense_range_mm": 12.0,
+			"hysteresis_mm": 1.2,
+			"body_od_mm": 18.0,
+			"stroke_mm": 65.0,
+			"supply_mode": "24dc",
+			"output_type": "npn",
+			"contact_form": "no",
+			"world_pos": [0.40, 1.40, 0.18],
+			"world_basis": [
+				[1, 0, 0],
+				[0, 1, 0],
+				[0, 0, 1]
+			],
+			"auto_ground": false
+		},
+		{
+			"kind": "cylinder",
+			"id": 2,
+			"tag": "Ц1",
+			"tag_prefix": "Ц",
+			"position": [200, 200],
+			"rotation_quad": 0,
+			"recipe_id": "da_basic",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 50.0,
+			"detect_material": "plastic",
+			"world_pos": [0.485, 1.40, 0.18],
+			"world_basis": [
+				[1, 0, 0],
+				[0, 1, 0],
+				[0, 0, 1]
+			],
+			"auto_ground": false
+		}
+	],
+	"wires": [
+		{
+			"id": 20,
+			"a_id": 5,
+			"a_port": "L",
+			"b_id": 3,
+			"b_port": "L",
+			"id_mm": 1.5,
+			"color_id": "brown",
+			"joints": []
+		},
+		{
+			"id": 21,
+			"a_id": 5,
+			"a_port": "N",
+			"b_id": 3,
+			"b_port": "N",
+			"id_mm": 1.5,
+			"color_id": "lightblue",
+			"joints": []
+		},
+		{
+			"id": 22,
+			"a_id": 5,
+			"a_port": "PE",
+			"b_id": 3,
+			"b_port": "PE",
+			"id_mm": 1.5,
+			"color_id": "pe",
+			"joints": []
+		},
+		{
+			"id": 10,
+			"a_id": 3,
+			"a_port": "+24",
+			"b_id": 1,
+			"b_port": "+",
+			"id_mm": 0.75,
+			"color_id": "brown",
+			"joints": []
+		},
+		{
+			"id": 11,
+			"a_id": 3,
+			"a_port": "0",
+			"b_id": 1,
+			"b_port": "0",
+			"id_mm": 0.75,
+			"color_id": "lightblue",
+			"joints": []
+		},
+		{
+			"id": 12,
+			"a_id": 3,
+			"a_port": "+24",
+			"b_id": 4,
+			"b_port": "X1",
+			"id_mm": 0.75,
+			"color_id": "brown",
+			"joints": []
+		},
+		{
+			"id": 13,
+			"a_id": 4,
+			"a_port": "X2",
+			"b_id": 1,
+			"b_port": "OUT",
+			"id_mm": 0.75,
+			"color_id": "black",
+			"joints": []
+		}
+	]
+}

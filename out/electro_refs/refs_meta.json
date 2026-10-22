@@ -1,0 +1,170 @@
+[
+  {
+    "id": "1",
+    "title": "Контакт НО (замыкающий)",
+    "ugo": [
+      "gost_contact_no.png",
+      "gost_contact_base_block.png",
+      "es_strip_contacts_base.png"
+    ],
+    "ugo_src": "ГОСТ 2.755-87 п.1.3.1; electricalschool рис.1",
+    "photo": null,
+    "photo_note": "— только 2D"
+  },
+  {
+    "id": "2",
+    "title": "Контакт НЗ (размыкающий)",
+    "ugo": [
+      "gost_contact_nc.png",
+      "gost_contact_base_block.png"
+    ],
+    "ugo_src": "ГОСТ 2.755-87 п.1.3.2 (два допустимых варианта)",
+    "photo": null,
+    "photo_note": "— только 2D"
+  },
+  {
+    "id": "3",
+    "title": "Переключающий контакт",
+    "ugo": [
+      "gost_contact_change.png",
+      "gost_contact_neutral.png"
+    ],
+    "ugo_src": "ГОСТ 2.755-87 п.1.3.3–1.3.4",
+    "photo": null,
+    "photo_note": "— только 2D"
+  },
+  {
+    "id": "4",
+    "title": "Кнопка нажимная",
+    "ugo": [
+      "gost_button_push.png",
+      "es_strip_actuators.png",
+      "gost_table3_devices.png"
+    ],
+    "ugo_src": "ГОСТ 2.755 табл.3 п.3; ES рис.2 (актуаторы д/е)",
+    "photo": "3d_btn_xb4.jpg",
+    "photo_note": "Schneider XB4BA*"
+  },
+  {
+    "id": "5",
+    "title": "Аварийный гриб",
+    "ugo": [
+      "es_strip_actuators.png",
+      "gost_button_push.png"
+    ],
+    "ugo_src": "ES рис.2е (гриб) + кнопочная база ГОСТ табл.3",
+    "photo": "3d_estop.jpg",
+    "photo_note": "Schneider XB4BS* (проверить кадр)"
+  },
+  {
+    "id": "6",
+    "title": "Переключатель 2 поз.",
+    "ugo": [
+      "gost_contact_change.png",
+      "es_switch.jpg"
+    ],
+    "ugo_src": "ГОСТ 2.755 п.1.3.3 + ES переключатель",
+    "photo": "3d_switch.jpg",
+    "photo_note": "Schneider XB4BD"
+  },
+  {
+    "id": "7",
+    "title": "Лампа сигнальная",
+    "ugo": [
+      "gost_lamp_general.png",
+      "gost_lamp_table2.png"
+    ],
+    "ugo_src": "ГОСТ 2.732-68 табл.2 п.1 (круг+крест; цвета С2/С4/С5/С9)",
+    "photo": null,
+    "photo_note": "Schneider XB4BV — TBD"
+  },
+  {
+    "id": "8",
+    "title": "Катушка реле / ЭМ / контактора",
+    "ugo": [
+      "gost_coil_general.png",
+      "gost_coil_table.png"
+    ],
+    "ugo_src": "ГОСТ 2.756-76 табл.1 п.1",
+    "photo": null,
+    "photo_note": "Finder 55.34 — TBD"
+  },
+  {
+    "id": "9",
+    "title": "Реле времени",
+    "ugo": [
+      "gost_coil_delay_page.png",
+      "es_strip_actuators.png"
+    ],
+    "ugo_src": "ГОСТ 2.756 п.16–18 + дуги на контакте 2.755 п.15–16 / ES л–р",
+    "photo": null,
+    "photo_note": "Schneider RE22 — TBD"
+  },
+  {
+    "id": "10",
+    "title": "Автомат",
+    "ugo": [
+      "gost_breaker_3p.png",
+      "gost_switch_1p.png",
+      "es_strip_breakers.png"
+    ],
+    "ugo_src": "ГОСТ 2.755 табл.3 п.1–2 (X, I>); ES рис.3",
+    "photo": "3d_mcb_abb_s201.jpg",
+    "photo_note": "ABB S201-C16"
+  },
+  {
+    "id": "11",
+    "title": "УЗО / дифавтомат",
+    "ugo": [
+      "gost_breaker_3p.png",
+      "gost_qualifiers_table1.png"
+    ],
+    "ugo_src": "База = выключатель ГОСТ 2.755; отдельного знака IΔn в 2.755 нет — форма на утверждении",
+    "photo": null,
+    "photo_note": "ABB F202/DS201 — TBD"
+  },
+  {
+    "id": "12",
+    "title": "Контактор (группа)",
+    "ugo": [
+      "es_strip_devices.png",
+      "gost_coil_general.png"
+    ],
+    "ugo_src": "ES рис.4б (3 НО + катушка + штриховая связь); катушка 2.756",
+    "photo": null,
+    "photo_note": "Schneider LC1D — TBD"
+  },
+  {
+    "id": "13",
+    "title": "Тепловое реле",
+    "ugo": [
+      "gost_thermal.png",
+      "es_strip_actuators.png"
+    ],
+    "ugo_src": "ГОСТ 2.756 п.21 + контакт t° (ES и/к)",
+    "photo": null,
+    "photo_note": "Schneider LRD — TBD"
+  },
+  {
+    "id": "14",
+    "title": "Клемма / контактные соединения",
+    "ugo": [
+      "gost_conn_p08.png",
+      "gost_conn_p09.png"
+    ],
+    "ugo_src": "ГОСТ 2.755 табл.5–6",
+    "photo": null,
+    "photo_note": "Phoenix UT — TBD"
+  },
+  {
+    "id": "15",
+    "title": "Квалификаторы (шпаргалка)",
+    "ugo": [
+      "gost_qualifiers_table1.png",
+      "es_strip_actuators.png"
+    ],
+    "ugo_src": "ГОСТ 2.755 табл.1 + ES рис.2",
+    "photo": null,
+    "photo_note": "— справочно"
+  }
+]

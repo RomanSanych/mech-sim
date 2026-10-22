@@ -1,0 +1,586 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Ревью: пневмо-визуализация",
+	"note": "Проверка нововведений при Run.\n• КМ1→T1→Z1 (ОК вперёд, 2=атм): постоянный расход.\n• T1↑→Z2 (ОК наоборот): закрыт.\n• КМ2→T2→Z3→Ц1.cap (питание), Ц1.rod→Z4→атм (выхлоп через дроссель) — корректный ход без подпора со штока.\n• Трубки Ø4 / Ø6 / Ø10.",
+	"cabinet_door_open": true,
+	"next_id": 10,
+	"schematic": {
+		"zoom": 1.05,
+		"pan": [
+			20,
+			8
+		]
+	},
+	"elements": [
+		{
+			"kind": "source",
+			"id": 1,
+			"tag": "КМ1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				100
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				0.35
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "junction",
+			"id": 2,
+			"tag": "У1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				130,
+				100
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.22,
+				1.35,
+				0.28
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"junction_style": "tee",
+			"junction_ports": 3,
+			"tube_od_mm": 6.0,
+			"auto_ground": false,
+			"tag_prefix": "У"
+		},
+		{
+			"kind": "accessory",
+			"id": 3,
+			"tag": "КО1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				260,
+				100
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.48,
+				1.35,
+				0.28
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"recipe_id": "check",
+			"catalog_id": "check",
+			"accessory_class": "check",
+			"tag_prefix": "КО",
+			"opening": 0.0,
+			"crack_pressure_bar": 0.2,
+			"flow_nl_min": 600.0,
+			"valve_cv": 1.0,
+			"tube_od_mm": 6.0,
+			"auto_ground": false
+		},
+		{
+			"kind": "accessory",
+			"id": 4,
+			"tag": "КО2",
+			"tag_offset": [
+				0,
+				12
+			],
+			"position": [
+				40,
+				30
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.48,
+				1.35,
+				0.05
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"recipe_id": "check",
+			"catalog_id": "check",
+			"accessory_class": "check",
+			"tag_prefix": "КО",
+			"opening": 0.0,
+			"crack_pressure_bar": 0.2,
+			"flow_nl_min": 600.0,
+			"valve_cv": 1.0,
+			"tube_od_mm": 4.0,
+			"auto_ground": false
+		},
+		{
+			"kind": "source",
+			"id": 5,
+			"tag": "КМ2",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				280
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				-0.25
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "junction",
+			"id": 9,
+			"tag": "У1",
+			"tag_offset": [
+				0,
+				-18
+			],
+			"position": [
+				120,
+				280
+			],
+			"rotation_quad": 2,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.18,
+				1.35,
+				-0.25
+			],
+			"world_basis": [
+				[
+					-1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					-1
+				]
+			],
+			"junction_style": "tee",
+			"junction_ports": 3,
+			"tube_od_mm": 10.0,
+			"auto_ground": false,
+			"tag_prefix": "У"
+		},
+		{
+			"kind": "accessory",
+			"id": 6,
+			"tag": "ДР1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				230,
+				280
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.42,
+				1.35,
+				-0.25
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"recipe_id": "throttle",
+			"catalog_id": "throttle",
+			"accessory_class": "throttle",
+			"tag_prefix": "ДР",
+			"opening": 0.28,
+			"valve_cv": 1.0,
+			"tube_od_mm": 10.0,
+			"auto_ground": false
+		},
+		{
+			"kind": "cylinder",
+			"id": 7,
+			"tag": "Ц1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				420,
+				110
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 40.0,
+			"rod_mm": 16.0,
+			"stroke_mm": 120.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.2,
+			"friction_n": 6.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.9,
+				1.35,
+				-0.25
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"catalog_id": "da_basic",
+			"port_name": "G1/4",
+			"fitting_id": "G1/4_10",
+			"tube_od_mm": 10.0,
+			"auto_ground": false,
+			"tag_prefix": "Ц"
+		},
+		{
+			"kind": "accessory",
+			"id": 8,
+			"tag": "ДР2",
+			"tag_offset": [
+				0,
+				14
+			],
+			"position": [
+				460,
+				360
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.42,
+				1.35,
+				-0.5
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"recipe_id": "throttle_fixed",
+			"catalog_id": "throttle_fixed",
+			"accessory_class": "throttle_fixed",
+			"tag_prefix": "ДР",
+			"opening": 0.35,
+			"valve_cv": 0.8,
+			"tube_od_mm": 10.0,
+			"auto_ground": false
+		}
+	],
+	"wires": [
+		{
+			"id": 1,
+			"num": 1,
+			"a_id": 1,
+			"a_port": "out",
+			"b_id": 2,
+			"b_port": "1",
+			"od_mm": 6.0,
+			"id_mm": 4.0
+		},
+		{
+			"id": 2,
+			"num": 2,
+			"a_id": 2,
+			"a_port": "2",
+			"b_id": 3,
+			"b_port": "1",
+			"od_mm": 6.0,
+			"id_mm": 4.0
+		},
+		{
+			"id": 3,
+			"num": 3,
+			"a_id": 2,
+			"a_port": "3",
+			"b_id": 4,
+			"b_port": "2",
+			"od_mm": 4.0,
+			"id_mm": 2.5
+		},
+		{
+			"id": 4,
+			"num": 4,
+			"a_id": 5,
+			"a_port": "out",
+			"b_id": 9,
+			"b_port": "2",
+			"od_mm": 10.0,
+			"id_mm": 7.0
+		},
+		{
+			"id": 5,
+			"num": 5,
+			"a_id": 9,
+			"a_port": "1",
+			"b_id": 6,
+			"b_port": "1",
+			"od_mm": 10.0,
+			"id_mm": 7.0
+		},
+		{
+			"id": 6,
+			"num": 6,
+			"a_id": 6,
+			"a_port": "2",
+			"b_id": 7,
+			"b_port": "cap",
+			"od_mm": 10.0,
+			"id_mm": 7.0
+		},
+		{
+			"id": 7,
+			"num": 7,
+			"a_id": 7,
+			"a_port": "rod",
+			"b_id": 8,
+			"b_port": "1",
+			"od_mm": 10.0,
+			"id_mm": 7.0
+		}
+	]
+}

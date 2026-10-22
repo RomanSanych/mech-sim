@@ -1,0 +1,387 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Демо: типоразмеры распредов",
+	"note": "Три 5/2: G1/8·Ø6, G1/4·Ø10, G3/8·Ø12. Свойства → «Типоразмер (порт / трубка)». Трубки и штуцеры от размера; Cv из Qn.",
+	"cabinet_door_open": true,
+	"next_id": 7,
+	"elements": [
+		{
+			"kind": "source",
+			"id": 1,
+			"tag": "КМ1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				40
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				0.35
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "source",
+			"id": 2,
+			"tag": "КМ2",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				100
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				0.0
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "source",
+			"id": 3,
+			"tag": "КМ3",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				160
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				-0.35
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "valve",
+			"id": 4,
+			"tag": "Р1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				160,
+				40
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"valve_ways": 5,
+			"valve_positions": 2,
+			"valve_center": "none",
+			"op_left": "solenoid_pilot",
+			"op_right": "spring",
+			"pilot_supply": "internal",
+			"valve_cv": 1.08,
+			"port_3": "muffler",
+			"port_5": "muffler",
+			"port_name": "G1/8",
+			"fitting_id": "G1/8_6",
+			"tube_od_mm": 6.0,
+			"recipe_id": "5_2_sol_spring",
+			"world_pos": [
+				0.55,
+				1.35,
+				0.35
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "Р"
+		},
+		{
+			"kind": "valve",
+			"id": 5,
+			"tag": "Р2",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				160,
+				100
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"valve_ways": 5,
+			"valve_positions": 2,
+			"valve_center": "none",
+			"op_left": "solenoid_pilot",
+			"op_right": "spring",
+			"pilot_supply": "internal",
+			"valve_cv": 2.33,
+			"port_3": "muffler",
+			"port_5": "muffler",
+			"port_name": "G1/4",
+			"fitting_id": "G1/4_10",
+			"tube_od_mm": 10.0,
+			"recipe_id": "5_2_sol_spring",
+			"world_pos": [
+				0.55,
+				1.35,
+				0.0
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "Р"
+		},
+		{
+			"kind": "valve",
+			"id": 6,
+			"tag": "Р3",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				160,
+				160
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"valve_ways": 5,
+			"valve_positions": 2,
+			"valve_center": "none",
+			"op_left": "solenoid_pilot",
+			"op_right": "spring",
+			"pilot_supply": "internal",
+			"valve_cv": 4.0,
+			"port_3": "muffler",
+			"port_5": "muffler",
+			"port_name": "G3/8",
+			"fitting_id": "G3/8_12",
+			"tube_od_mm": 12.0,
+			"recipe_id": "5_2_sol_spring",
+			"world_pos": [
+				0.55,
+				1.35,
+				-0.35
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "Р"
+		}
+	],
+	"wires": [
+		{
+			"id": 1,
+			"num": 1,
+			"a_id": 1,
+			"a_port": "out",
+			"b_id": 4,
+			"b_port": "1",
+			"od_mm": 6.0,
+			"id_mm": 4.0
+		},
+		{
+			"id": 2,
+			"num": 2,
+			"a_id": 2,
+			"a_port": "out",
+			"b_id": 5,
+			"b_port": "1",
+			"od_mm": 10.0,
+			"id_mm": 7.0
+		},
+		{
+			"id": 3,
+			"num": 3,
+			"a_id": 3,
+			"a_port": "out",
+			"b_id": 6,
+			"b_port": "1",
+			"od_mm": 12.0,
+			"id_mm": 9.0
+		}
+	]
+}

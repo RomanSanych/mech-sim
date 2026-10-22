@@ -1,0 +1,38 @@
+{
+  "source": "УГО элементов для электрических схем.dxf",
+  "copied_as": "ugo_electrical_schemes.dxf",
+  "unit_note": "DXF drawing units map 1:1 to ElectroSymbols world units. Coil U463 is 10x16 — same as current COIL_W/COIL_H.",
+  "blocks": {
+    "no_contact": "U578",
+    "nc_contact": "U580",
+    "no_button": "U584",
+    "nc_button": "U582",
+    "coil": "U463"
+  },
+  "normalized_wire_at_y0": {
+    "GAP": 3.0,
+    "LEAD_TO_EDGE": 4.5,
+    "TOTAL_HALF_WIDTH": 7.5,
+    "NO_TIP": [3.0, 3.46],
+    "NC_TAB": [[3.0, 0.0], [3.0, -4.0]],
+    "NC_TIP": [4.0, -4.04],
+    "BTN_BAR_Y": 8.0,
+    "BTN_BAR_HALF": 3.0,
+    "BTN_LIP": 2.0,
+    "BTN_STEM_DASH": 1.5,
+    "BTN_STEM_GAP": 1.0
+  },
+  "godot_y_down": {
+    "DXF_SCALE": 3.3333333333,
+    "note": "DXF_SCALE = SCH_GRID/3 so DXF GAP=3 → one grid cell",
+    "GAP": 10.0,
+    "LEAD_X": 10.0,
+    "TAB": 13.3333333333,
+    "NC_OVER": 3.3333333333,
+    "NO_RISE": 11.5333333333,
+    "BTN_LINK": 26.6666666667,
+    "BTN_BAR": 10.0,
+    "BTN_LIP": 6.6666666667,
+    "BTN_STEM": 5.7666666667
+  }
+}

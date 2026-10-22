@@ -1,0 +1,72 @@
+1
+Eaton miniature circuit breaker, current-limiting, 16A, 277 VAC /  
+48 VDC, 1-pole, D curve, thermal magnetic, 14kA @ 277 VAC  
+Вращает 3D-объекты  относительно  экрана.  
+Движение  объектов  зависит  от  исходного  
+вида,  точки  начала  движения  и  
+направления  вращения.
+3D view
+To activate the interactive 3D view in Acrobat Reader, you need to select, at the top of the page,  Options and then  
+Trust this document
+Zoom
+Приближает  или  отдаляет  объекты  при  
+вертикальном  движении  курсора.  
+Инструмент 'рука'  также  позволяет  
+масштабировать  объекты.  Зажмите  для  
+этого  при  движении  клавишу Shift.
+Pan
+Перемещает  модель  только  горизонтально  
+или  вертикально.  Инструмент 'рука'  также  
+позволит  Вам  панорамировать  модель.  
+Зажмите  для  этого  при  движении  клавишу  
+Ctrl.
+Вращать
+Augmented Reality, often shortened to AR, is a technology that blends digital  
+information into the real world.
+For more information, please click  here  or directly try yourself by scanning the QR  
+code with your phone.
+Augmented Reality (AR) - Digital meets real
+https://www.3dfindit.com
+
+---
+2
+Eaton miniature circuit breaker, current-limiting, 16A, 277 VAC /  
+48 VDC, 1-pole, D curve, thermal magnetic, 14kA @ 277 VAC  
+N°  
+Наименование  
+Количество  
+1.1  
+3  
+2D derivation
+ISO view
+Bill-Of-Materials
+https://www.3dfindit.com
+
+---
+3
+Eaton miniature circuit breaker, current-limiting, 16A, 277 VAC /  
+48 VDC, 1-pole, D curve, thermal magnetic, 14kA @ 277 VAC  
+Technical drawings
+https://www.3dfindit.com
+
+---
+4
+Eaton miniature circuit breaker, current-limiting, 16A, 277 VAC /  
+48 VDC, 1-pole, D curve, thermal magnetic, 14kA @ 277 VAC  
+PART_NUMBER (Part Number)  
+FAZ-D16-1-NA-SP  
+PRODUCT_ID (Product ID)  
+62339  
+MANUFACTURER (Manufacturer)  
+Eaton Electrical - 1003675  
+PRODUCT_LONG_DESCRIPTION (Product Long  
+Description)  
+Eaton miniature circuit breaker, current-limiting, 16A, 277 VAC / 48 VDC, 1-pole, D  
+curve, thermal magnetic, 14kA @ 277 VAC interrupting rating, 35mm DIN rail mount.  
+PRODUCT_INFO_DOCUMENT_URL (Product Info  
+Document URL)  
+Product Info  
+Technical data
+https://www.3dfindit.com
+
+---

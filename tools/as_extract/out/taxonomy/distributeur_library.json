@@ -1,0 +1,843 @@
+﻿{
+    "configurator_dlls":  [
+                              "CFGDistributeur.dll",
+                              "CFGDistributeur2.dll",
+                              "CFGDistributeur3.dll"
+                          ],
+    "port_configuration":  "C:\\Program Files\\Famic Technologies\\Automation Studio P7.0\\ValveConfigurator\\PortConfiguration.xml",
+    "source":  {
+                   "extracted_at":  "2026-10-03T10:54:55.6868422+03:00",
+                   "main_xml":  "C:\\Program Files\\Famic Technologies\\Automation Studio P7.0\\Main.xml"
+               },
+    "valves":  [
+                   {
+                       "name":  "#TtValve compatible with subcomponents",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2690002"
+                   },
+                   {
+                       "name":  "3/2 valve NC",
+                       "atelier":  "1283",
+                       "famille":  "1",
+                       "type":  "2690002"
+                   },
+                   {
+                       "name":  "#TtValve compatible with subcomponents",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2690004"
+                   },
+                   {
+                       "name":  "3/2 valve NC",
+                       "atelier":  "1283",
+                       "famille":  "1",
+                       "type":  "2690005"
+                   },
+                   {
+                       "name":  "#TtDirectionalValveBuilderCompatiblewithSubcomponentsandwithoutSpoolTransition",
+                       "atelier":  "1027",
+                       "famille":  "1",
+                       "type":  "2690006"
+                   },
+                   {
+                       "name":  "3/2 valve NO",
+                       "atelier":  "1283",
+                       "famille":  "1",
+                       "type":  "2690007"
+                   },
+                   {
+                       "name":  "5/2-way NC - Electric - Spring Return",
+                       "atelier":  "1283",
+                       "famille":  "1",
+                       "type":  "2690011"
+                   },
+                   {
+                       "name":  "5/2-way NC - Electric - Spring Return",
+                       "atelier":  "1283",
+                       "famille":  "1",
+                       "type":  "2690013"
+                   },
+                   {
+                       "name":  "#TtDirectionalValveBuilderCompatiblewithSubcomponentsandwithoutSpoolTransition",
+                       "atelier":  "1283",
+                       "famille":  "1",
+                       "type":  "2690037"
+                   },
+                   {
+                       "name":  "2/2 valve NC",
+                       "atelier":  "1027",
+                       "famille":  "1",
+                       "type":  "2690100"
+                   },
+                   {
+                       "name":  "3/2 valve NC",
+                       "atelier":  "1027",
+                       "famille":  "1",
+                       "type":  "2690122"
+                   },
+                   {
+                       "name":  "3/2 valve NC",
+                       "atelier":  "1027",
+                       "famille":  "1",
+                       "type":  "2690124"
+                   },
+                   {
+                       "name":  "4/3 valve NC",
+                       "atelier":  "1027",
+                       "famille":  "1",
+                       "type":  "2690150"
+                   },
+                   {
+                       "name":  "4/3 valve NC",
+                       "atelier":  "1027",
+                       "famille":  "1",
+                       "type":  "2690152"
+                   },
+                   {
+                       "name":  "2 Ports",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800002"
+                   },
+                   {
+                       "name":  "Electrically Controlled",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800002"
+                   },
+                   {
+                       "name":  "3 Ports",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800003"
+                   },
+                   {
+                       "name":  "Electrically Controlled",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800003"
+                   },
+                   {
+                       "name":  "4 Ports",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800004"
+                   },
+                   {
+                       "name":  "5 Ports",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800005"
+                   },
+                   {
+                       "name":  "Pneumatically Piloted",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800005"
+                   },
+                   {
+                       "name":  "6 Ports",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800006"
+                   },
+                   {
+                       "name":  "7 Ports",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800007"
+                   },
+                   {
+                       "name":  "2/2-way NC - Manual Button with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800100"
+                   },
+                   {
+                       "name":  "2/2-way NC - Lever with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800101"
+                   },
+                   {
+                       "name":  "Manually Operated",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800101"
+                   },
+                   {
+                       "name":  "2/2-way NC - Lever with Detent",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800102"
+                   },
+                   {
+                       "name":  "Electrically Controlled",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800102"
+                   },
+                   {
+                       "name":  "2/2-way NC - Check Valve - Elec. Control with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800103"
+                   },
+                   {
+                       "name":  "Externally Piloted",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800103"
+                   },
+                   {
+                       "name":  "2/2-way NO - Electrical Control with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800104"
+                   },
+                   {
+                       "name":  "Internally Piloted",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800104"
+                   },
+                   {
+                       "name":  "#TpMechanicallyOperated",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800105"
+                   },
+                   {
+                       "name":  "2/2-way NO - Electrical Control with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800105"
+                   },
+                   {
+                       "name":  "2/2-way NC - External Pilot with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800106"
+                   },
+                   {
+                       "name":  "Manually Operated",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800106"
+                   },
+                   {
+                       "name":  "Manually Operated",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800107"
+                   },
+                   {
+                       "name":  "#TpMechanicallyOperated",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800108"
+                   },
+                   {
+                       "name":  "Externally Piloted",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800109"
+                   },
+                   {
+                       "name":  "Externally Piloted",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800110"
+                   },
+                   {
+                       "name":  "Externally Piloted",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800111"
+                   },
+                   {
+                       "name":  "Electrically Controlled",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800112"
+                   },
+                   {
+                       "name":  "Electrically Controlled",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800113"
+                   },
+                   {
+                       "name":  "#TtDirectionalValveBuilderWithPressureDropCurvesAndWithoutSpoolTransition",
+                       "atelier":  "1027",
+                       "famille":  "1",
+                       "type":  "2800150"
+                   },
+                   {
+                       "name":  "3/2-way NC - Electrical Control with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800200"
+                   },
+                   {
+                       "name":  "3/2-way NC - Manual Button with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800200"
+                   },
+                   {
+                       "name":  "3/2-way NC - Electrical Control, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800201"
+                   },
+                   {
+                       "name":  "3/2-way NC - Lever with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800201"
+                   },
+                   {
+                       "name":  "3/2-way Float Type - Electrical Control with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800202"
+                   },
+                   {
+                       "name":  "3/2-way NC - Electrical Control, Push Button with Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800202"
+                   },
+                   {
+                       "name":  "3/2-way Float Type - Double Electrical Control",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800203"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. control, Int. Pilot, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800203"
+                   },
+                   {
+                       "name":  "3/2-way Float Type - Double External Hydraulic Pilot",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800204"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Int. Pilot, Push Button with Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800204"
+                   },
+                   {
+                       "name":  "3/2-way Float Type - External Pilot with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800205"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Int. Pilot, Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800205"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Double Int. Pilot with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800206"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Double Int. Pilot, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800207"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Double Int. Pilot, Push Button with Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800208"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Double Int. Pilot, Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800209"
+                   },
+                   {
+                       "name":  "3/2-way NC - Ext. Pilot Control, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800210"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Ext. Pilot, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800211"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Ext. Pilot, Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800212"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Double Ext. Pilot, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800213"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Double Ext. Pilot, Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800214"
+                   },
+                   {
+                       "name":  "3/2-way NC - Electrical Control with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800215"
+                   },
+                   {
+                       "name":  "3/2-way NC - Electrical Control, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800216"
+                   },
+                   {
+                       "name":  "3/2-way NC - Electrical Control, Push Button with Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800217"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. control, Int. Pilot, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800218"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Int. Pilot, Push Button with Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800219"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Int. Pilot, Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800220"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Double Int. Pilot with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800221"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Double Int. Pilot, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800222"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Double Int. Pilot, Push Button with Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800223"
+                   },
+                   {
+                       "name":  "3/2-way NC - El. Control, Double Int. Pilot, Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800224"
+                   },
+                   {
+                       "name":  "3/2-way NO - Electrical Control with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800225"
+                   },
+                   {
+                       "name":  "3/2-way NO - Electrical Control, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800226"
+                   },
+                   {
+                       "name":  "3/2-way NO - Electrical Control, Push Button with Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800227"
+                   },
+                   {
+                       "name":  "3/2-way NO - El. control, Int. Pilot, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800228"
+                   },
+                   {
+                       "name":  "3/2-way NO - El. Control, Int. Pilot, Push Button with Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800229"
+                   },
+                   {
+                       "name":  "3/2-way NO - El. Control, Int. Pilot, Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800230"
+                   },
+                   {
+                       "name":  "3/2-way NO - El. Control, Double Int. Pilot with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800231"
+                   },
+                   {
+                       "name":  "3/2-way NO - El. Control, Double Int. Pilot, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800232"
+                   },
+                   {
+                       "name":  "3/2-way NO - El. Control, Double Int. Pilot, Push Button with Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800233"
+                   },
+                   {
+                       "name":  "3/2-way NO - El. Control, Double Int. Pilot, Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800234"
+                   },
+                   {
+                       "name":  "3/2-way NO - Ext. Pilot Control, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800235"
+                   },
+                   {
+                       "name":  "3/2-way NO - El. Control, Ext. Pilot, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800236"
+                   },
+                   {
+                       "name":  "3/2-way NO - El. Control, Ext. Pilot, Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800237"
+                   },
+                   {
+                       "name":  "3/2-way NO - El. Control, Double Ext. Pilot, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800238"
+                   },
+                   {
+                       "name":  "3/2-way NO - El. Control, Double Ext. Pilot, Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800239"
+                   },
+                   {
+                       "name":  "3/3-way NC - Double External Hydraulic Pilot",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800250"
+                   },
+                   {
+                       "name":  "3/3-way NC - Double Electrical Control",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800251"
+                   },
+                   {
+                       "name":  "4/2-way NC - Manual Button with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800300"
+                   },
+                   {
+                       "name":  "Manually Operated",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800300"
+                   },
+                   {
+                       "name":  "4/2-way NO - Lever with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800301"
+                   },
+                   {
+                       "name":  "Manually Operated",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800301"
+                   },
+                   {
+                       "name":  "4/2-way NC - Electrical Control with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800302"
+                   },
+                   {
+                       "name":  "Electrically Controlled",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800302"
+                   },
+                   {
+                       "name":  "4/2-way NC - Double Electrical Control",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800303"
+                   },
+                   {
+                       "name":  "Externally Piloted",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800303"
+                   },
+                   {
+                       "name":  "4/2-way NC - External Pilot with Spring Return",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800304"
+                   },
+                   {
+                       "name":  "4/2-way NO - Double External Hydraulic Pilot",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800305"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800400"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800401"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800402"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800403"
+                   },
+                   {
+                       "name":  "4/3-way Open Type - Double Electrical Control",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800403"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800404"
+                   },
+                   {
+                       "name":  "4/3 - Electrically Controlled",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800404"
+                   },
+                   {
+                       "name":  "4/3-way NC - Double Electrical Control",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800404"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800405"
+                   },
+                   {
+                       "name":  "4/3-way Tandem Type - Double External Pilot Control",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800405"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800406"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800407"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800408"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800409"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800410"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800411"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800412"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800413"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800414"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800415"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800416"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800417"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800418"
+                   },
+                   {
+                       "name":  "#Tp52WayValve",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800419"
+                   },
+                   {
+                       "name":  "5/3-way NC - Double Electrical Control",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800500"
+                   },
+                   {
+                       "name":  "5/3-way NC - Double External Pilot Control",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800500"
+                   },
+                   {
+                       "name":  "5/3-way NC - Double Electrical Control",
+                       "atelier":  "9731",
+                       "famille":  "1",
+                       "type":  "2800501"
+                   },
+                   {
+                       "name":  "5/3-way NC - Double Electrical Control with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800501"
+                   },
+                   {
+                       "name":  "5/3-way NC - Lever with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800502"
+                   },
+                   {
+                       "name":  "5/3-way NC - Lever with Detent",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800503"
+                   },
+                   {
+                       "name":  "5/3-way NC - Double External Pilot Control",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800504"
+                   },
+                   {
+                       "name":  "5/3-way NC - Double External Pilot Control with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800505"
+                   },
+                   {
+                       "name":  "5/3-way NC - El. Control, Double Int. Pilot with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800506"
+                   },
+                   {
+                       "name":  "5/3-way NC - El. Control, Double Int. Pilot, Override with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800507"
+                   },
+                   {
+                       "name":  "5/3-way NC - El. Control, Double Int. Pilot, Push Button with Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800508"
+                   },
+                   {
+                       "name":  "5/3-way NC - El. Control, Double Int. Pilot, Detent with Spring Return",
+                       "atelier":  "11267",
+                       "famille":  "1",
+                       "type":  "2800509"
+                   }
+               ],
+    "note":  "Prebuilt directional valve library entries. AS ValveConfigurator also composes from tiroir+commande symbols in ASSpoolPosition.db (not parsed)."
+}

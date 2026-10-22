@@ -1,0 +1,75 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Демо: клапан «И»",
+	"note": "КМ1 и КМ2 → входы 1/2 клапана И → выход 3. Оба давления → проход; один сигнал → выход стравливается. Рентген — гантель с конусами.",
+	"cabinet_door_open": true,
+	"next_id": 4,
+	"elements": [
+		{
+			"kind": "source",
+			"id": 1,
+			"tag": "КМ1",
+			"position": [40, 60],
+			"rotation_quad": 0,
+			"pressure_bar": 6.0,
+			"tag_prefix": "КМ",
+			"world_pos": [0.0, 1.35, 0.2],
+			"world_basis": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+			"auto_ground": false
+		},
+		{
+			"kind": "source",
+			"id": 2,
+			"tag": "КМ2",
+			"position": [40, 160],
+			"rotation_quad": 0,
+			"pressure_bar": 6.0,
+			"tag_prefix": "КМ",
+			"world_pos": [0.0, 1.35, -0.2],
+			"world_basis": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+			"auto_ground": false
+		},
+		{
+			"kind": "accessory",
+			"id": 3,
+			"tag": "КЛ1",
+			"position": [160, 110],
+			"rotation_quad": 0,
+			"recipe_id": "and_valve",
+			"catalog_id": "and_valve",
+			"accessory_class": "and_valve",
+			"tag_prefix": "КЛ",
+			"opening": 0.5,
+			"flow_nl_min": 1000.0,
+			"valve_cv": 1.1,
+			"tube_od_mm": 8.0,
+			"port_name": "G1/4",
+			"world_pos": [0.45, 1.35, 0.0],
+			"world_basis": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+			"auto_ground": false
+		}
+	],
+	"wires": [
+		{
+			"id": 1,
+			"num": 1,
+			"a_id": 1,
+			"a_port": "out",
+			"b_id": 3,
+			"b_port": "1",
+			"id_mm": 5.0,
+			"tube_od_mm": 8.0
+		},
+		{
+			"id": 2,
+			"num": 2,
+			"a_id": 2,
+			"a_port": "out",
+			"b_id": 3,
+			"b_port": "2",
+			"id_mm": 5.0,
+			"tube_od_mm": 8.0
+		}
+	]
+}

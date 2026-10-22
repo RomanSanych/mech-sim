@@ -1,0 +1,13 @@
+{
+  "args_summary": "write_file(path=res://test/demo_junction_atm.mechsim.json)",
+  "files": [
+    {
+      "backup": "res://addons/godot_mcp/cache/undo/entry_000436/files/test/demo_junction_atm.mechsim.json",
+      "kind": "snapshot",
+      "path": "res://test/demo_junction_atm.mechsim.json"
+    }
+  ],
+  "id": "000436",
+  "timestamp": 1791528659.0,
+  "tool": "write_file"
+}

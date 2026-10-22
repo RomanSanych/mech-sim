@@ -1,0 +1,132 @@
+1
+A9F03101
+Вращает 3D-объекты  относительно  экрана.  
+Движение  объектов  зависит  от  исходного  
+вида,  точки  начала  движения  и  
+направления  вращения.
+3D view
+To activate the interactive 3D view in Acrobat Reader, you need to select, at the top of the page,  Options and then  
+Trust this document
+Zoom
+Приближает  или  отдаляет  объекты  при  
+вертикальном  движении  курсора.  
+Инструмент 'рука'  также  позволяет  
+масштабировать  объекты.  Зажмите  для  
+этого  при  движении  клавишу Shift.
+Pan
+Перемещает  модель  только  горизонтально  
+или  вертикально.  Инструмент 'рука'  также  
+позволит  Вам  панорамировать  модель.  
+Зажмите  для  этого  при  движении  клавишу  
+Ctrl.
+Вращать
+Augmented Reality, often shortened to AR, is a technology that blends digital  
+information into the real world.
+For more information, please click  here  or directly try yourself by scanning the QR  
+code with your phone.
+Augmented Reality (AR) - Digital meets real
+https://www.3dfindit.com
+2
+A9F03101
+N°  
+Наименование  
+Количество  
+1.1  
+10  
+2D derivation
+ISO view
+Bill-Of-Materials
+https://www.3dfindit.com
+3
+A9F03101
+Technical drawings
+https://www.3dfindit.com
+4
+A9F03101
+PREVIEW ()  
+pb107401_1500.png  
+DESCSHORT (Short Description)  
+Miniature circuit breaker (MCB), Acti9 iC60N, 1P, 1A, B curve, 6000A (IEC 60898-1),  
+50kA (IEC 60947-2), double term.  
+INTNO (International product number)  
+3606480439636  
+MANUID (Product number of the Manufacturer)  
+A9F03101  
+MANUNAME (Manufacturer Name)  
+Schneider Electric  
+MANUTYPEDESC (Manufacturer Type Description)  A9F03101  
+AAD246 (Overvoltage category)  
+IV  
+AAD934 (min. frequency / Hz)  
+50  
+AAE229 (max. frequency / Hz)  
+60  
+AAF726 (rated current / A)  
+1.000  
+AAF844 (additional equipment possible)  
+Yes  
+AAG268 (concurrently switching N-neutral present)  No  
+AAG457 (release characteristic)  
+B  
+AAG460 (number of protected poles)  
+1  
+AAL647 (suitable for flush-mounted installation)  
+No  
+AAP798 (Application standards)  
+IEC 60898-1  
+AAS574 (Rated current [In] for the power loss  
+specification / A)  
+1.000  
+AAS575 (Power loss per pole, current-dependent  
+[PlIp] / W)  
+2.300  
+AAT080 (Pole number)  
+1  
+AAT082 (Construction size)  
+1  
+AAT083 (Width in units of measurement)  
+2.000  
+AAT084 (Energy limitation class)  
+3  
+AAW366 (Installation depth / mm)  
+78.500  
+BAA295 (Degree of soiling)  
+3  
+BAB392 (certificate/approval)  
+CE  
+BAD915 (Voltage type)  
+AC  
+BAG975 (degree of protection)  
+IP20  
+BAH005 (rated voltage / V)  
+230.000  
+AAO057 (Product type)  
+A9F03101  
+AAO663 (GTIN)  
+3606480439636  
+AAO742 (Brand)  
+Schneider Electric  
+AAU731 (Manufacturer product family)  
+iC60N  
+AAU734 (Manufacturer product description)  
+Miniature circuit breaker (MCB), Acti9 iC60N, 1P, 1A, B curve, 6000A (IEC 60898-1),  
+50kA (IEC 60947-2), double term.  
+AAW338 (Manufacturer product designation)  
+Miniature circuit breaker (MCB), Acti9 iC60N, 1P, 1A, B curve, 6000A (IEC 60898-1),  
+50kA (IEC 60947-2), double term.  
+AAO735 (name of supplier)  
+Schneider Electric  
+AAZ800 (Customs tariff number)  
+85362010  
+NOCUPEROU (Number of content units per order  
+unit)  
+1  
+Technical data
+https://www.3dfindit.com
+5
+A9F03101
+To the plugins
+CAD plugins
+With our CAD integrations, you can use 3Dfindit directly in your CAD system and make your work easier with  
+additional comfort functions, such as replacing a part and many more.
+https://www.3dfindit.com

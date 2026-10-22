@@ -1,0 +1,45 @@
+{
+  "source": "C:/Users/RomanSanych/Downloads/PNEUMO (3Dfindit Camozzi STEP)",
+  "units": "mm",
+  "parts": {
+    "fitting_2931_G1_4": {
+      "bbox": [27.0, 17.02, 15.0],
+      "hex_r": 7.5,
+      "collet_r": 5.5,
+      "file": "fitting_2931_1_4.stp",
+      "note": "push-in fitting G1/4"
+    },
+    "silencer_S6510_G3_8": {
+      "bbox": [23.5, 21.94, 19.0],
+      "body_r": 9.5,
+      "hex_r": 6.5,
+      "file": "silencer_S6510_8-3_8.stp",
+      "note": "sintered bronze muffler G3/8"
+    },
+    "coil_U75_24": {
+      "bbox": [22.0, 29.5, 39.8],
+      "bore_r": 5.15,
+      "file": "coil_U75_24.stp",
+      "note": "solenoid coil U75 24V"
+    },
+    "coil_H8BI": {"bbox": [79.9, 62.7, 29.6], "note": "coil/connector module"},
+    "valve_338L_015_02": {
+      "bbox": [32.3, 65.5, 22.0],
+      "body": [32.3, 48.0, 22.0],
+      "tube_r": 5.0,
+      "tube_len": 14.0,
+      "flange_r": 9.0,
+      "flange_h": 3.0,
+      "nut_af": 15.0,
+      "nut_h": 5.0,
+      "tip_r": 3.7,
+      "tip_h": 7.0,
+      "file": "valve_338L-015-02_solenoid.stp",
+      "note": "5/2 solenoid body+armature; Y=spool+EM axis"
+    },
+    "valve_368_900_lever": {"bbox": [65.2, 87.6, 32], "port_r": 4.3, "note": "3-port lever valve"},
+    "valve_358_E15_solenoid": {"bbox": [32.3, 65.5, 34.6], "note": "solenoid valve"},
+    "valve_338_976_mushroom": {"bbox": [33.5, 119.2, 25.5], "note": "mushroom button valve"},
+    "valve_NA34N_15_02": {"bbox": [33, 143.9, 41.1], "note": "mechanical valve multi-face ports"}
+  }
+}

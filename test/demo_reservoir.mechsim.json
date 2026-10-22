@@ -1,0 +1,319 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Демо: ресивер",
+	"note": "РС1 — 2 л, 1 бобышка (заряд от КМ1). РС2 — 0.4 л, 3 бобышки: питание / ДР1 / свободен. Обозначения — ГОСТ 2.704-2011.",
+	"cabinet_door_open": true,
+	"next_id": 5,
+	"elements": [
+		{
+			"kind": "source",
+			"id": 1,
+			"tag": "КМ1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				120
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				0.2
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "accessory",
+			"id": 2,
+			"tag": "РС1",
+			"tag_offset": [
+				0,
+				-58
+			],
+			"position": [
+				200,
+				120
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.35,
+				1.35,
+				0.0
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"recipe_id": "reservoir",
+			"catalog_id": "reservoir",
+			"accessory_class": "reservoir",
+			"tag_prefix": "РС",
+			"volume_l": 2.0,
+			"reservoir_ports": 1,
+			"valve_cv": 1.6,
+			"tube_od_mm": 10.0,
+			"port_name": "G1/2",
+			"auto_ground": false
+		},
+		{
+			"kind": "source",
+			"id": 5,
+			"tag": "КМ2",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				280
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				-0.35
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "accessory",
+			"id": 3,
+			"tag": "РС2",
+			"tag_offset": [
+				0,
+				-58
+			],
+			"position": [
+				280,
+				280
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.55,
+				1.35,
+				-0.35
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"recipe_id": "reservoir",
+			"catalog_id": "reservoir",
+			"accessory_class": "reservoir",
+			"tag_prefix": "РС",
+			"volume_l": 0.4,
+			"reservoir_ports": 3,
+			"valve_cv": 1.2,
+			"tube_od_mm": 8.0,
+			"port_name": "G1/4",
+			"auto_ground": false
+		},
+		{
+			"kind": "accessory",
+			"id": 4,
+			"tag": "ДР1",
+			"tag_offset": [
+				0,
+				12
+			],
+			"position": [
+				480,
+				200
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.9,
+				1.35,
+				-0.2
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"recipe_id": "throttle",
+			"catalog_id": "throttle",
+			"accessory_class": "throttle",
+			"tag_prefix": "ДР",
+			"opening": 1.0,
+			"valve_cv": 1.0,
+			"tube_od_mm": 8.0,
+			"auto_ground": false
+		}
+	],
+	"wires": [
+		{
+			"id": 1,
+			"num": 1,
+			"a_id": 1,
+			"a_port": "out",
+			"b_id": 2,
+			"b_port": "1",
+			"od_mm": 10.0,
+			"id_mm": 7.0
+		},
+		{
+			"id": 2,
+			"num": 2,
+			"a_id": 5,
+			"a_port": "out",
+			"b_id": 3,
+			"b_port": "1",
+			"od_mm": 8.0,
+			"id_mm": 5.5
+		},
+		{
+			"id": 3,
+			"num": 3,
+			"a_id": 3,
+			"a_port": "2",
+			"b_id": 4,
+			"b_port": "1",
+			"od_mm": 8.0,
+			"id_mm": 5.5
+		}
+	]
+}

@@ -1,0 +1,64 @@
+1
+58 Series
+Вращает 3D-объекты  относительно  экрана.  
+Движение  объектов  зависит  от  исходного  
+вида,  точки  начала  движения  и  
+направления  вращения.
+3D view
+To activate the interactive 3D view in Acrobat Reader, you need to select, at the top of the page,  Options and then  
+Trust this document
+Zoom
+Приближает  или  отдаляет  объекты  при  
+вертикальном  движении  курсора.  
+Инструмент 'рука'  также  позволяет  
+масштабировать  объекты.  Зажмите  для  
+этого  при  движении  клавишу Shift.
+Pan
+Перемещает  модель  только  горизонтально  
+или  вертикально.  Инструмент 'рука'  также  
+позволит  Вам  панорамировать  модель.  
+Зажмите  для  этого  при  движении  клавишу  
+Ctrl.
+Вращать
+Augmented Reality, often shortened to AR, is a technology that blends digital  
+information into the real world.
+For more information, please click  here  or directly try yourself by scanning the QR  
+code with your phone.
+Augmented Reality (AR) - Digital meets real
+https://www.3dfindit.com
+
+---
+2
+58 Series
+N°  
+Наименование  
+Количество  
+1.1  
+45  
+2D derivation
+ISO view
+Bill-Of-Materials
+https://www.3dfindit.com
+
+---
+3
+58 Series
+Technical drawings
+https://www.3dfindit.com
+
+---
+4
+58 Series
+CODE (Code)  
+583490120050SPB  
+VAR0 (Description)  
+Type 58. 34 is a relay interface module, 4 CO 7 A, with screw terminals, 27 mm wide.  
+For interfacing with PLC systems. Available Atex compliant version (HazLoc Class I  
+Div. 2 Groups A, B, C, D – T5 compliant): 58. 34-x0xx, 4 CO 6 A, with scren terminals  
+or push-in terminals. Features include: AC or DC coil, Coil Indication and EMC  
+suppression module, Identification label, UL Listing (relay/socket/jumper link), 35 mm  
+rail (EN 60715) mounting, Cadmium-free contacts  
+Technical data
+https://www.3dfindit.com
+
+---

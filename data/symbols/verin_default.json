@@ -1,0 +1,77 @@
+{
+  "id": "cylinder.iso1219.double_acting",
+  "norm": "ISO1219-1",
+  "source": {
+    "primary": "ISO 1219-1 topology (AS-declared); layout scaled for Tab-configurator readability",
+    "geometry": "ISO 1219 structure (body, dual piston lines, rod gap, ports) at AS-like working scale",
+    "commons": "https://commons.wikimedia.org/wiki/Category:ISO_1219",
+    "related": [
+      "ISO 1219-2",
+      "ISO 14617",
+      "DIN ISO 1219-1:2019",
+      "GOST 2.782-96",
+      "GOST 2.781-96",
+      "GOST 2.780-96"
+    ]
+  },
+  "layout": {
+    "body_l": -80,
+    "body_r": 80,
+    "body_t": -36,
+    "body_b": 36,
+    "rod_x": 132,
+    "piston_a": -27,
+    "piston_b": 50,
+    "piston_gap": 28,
+    "port_cap_x": -71,
+    "port_rod_x": 70,
+    "port_drop": 36,
+    "rod_gap": 9
+  },
+  "layers": {
+    "corps": {
+      "strokes": [
+        [[-80, -36], [80, -36]],
+        [[80, -36], [80, -9]],
+        [[80, 9], [80, 36]],
+        [[80, 36], [-80, 36]],
+        [[-80, 36], [-80, -36]]
+      ]
+    },
+    "piston.simple": {
+      "strokes": [
+        [[-55, -36], [-55, 36]],
+        [[-27, -36], [-27, 36]]
+      ]
+    },
+    "tige.single": {
+      "strokes": [
+        [[-27, -9], [132, -9]],
+        [[-27, 9], [132, 9]],
+        [[132, -9], [132, 9]]
+      ]
+    },
+    "port.connect": {
+      "strokes": [
+        [[-71, 36], [-71, 72]],
+        [[70, 36], [70, 72]]
+      ]
+    }
+  },
+  "hit_zones": [
+    {"id": "piston", "rect": [-62, -36, 48, 72]},
+    {"id": "cush_cap", "rect": [-80, -36, 22, 72]},
+    {"id": "cush_rod", "rect": [58, -36, 22, 72]},
+    {"id": "spring", "rect": [-16, -36, 80, 72]},
+    {"id": "port_cap", "rect": [-85, 36, 30, 42]},
+    {"id": "port_rod", "rect": [55, 36, 30, 42]},
+    {"id": "rod", "rect": [80, -14, 52, 28]},
+    {"id": "tip", "rect": [120, -16, 28, 32]},
+    {"id": "brake", "rect": [84, -56, 50, 36]},
+    {"id": "carriage", "rect": [-80, -64, 70, 28]}
+  ],
+  "ports": [
+    {"name": "cap", "at": [-71, 72], "kind": "connect"},
+    {"name": "rod", "at": [70, 72], "kind": "connect"}
+  ]
+}

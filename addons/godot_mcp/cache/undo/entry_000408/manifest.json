@@ -1,0 +1,13 @@
+{
+  "args_summary": "edit_script",
+  "files": [
+    {
+      "backup": "res://addons/godot_mcp/cache/undo/entry_000408/files/scripts/view3d/workshop_view.gd",
+      "kind": "snapshot",
+      "path": "res://scripts/view3d/workshop_view.gd"
+    }
+  ],
+  "id": "000408",
+  "timestamp": 1791469143.0,
+  "tool": "edit_script"
+}

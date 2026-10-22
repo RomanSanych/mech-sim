@@ -1,0 +1,121 @@
+Product number of the Manufacturer  
+09112601HD  
+Manufacturer Type Description  
+DFS2 016-2/0,01-A HD  
+International product number  
+4014712243286  
+Manufacturer Name  
+Doepke Schaltgeräte GmbH  
+Delivery Time  
+10  
+Customs tariff number  
+85363010  
+Country of origin  
+DE  
+Number of poles  
+2  
+Rated voltage [V]  
+230  
+Rated current [A]  
+16  
+Rated fault current [mA]  
+0.01  
+Rated insulation voltage Ui [V]  
+400  
+Rated impulse withstand voltage Uimp [kV]  
+4  
+Mounting method  
+DIN rail  
+Leakage current type  
+A  
+Selective protection  
+false  
+Rated switching capacity [kA]  
+Short-time delayed tripping  
+false  
+Short-circuit breaking capacity (Icw) [kA]  
+10  
+Frequency [Hz]  
+Surge current capacity [kA]  
+0.25  
+Additional equipment integrated  
+Voltage type  
+AC  
+With interlocking device  
+true  
+Additional equipment attached at delivery  
+Frequency  
+50 Hz  
+Rated switch current auxiliary device [A]  
+Residual current circuit-breakers (RCCB) switch the power supply off if dangerous high residual currents occur. DFS 2 are two-terminal  
+residual current circuit-breakers for single-phase networks. In the standard design, the compact devices are just two module widths wide.  
+They are available with many different residual current types and variants for rated currents up to 125 A. The large two-tier terminals can  
+also accommodate large conductor cross-sections. The trip position of the multi-function toggle switch simplifies fault-finding. The free label  
+software helps in the labelling process. Type A switches are sensitive to pulsating and alternating currents. This function is independent of  
+the mains voltage. Devices in the standard design are intended for monitoring circuits with a rated voltage of 230 V and a rated frequency of  
+50 Hz. With an airtight, encapsulated tripping mechanism from a special alloy and the stainless steel latch, residual current circuit-breakers in  
+HD design are protected, in particular from corrosion, corrosive gases, moisture and extreme temperature fluctuations. Properties: tripping  
+not dependent on mains and auxiliary voltage; sensitive to AC residual currents and pulsating DC residual currents (type A) compact design  
+for all rated currents; high short-circuit resistance; double-sided two-tier terminals for large conductor cross-section and busbar; switch  
+position indicator; viewing window for labels; multifunction switch toggle with three positions: "on", "off" and "tripped"; Connector C1 Neutral  
+conductor position left or right; Mounting: quick fastening to mounting rail; any installation position; supply from any direction; Application  
+areas: Power supplies to residential and purpose-built buildings as well as industrial facilities with TN-S, TT and TN-C-S networks. In IT  
+networks. the residual current circuit-breakers of this series can be set to switch off in the event of a second fault; Excluded is the  
+application in TN-C systems and for the protection of installations in which electronic equipment could generate smooth DC currents or  
+residual currents with frequencies other than 50 Hz. Comprehensive protection is not provided in this case. For these applications we  
+recommend our AC/DC sensitive residual current circuit-breakers (Type B or B+).
+Function
+Table Information
+Doepke Residual current circuit-breakers 2-pole, 16 A, 0.01 A, Type A, N left or right, HD
+Shortdescribtion
+Table Information
+
+---
+Additional equipment possible  
+true  
+Rated voltage auxiliary device [V]  
+Control voltage type auxiliary equipment  
+Degree of protection (IP)  
+IP20  
+Width in number of modular spacings  
+2  
+Ambient temperature during operating [°C]  
+-25 - 60  
+Built-in depth [mm]  
+69  
+Construction size (according to DIN 43880)  
+Pollution degree  
+2  
+Connectable conductor cross section multi-wired  
+[mm²]  
+1.5 - 50  
+Connectable conductor cross section solid-core  
+[mm²]  
+1.5 - 50  
+Explosion-proof  
+false  
+Weight [kg]  
+0.250  
+Length [mm]  
+85.000  
+Width [mm]  
+36.000  
+Depth [mm]  
+75.000  
+Certificate RoHS  
+true  
+Certificate CE  
+true  
+Certificate REACH  
+true  
+Website  
+Website  
+Power loss [W]  
+RAL-number (similar)  
+
+---
+3D-вид
+Electric circuit
+Technical drawing  
+
+---

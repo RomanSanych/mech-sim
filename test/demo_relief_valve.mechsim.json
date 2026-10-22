@@ -1,0 +1,56 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Демо: предохранительный клапан",
+	"note": "КМ1 (6 бар) → КП1 (уставка 4 бар, глушитель). Run: тарелка жмёт пружину, УГО оживает. Рентген: рычаг→воротник→шток→тарелка; винт сверху=уставка.",
+	"cabinet_door_open": true,
+	"next_id": 3,
+	"elements": [
+		{
+			"kind": "source",
+			"id": 1,
+			"tag": "КМ1",
+			"position": [40, 100],
+			"rotation_quad": 0,
+			"pressure_bar": 6.0,
+			"tag_prefix": "КМ",
+			"world_pos": [0.0, 1.35, 0.15],
+			"world_basis": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+			"auto_ground": false
+		},
+		{
+			"kind": "accessory",
+			"id": 2,
+			"tag": "КП1",
+			"position": [180, 100],
+			"rotation_quad": 0,
+			"recipe_id": "relief",
+			"catalog_id": "relief",
+			"accessory_class": "relief",
+			"tag_prefix": "КП",
+			"opening": 0.0,
+			"set_pressure_bar": 4.0,
+			"flow_nl_min": 700.0,
+			"valve_cv": 1.0,
+			"tube_od_mm": 8.0,
+			"port_name": "G1/4",
+			"port_3": "muffler",
+			"pressed": false,
+			"world_pos": [0.42, 1.35, 0.0],
+			"world_basis": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+			"auto_ground": false
+		}
+	],
+	"wires": [
+		{
+			"id": 1,
+			"num": 1,
+			"a_id": 1,
+			"a_port": "out",
+			"b_id": 2,
+			"b_port": "1",
+			"id_mm": 5.0,
+			"tube_od_mm": 8.0
+		}
+	]
+}

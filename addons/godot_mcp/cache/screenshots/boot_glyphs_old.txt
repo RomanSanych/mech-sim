@@ -1,0 +1,37 @@
+func _build_cells() -> void:
+	_cells.clear()
+	var cursor_x := 0
+	var letter_gap := 2
+	var text_cells: Array[Vector2i] = []
+	for glyph in WORD_GLYPHS:
+		var rows: Array = glyph
+		for y in rows.size():
+			var row: String = str(rows[y])
+			for x in row.length():
+				if row[x] == "1":
+					text_cells.append(Vector2i(cursor_x + x, y))
+		cursor_x += GLYPH_W + letter_gap
+	var text_w := cursor_x - letter_gap
+
+	var logo_cells := _rasterize_fspo_exact(LOGO_N)
+	var logo_x0 := text_w + LOGO_GAP
+	var main_w: int = logo_x0 + LOGO_N
+	var text_y0 := int(floor(float(LOGO_N - GLYPH_H) * 0.5))
+
+	var sub_cells: Array[Vector2i] = _rasterize_subtitle()
+	var sub_w: int = _subtitle_width()
+	_grid_w = maxi(main_w, sub_w)
+	_grid_h = LOGO_N + SUB_GAP_Y + SUB_GLYPH_H
+
+	var main_x0: int = int(floor(float(_grid_w - main_w) * 0.5))
+	var sub_x0: int = int(floor(float(_grid_w - sub_w) * 0.5))
+	var sub_y0: int = LOGO_N + SUB_GAP_Y
+
+	for c in text_cells:
+		_cells.append(Vector2i(main_x0 + c.x, c.y + text_y0))
+	for c in logo_cells:
+		_cells.append(Vector2i(main_x0 + logo_x0 + c.x, c.y))
+	for c in sub_cells:
+		_cells.append(Vector2i(sub_x0 + c.x, sub_y0 + c.y))
+
+	_recompute_metrics()

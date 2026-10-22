@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fx/krIWZTEI=",
+  "success": true,
+  "projectFilePath": "D:\\mech-sim\\tools\\as_extract\\il_dump\\probe_rva\\probe_rva.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RomanSanych\\AppData\\Local\\Temp\\cursor-sandbox-cache\\888bcfcbe6052230f9446354f80fdfc9\\nuget\\mono.cecil\\0.11.5\\mono.cecil.0.11.5.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,13 @@
+{
+  "args_summary": "edit_script",
+  "files": [
+    {
+      "backup": "res://addons/godot_mcp/cache/undo/entry_000559/files/scripts/domain/wire_router_2d.gd",
+      "kind": "snapshot",
+      "path": "res://scripts/domain/wire_router_2d.gd"
+    }
+  ],
+  "id": "000559",
+  "timestamp": 1792236317.0,
+  "tool": "edit_script"
+}

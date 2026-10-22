@@ -1,0 +1,412 @@
+﻿<?xml version="1.0"?>
+<LIB Name="ConfigPortTiroir">
+
+<DISTRIBUTEUR type="HydrauliqueProportionnel">
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT2" tailleTiroir="4" nomTiroir="2"/>
+<PORT emplacement="BAS" position="2" nom="P"/>
+<PORT emplacement="HAUT" position="2" nom="A"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT3" tailleTiroir="4" nomTiroir="3a"/>
+<PORT emplacement="BAS" position="1" nom="P"/>
+<PORT emplacement="HAUT" position="1" nom="A"/>
+<PORT emplacement="BAS" position="3" nom="T"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT3-B" tailleTiroir="4" nomTiroir="3b"/>
+<PORT emplacement="BAS" position="2" nom="P"/>
+<PORT emplacement="HAUT" position="1" nom="A"/>
+<PORT emplacement="HAUT" position="3" nom="B"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT4" tailleTiroir="4" nomTiroir="4a"/>
+<PORT emplacement="BAS" position="1" nom="P"/>
+<PORT emplacement="HAUT" position="1" nom="A"/>
+<PORT emplacement="HAUT" position="3" nom="B"/>
+<PORT emplacement="BAS" position="3" nom="T"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT4-B" tailleTiroir="6" nomTiroir="4b"/>
+<PORT emplacement="BAS" position="1" nom="P"/>
+<PORT emplacement="HAUT" position="3" nom="A"/>
+<PORT emplacement="BAS" position="5" nom="B"/>
+<PORT emplacement="BAS" position="3" nom="T"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT5" tailleTiroir="6" nomTiroir="5"/>
+<PORT emplacement="BAS" position="1" nom="T1"/>
+<PORT emplacement="HAUT" position="1" nom="A"/>
+<PORT emplacement="HAUT" position="5" nom="B"/>
+<PORT emplacement="BAS" position="5" nom="T2"/>
+<PORT emplacement="BAS" position="3" nom="P"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT5-B" tailleTiroir="8" nomTiroir="5b"/>
+<PORT emplacement="BAS" position="4" nom="P"/>
+<PORT emplacement="HAUT" position="1" nom="A"/>
+<PORT emplacement="HAUT" position="3" nom="B"/>
+<PORT emplacement="HAUT" position="5" nom="C"/>
+<PORT emplacement="HAUT" position="7" nom="D"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT6" tailleTiroir="6" nomTiroir="6a"/>
+<PORT emplacement="BAS" position="1" nom="T1"/>
+<PORT emplacement="HAUT" position="1" nom="A"/>
+<PORT emplacement="HAUT" position="3" nom="B"/>
+<PORT emplacement="HAUT" position="5" nom="C"/>
+<PORT emplacement="BAS" position="5" nom="T2"/>
+<PORT emplacement="BAS" position="3" nom="P"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT6-B" tailleTiroir="8" nomTiroir="6b"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="BAS" position="7" nom="6"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT7" tailleTiroir="8" nomTiroir="7a"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="BAS" position="7" nom="6"/>
+<PORT emplacement="BAS" position="5" nom="7"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT7-B" tailleTiroir="10" nomTiroir="7b"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="HAUT" position="9" nom="6"/>
+<PORT emplacement="BAS" position="9" nom="7"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT7-C" tailleTiroir="8" nomTiroir="7c"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="5" nom="3"/>
+<PORT emplacement="HAUT" position="7" nom="4"/>
+<PORT emplacement="BAS" position="7" nom="5"/>
+<PORT emplacement="BAS" position="5" nom="6"/>
+<PORT emplacement="BAS" position="3" nom="7"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT7-D" tailleTiroir="10" nomTiroir="7d"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="3" nom="2"/>
+<PORT emplacement="HAUT" position="7" nom="3"/>
+<PORT emplacement="BAS" position="9" nom="4"/>
+<PORT emplacement="BAS" position="7" nom="5"/>
+<PORT emplacement="BAS" position="5" nom="6"/>
+<PORT emplacement="BAS" position="3" nom="7"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT8" tailleTiroir="10" nomTiroir="8a"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="5" nom="3"/>
+<PORT emplacement="HAUT" position="7" nom="4"/>
+<PORT emplacement="BAS" position="9" nom="5"/>
+<PORT emplacement="BAS" position="7" nom="6"/>
+<PORT emplacement="BAS" position="5" nom="7"/>
+<PORT emplacement="BAS" position="3" nom="8"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT8-B" tailleTiroir="8" nomTiroir="8b"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="BAS" position="7" nom="6"/>
+<PORT emplacement="BAS" position="5" nom="7"/>
+<PORT emplacement="BAS" position="3" nom="8"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT9-A" tailleTiroir="10" nomTiroir="9a"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="HAUT" position="9" nom="6"/>
+<PORT emplacement="BAS" position="7" nom="7"/>
+<PORT emplacement="BAS" position="5" nom="8"/>
+<PORT emplacement="BAS" position="3" nom="9"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT9-B" tailleTiroir="12" nomTiroir="9b"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="3" nom="2"/>
+<PORT emplacement="HAUT" position="5" nom="3"/>
+<PORT emplacement="HAUT" position="7" nom="4"/>
+<PORT emplacement="HAUT" position="9" nom="5"/>
+<PORT emplacement="BAS" position="11" nom="6"/>
+<PORT emplacement="BAS" position="9" nom="7"/>
+<PORT emplacement="BAS" position="6" nom="8"/>
+<PORT emplacement="BAS" position="3" nom="9"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT10" tailleTiroir="12" nomTiroir="10a"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="HAUT" position="9" nom="6"/>
+<PORT emplacement="BAS" position="11" nom="7"/>
+<PORT emplacement="BAS" position="9" nom="8"/>
+<PORT emplacement="BAS" position="6" nom="9"/>
+<PORT emplacement="BAS" position="3" nom="10"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT10-B" tailleTiroir="10" nomTiroir="10b"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="HAUT" position="9" nom="6"/>
+<PORT emplacement="BAS" position="9" nom="7"/>
+<PORT emplacement="BAS" position="7" nom="8"/>
+<PORT emplacement="BAS" position="5" nom="9"/>
+<PORT emplacement="BAS" position="3" nom="10"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT13" tailleTiroir="16" nomTiroir="13"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="5" nom="3"/>
+<PORT emplacement="HAUT" position="7" nom="4"/>
+<PORT emplacement="HAUT" position="9" nom="5"/>
+<PORT emplacement="HAUT" position="11" nom="6"/>
+<PORT emplacement="HAUT" position="15" nom="7"/>
+<PORT emplacement="BAS" position="15" nom="8"/>
+<PORT emplacement="BAS" position="13" nom="9"/>
+<PORT emplacement="BAS" position="11" nom="10"/>
+<PORT emplacement="BAS" position="8" nom="11"/>
+<PORT emplacement="BAS" position="5" nom="12"/>
+<PORT emplacement="BAS" position="3" nom="13"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT13-B" tailleTiroir="16" nomTiroir="13b"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="5" nom="3"/>
+<PORT emplacement="HAUT" position="7" nom="4"/>
+<PORT emplacement="HAUT" position="9" nom="5"/>
+<PORT emplacement="HAUT" position="11" nom="6"/>
+<PORT emplacement="BAS" position="15" nom="7"/>
+<PORT emplacement="BAS" position="13" nom="8"/>
+<PORT emplacement="BAS" position="11" nom="9"/>
+<PORT emplacement="BAS" position="9" nom="10"/>
+<PORT emplacement="BAS" position="7" nom="11"/>
+<PORT emplacement="BAS" position="5" nom="12"/>
+<PORT emplacement="BAS" position="3" nom="13"/>
+</TIROIR>
+
+</DISTRIBUTEUR>
+<DISTRIBUTEUR type="Hydraulique">
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT2" tailleTiroir="4" nomTiroir="2"/>
+<PORT emplacement="BAS" position="2" nom="P"/>
+<PORT emplacement="HAUT" position="2" nom="A"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT3" tailleTiroir="4" nomTiroir="3"/>
+<PORT emplacement="BAS" position="1" nom="P"/>
+<PORT emplacement="HAUT" position="1" nom="A"/>
+<PORT emplacement="BAS" position="3" nom="T"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT3-B" tailleTiroir="4" nomTiroir="3b"/>
+<PORT emplacement="BAS" position="1" nom="P"/>
+<PORT emplacement="HAUT" position="2" nom="A"/>
+<PORT emplacement="BAS" position="3" nom="T"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT4" tailleTiroir="4" nomTiroir="4"/>
+<PORT emplacement="BAS" position="1" nom="P"/>
+<PORT emplacement="HAUT" position="1" nom="A"/>
+<PORT emplacement="HAUT" position="3" nom="B"/>
+<PORT emplacement="BAS" position="3" nom="T"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT4-B" tailleTiroir="6" nomTiroir="4b"/>
+<PORT emplacement="BAS" position="1" nom="P"/>
+<PORT emplacement="HAUT" position="3" nom="A"/>
+<PORT emplacement="BAS" position="5" nom="B"/>
+<PORT emplacement="BAS" position="3" nom="T"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT5" tailleTiroir="6" nomTiroir="5"/>
+<PORT emplacement="BAS" position="1" nom="T1"/>
+<PORT emplacement="HAUT" position="1" nom="A"/>
+<PORT emplacement="HAUT" position="5" nom="B"/>
+<PORT emplacement="BAS" position="5" nom="T2"/>
+<PORT emplacement="BAS" position="3" nom="P"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT5-B" tailleTiroir="6" nomTiroir="5b"/>
+<PORT emplacement="BAS" position="3" nom="P"/>
+<PORT emplacement="HAUT" position="1" nom="A"/>
+<PORT emplacement="HAUT" position="3" nom="B"/>
+<PORT emplacement="HAUT" position="5" nom="C"/>
+<PORT emplacement="BAS" position="5" nom="T"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT6" tailleTiroir="6" nomTiroir="6"/>
+<PORT emplacement="BAS" position="1" nom="T1"/>
+<PORT emplacement="HAUT" position="1" nom="A"/>
+<PORT emplacement="HAUT" position="3" nom="B"/>
+<PORT emplacement="HAUT" position="5" nom="C"/>
+<PORT emplacement="BAS" position="5" nom="T2"/>
+<PORT emplacement="BAS" position="3" nom="P"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT6-B" tailleTiroir="8" nomTiroir="6b"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="BAS" position="7" nom="6"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT6-C" tailleTiroir="8" nomTiroir="6c"/>
+<PORT emplacement="BAS" position="3" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="BAS" position="5" nom="6"/>
+</TIROIR>
+
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT7" tailleTiroir="8" nomTiroir="7"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="BAS" position="7" nom="6"/>
+<PORT emplacement="BAS" position="5" nom="7"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT8" tailleTiroir="10" nomTiroir="8"/>
+<PORT emplacement="BAS" position="3" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="HAUT" position="9" nom="6"/>
+<PORT emplacement="BAS" position="7" nom="7"/>
+<PORT emplacement="BAS" position="5" nom="8"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT8-B" tailleTiroir="8" nomTiroir="8b"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="BAS" position="7" nom="6"/>
+<PORT emplacement="BAS" position="5" nom="7"/>
+<PORT emplacement="BAS" position="3" nom="8"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT9" tailleTiroir="10" nomTiroir="9"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="7" nom="4"/>
+<PORT emplacement="HAUT" position="9" nom="5"/>
+<PORT emplacement="BAS" position="9" nom="6"/>
+<PORT emplacement="BAS" position="7" nom="7"/>
+<PORT emplacement="BAS" position="5" nom="8"/>
+<PORT emplacement="BAS" position="3" nom="9"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT10" tailleTiroir="10" nomTiroir="10"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="HAUT" position="7" nom="5"/>
+<PORT emplacement="HAUT" position="9" nom="6"/>
+<PORT emplacement="BAS" position="9" nom="7"/>
+<PORT emplacement="BAS" position="7" nom="8"/>
+<PORT emplacement="BAS" position="5" nom="9"/>
+<PORT emplacement="BAS" position="3" nom="10"/>
+</TIROIR>
+</DISTRIBUTEUR>
+<DISTRIBUTEUR type="Pneumatique">
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT2" tailleTiroir="4" nomTiroir="2"/>
+<PORT emplacement="BAS" position="2" nom="1"/>
+<PORT emplacement="HAUT" position="2" nom="2"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT3" tailleTiroir="4" nomTiroir="3"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="BAS" position="3" nom="3"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT4" tailleTiroir="4" nomTiroir="4"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="BAS" position="3" nom="4"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT5" tailleTiroir="6" nomTiroir="5"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="5" nom="3"/>
+<PORT emplacement="BAS" position="5" nom="4"/>
+<PORT emplacement="BAS" position="3" nom="5"/>
+</TIROIR>
+<TIROIR>
+<PARAMETRE IDFamilleISO="VDT6" tailleTiroir="6" nomTiroir="6"/>
+<PORT emplacement="BAS" position="1" nom="1"/>
+<PORT emplacement="HAUT" position="1" nom="2"/>
+<PORT emplacement="HAUT" position="3" nom="3"/>
+<PORT emplacement="HAUT" position="5" nom="4"/>
+<PORT emplacement="BAS" position="5" nom="5"/>
+<PORT emplacement="BAS" position="3" nom="6"/>
+</TIROIR>
+</DISTRIBUTEUR>
+</LIB>
+

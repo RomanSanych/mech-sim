@@ -1,0 +1,12 @@
+{
+  "args_summary": "create_script(path=res://scripts/view3d/iso_air_motor_turbine.gd)",
+  "files": [
+    {
+      "kind": "created",
+      "path": "res://scripts/view3d/iso_air_motor_turbine.gd"
+    }
+  ],
+  "id": "000491",
+  "timestamp": 1792045029.0,
+  "tool": "create_script"
+}

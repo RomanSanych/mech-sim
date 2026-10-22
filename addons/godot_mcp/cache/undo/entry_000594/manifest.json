@@ -1,0 +1,12 @@
+{
+  "args_summary": "write_file(path=res://tools/decode_msim.py)",
+  "files": [
+    {
+      "kind": "created",
+      "path": "res://tools/decode_msim.py"
+    }
+  ],
+  "id": "000594",
+  "timestamp": 1792321968.0,
+  "tool": "write_file"
+}

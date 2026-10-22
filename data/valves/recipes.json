@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "2_2_nc_sol_spring",
+      "title": "2/2 NC ЭМ / пружина",
+      "ways": 2,
+      "positions": 2,
+      "envelopes": ["2_open_P_A", "2_closed"],
+      "op_left": "solenoid",
+      "op_right": "spring",
+      "valve_nc_no": "nc"
+    },
+    {
+      "id": "2_2_no_sol_spring",
+      "title": "2/2 NO ЭМ / пружина",
+      "ways": 2,
+      "positions": 2,
+      "envelopes": ["2_closed", "2_open_P_A"],
+      "op_left": "solenoid",
+      "op_right": "spring",
+      "valve_nc_no": "no"
+    },
+    {
+      "id": "3_2_nc_sol_spring",
+      "title": "3/2 NC ЭМ / пружина",
+      "ways": 3,
+      "positions": 2,
+      "envelopes": ["3_work_P_A", "3_rest_A_R"],
+      "op_left": "solenoid_pilot",
+      "op_right": "spring",
+      "valve_nc_no": "nc",
+      "port_3": "muffler"
+    },
+    {
+      "id": "3_2_no_sol_spring",
+      "title": "3/2 NO ЭМ / пружина",
+      "ways": 3,
+      "positions": 2,
+      "envelopes": ["3_rest_A_R", "3_work_P_A"],
+      "op_left": "solenoid_pilot",
+      "op_right": "spring",
+      "valve_nc_no": "no",
+      "port_3": "muffler"
+    },
+    {
+      "id": "3_2_nc_button_spring",
+      "title": "3/2 NC кнопка / пружина",
+      "ways": 3,
+      "positions": 2,
+      "envelopes": ["3_work_P_A", "3_rest_A_R"],
+      "op_left": "button",
+      "op_right": "spring",
+      "valve_nc_no": "nc",
+      "port_3": "muffler"
+    },
+    {
+      "id": "3_2_nc_roller_spring",
+      "title": "3/2 NC ролик / пружина",
+      "ways": 3,
+      "positions": 2,
+      "envelopes": ["3_work_P_A", "3_rest_A_R"],
+      "op_left": "roller",
+      "op_right": "spring",
+      "valve_nc_no": "nc",
+      "port_3": "muffler"
+    },
+    {
+      "id": "3_2_nc_pilot_spring",
+      "title": "3/2 NC пневмопилот / пружина",
+      "ways": 3,
+      "positions": 2,
+      "envelopes": ["3_work_P_A", "3_rest_A_R"],
+      "op_left": "pilot",
+      "op_right": "spring",
+      "valve_nc_no": "nc",
+      "port_3": "muffler",
+      "pilot_supply": "external"
+    },
+    {
+      "id": "4_2_sol_spring",
+      "title": "4/2 ЭМ / пружина",
+      "ways": 4,
+      "positions": 2,
+      "envelopes": ["4_work_P_A", "4_rest_P_B"],
+      "op_left": "solenoid_pilot",
+      "op_right": "spring",
+      "port_3": "muffler"
+    },
+    {
+      "id": "5_2_sol_spring",
+      "title": "5/2 ЭМ / пружина",
+      "ways": 5,
+      "positions": 2,
+      "envelopes": ["5_2_work_P_A", "5_2_rest_P_B"],
+      "op_left": "solenoid_pilot",
+      "op_right": "spring",
+      "port_3": "muffler",
+      "port_5": "muffler"
+    },
+    {
+      "id": "5_2_button_spring",
+      "title": "5/2 кнопка / пружина",
+      "ways": 5,
+      "positions": 2,
+      "envelopes": ["5_2_work_P_A", "5_2_rest_P_B"],
+      "op_left": "button",
+      "op_right": "spring",
+      "port_3": "muffler",
+      "port_5": "muffler"
+    },
+    {
+      "id": "5_2_dual_sol",
+      "title": "5/2 бистабил ЭМ / ЭМ",
+      "ways": 5,
+      "positions": 2,
+      "envelopes": ["5_2_work_P_A", "5_2_rest_P_B"],
+      "op_left": "solenoid_pilot",
+      "op_right": "solenoid_pilot",
+      "port_3": "muffler",
+      "port_5": "muffler"
+    },
+    {
+      "id": "5_3_closed_dual_sol",
+      "title": "5/3 закрытый центр ЭМ / ЭМ",
+      "ways": 5,
+      "positions": 3,
+      "envelopes": ["5_2_work_P_A", "5_3_center_closed", "5_2_rest_P_B"],
+      "op_left": "solenoid_pilot",
+      "op_right": "solenoid_pilot",
+      "valve_center": "closed",
+      "port_3": "muffler",
+      "port_5": "muffler"
+    },
+    {
+      "id": "5_3_exhausted_dual_sol",
+      "title": "5/3 выхлопной центр ЭМ / ЭМ",
+      "ways": 5,
+      "positions": 3,
+      "envelopes": ["5_2_work_P_A", "5_3_center_exhausted", "5_2_rest_P_B"],
+      "op_left": "solenoid_pilot",
+      "op_right": "solenoid_pilot",
+      "valve_center": "exhausted",
+      "port_3": "muffler",
+      "port_5": "muffler"
+    },
+    {
+      "id": "5_3_pressurized_dual_sol",
+      "title": "5/3 напорный центр ЭМ / ЭМ",
+      "ways": 5,
+      "positions": 3,
+      "envelopes": ["5_2_work_P_A", "5_3_center_pressurized", "5_2_rest_P_B"],
+      "op_left": "solenoid_pilot",
+      "op_right": "solenoid_pilot",
+      "valve_center": "pressurized",
+      "port_3": "muffler",
+      "port_5": "muffler"
+    },
+    {
+      "id": "5_3_floating_dual_sol",
+      "title": "5/3 плавающий центр ЭМ / ЭМ",
+      "ways": 5,
+      "positions": 3,
+      "envelopes": ["5_2_work_P_A", "5_3_center_floating", "5_2_rest_P_B"],
+      "op_left": "solenoid_pilot",
+      "op_right": "solenoid_pilot",
+      "valve_center": "floating",
+      "port_3": "muffler",
+      "port_5": "muffler"
+    }
+  ]
+}

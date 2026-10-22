@@ -1,0 +1,73 @@
+{
+    "id":  "cylinder.from_as_dxf",
+    "source":  {
+                   "raw_stroke_count":  4,
+                   "imported_at":  "2026-10-02T21:44:31.7641407+03:00",
+                   "dxf":  "D:\\mech-sim\\tools\\as_extract\\out\\captures\\smoke_box.dxf"
+               },
+    "layout":  {
+                   "body_l":  -80,
+                   "body_r":  80,
+                   "body_b":  40,
+                   "body_t":  -40
+               },
+    "notes":  [
+                  "Imported from AS diagram DXF export (File \u003e Export diagram \u003e DXF).",
+                  "AS drawing IL is Sec-protected; DXF/EMF export is the extraction path."
+              ],
+    "strokes":  [
+                    {
+                        "polyline":  [
+                                         [
+                                             -80,
+                                             40
+                                         ],
+                                         [
+                                             80,
+                                             40
+                                         ]
+                                     ],
+                        "part":  "line"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             80,
+                                             40
+                                         ],
+                                         [
+                                             80,
+                                             -40
+                                         ]
+                                     ],
+                        "part":  "line"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             80,
+                                             -40
+                                         ],
+                                         [
+                                             -80,
+                                             -40
+                                         ]
+                                     ],
+                        "part":  "line"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             -80,
+                                             -40
+                                         ],
+                                         [
+                                             -80,
+                                             40
+                                         ]
+                                     ],
+                        "part":  "line"
+                    }
+                ],
+    "norm":  "ISO1219-1-2012"
+}

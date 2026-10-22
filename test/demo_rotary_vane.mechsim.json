@@ -1,0 +1,109 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Демо: лопастной поворотный ПЦ (DSM)",
+	"note": "КМ1 → Р1 (5/2 кнопка) → ППЦ1 лопастной 270°. Лопасть: щека↔щека через полость.",
+	"cabinet_door_open": false,
+	"next_id": 10,
+	"schematic": {
+		"zoom": 1.1,
+		"pan": [10, 0]
+	},
+	"elements": [
+		{
+			"kind": "source",
+			"id": 1,
+			"tag": "КМ1",
+			"tag_offset": [0, 0],
+			"position": [40, 80],
+			"rotation_quad": 0,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [0.20, 1.32, 1.35],
+			"world_basis": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "valve",
+			"id": 2,
+			"tag": "Р1",
+			"tag_offset": [0, 0],
+			"position": [140, 80],
+			"rotation_quad": 0,
+			"recipe_id": "5_2_button_spring",
+			"valve_ways": 5,
+			"valve_positions": 2,
+			"op_left": "button",
+			"op_right": "spring",
+			"rest_pos": 1,
+			"valve_pos": 1,
+			"port_3": "muffler",
+			"port_5": "muffler",
+			"tube_od_mm": 6.0,
+			"port_name": "G1/8",
+			"valve_cv": 1.0,
+			"world_pos": [0.55, 1.32, 1.35],
+			"world_basis": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+			"auto_ground": false,
+			"tag_prefix": "Р"
+		},
+		{
+			"kind": "rotary_cylinder",
+			"id": 3,
+			"tag": "ППЦ1",
+			"tag_offset": [0, -36],
+			"position": [280, 80],
+			"rotation_quad": 0,
+			"recipe_id": "vane_270",
+			"rotary_class": "vane",
+			"bore_mm": 32.0,
+			"angle_max_deg": 270.0,
+			"torque_nm_at_6bar": 10.0,
+			"angle": 0.0,
+			"omega": 0.0,
+			"port_name": "G1/8",
+			"fitting_id": "G1/8_6",
+			"tube_od_mm": 6.0,
+			"mass_kg": 0.66,
+			"friction_n": 3.1,
+			"order_code": "ППЦ-Л-32-270",
+			"world_pos": [1.00, 1.32, 1.35],
+			"world_basis": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+			"auto_ground": false,
+			"tag_prefix": "ППЦ"
+		}
+	],
+	"wires": [
+		{
+			"id": 4,
+			"num": 1,
+			"a_id": 1,
+			"a_port": "out",
+			"b_id": 2,
+			"b_port": "1",
+			"id_mm": 4.0,
+			"od_mm": 6.0
+		},
+		{
+			"id": 5,
+			"num": 2,
+			"a_id": 2,
+			"a_port": "4",
+			"b_id": 3,
+			"b_port": "a",
+			"id_mm": 4.0,
+			"od_mm": 6.0
+		},
+		{
+			"id": 6,
+			"num": 3,
+			"a_id": 2,
+			"a_port": "2",
+			"b_id": 3,
+			"b_port": "b",
+			"id_mm": 4.0,
+			"od_mm": 6.0
+		}
+	]
+}

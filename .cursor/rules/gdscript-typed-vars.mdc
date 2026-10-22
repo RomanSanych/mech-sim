@@ -1,0 +1,31 @@
+---
+description: GDScript — явные типы вместо := на Variant
+globs: "**/*.gd"
+alwaysApply: true
+---
+
+# GDScript: типизация локальных переменных
+
+В Godot 4 выражение вроде `item.size() >= 4 and bool(item[3])` имеет тип **Variant**.  
+`var x := ...` тогда падает: *Cannot infer the type of "x"*.
+
+## Правило
+
+- Из **Array / Dictionary / get / meta / JSON** — всегда **явный тип**:
+  - `var shift: bool = ...`
+  - `var key: int = int(item[2])`
+  - `var label: String = str(item[0])`
+- `:=` только когда RHS уже однозначен: `Node.new()`, литерал, типизированный вызов.
+- Не писать `var x := a and b`, если `a`/`b` тянут Variant — писать `var x: bool = ...`.
+
+## Плохо / хорошо
+
+```gdscript
+# Плохо
+var shift := item.size() >= 4 and bool(item[3])
+var n := data.get("count", 0)
+
+# Хорошо
+var shift: bool = item.size() >= 4 and bool(item[3])
+var n: int = int(data.get("count", 0))
+```

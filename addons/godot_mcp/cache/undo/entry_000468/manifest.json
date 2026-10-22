@@ -1,0 +1,13 @@
+{
+  "args_summary": "delete_file(path=res://test/_route_km1_check.gd)",
+  "files": [
+    {
+      "backup": "res://addons/godot_mcp/cache/undo/entry_000468/files/test/_route_km1_check.gd",
+      "kind": "deleted",
+      "path": "res://test/_route_km1_check.gd"
+    }
+  ],
+  "id": "000468",
+  "timestamp": 1791969701.0,
+  "tool": "delete_file"
+}

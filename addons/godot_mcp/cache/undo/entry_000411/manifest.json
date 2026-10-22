@@ -1,0 +1,13 @@
+{
+  "args_summary": "edit_script",
+  "files": [
+    {
+      "backup": "res://addons/godot_mcp/cache/undo/entry_000411/files/scripts/ui/schematic_view.gd",
+      "kind": "snapshot",
+      "path": "res://scripts/ui/schematic_view.gd"
+    }
+  ],
+  "id": "000411",
+  "timestamp": 1791469149.0,
+  "tool": "edit_script"
+}

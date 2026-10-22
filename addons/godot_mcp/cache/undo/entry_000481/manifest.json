@@ -1,0 +1,12 @@
+{
+  "args_summary": "write_file(path=res://test/.agent_review_scene)",
+  "files": [
+    {
+      "kind": "created",
+      "path": "res://test/.agent_review_scene"
+    }
+  ],
+  "id": "000481",
+  "timestamp": 1791997408.0,
+  "tool": "write_file"
+}

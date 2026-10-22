@@ -1,0 +1,91 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Демо: тепловизор — КЗ в щите",
+	"note": "Щит, дверь открыта. QF1 → I → КЗ L–N (жила 0.5 мм²).\nТепловизор: ~4 с жилы белые (тысячи °C), затем АВ выбивает.\nПовтор: рычаг QF1 снова в I.",
+	"cabinet_door_open": true,
+	"next_id": 20,
+	"schematic": {
+		"zoom": 1.15,
+		"pan": [10, 0]
+	},
+	"elements": [
+		{
+			"kind": "electro",
+			"id": 1,
+			"tag": "XS1",
+			"tag_prefix": "XS",
+			"position": [40, 60],
+			"rotation_quad": 0,
+			"recipe_id": "supply_1ph",
+			"catalog_id": "supply_1ph",
+			"electro_class": "supply",
+			"electro_mount": "none",
+			"voltage": 230.0,
+			"poles": 1,
+			"member_role": "device",
+			"group_id": -1,
+			"din_slot": -1,
+			"electro_ports": [
+				{"name": "L", "type": "source"},
+				{"name": "N", "type": "source"},
+				{"name": "PE", "type": "source"}
+			],
+			"coil_ports": [],
+			"contact_defs": [],
+			"world_pos": [0, 0, 0],
+			"auto_ground": false
+		},
+		{
+			"kind": "electro",
+			"id": 2,
+			"tag": "QF1",
+			"tag_prefix": "QF",
+			"position": [220, 60],
+			"rotation_quad": 0,
+			"recipe_id": "mcb_1p",
+			"catalog_id": "mcb_1p",
+			"electro_class": "mcb",
+			"electro_mount": "din",
+			"voltage": 230.0,
+			"poles": 1,
+			"curve": "C",
+			"rating_a": 16.0,
+			"u_max": 6.0,
+			"closed": true,
+			"member_role": "device",
+			"group_id": -1,
+			"din_slot": 2,
+			"electro_ports": [
+				{"name": "1", "type": "line"},
+				{"name": "2", "type": "line"}
+			],
+			"coil_ports": [],
+			"contact_defs": [],
+			"world_pos": [0, 0, 0],
+			"auto_ground": false
+		}
+	],
+	"wires": [
+		{
+			"id": 10,
+			"a_id": 1,
+			"a_port": "L",
+			"b_id": 2,
+			"b_port": "1",
+			"id_mm": 1.5,
+			"color_id": "brown",
+			"joints": []
+		},
+		{
+			"id": 11,
+			"a_id": 2,
+			"a_port": "2",
+			"b_id": 1,
+			"b_port": "N",
+			"id_mm": 0.5,
+			"color_id": "lightblue",
+			"joints": []
+		}
+	]
+}

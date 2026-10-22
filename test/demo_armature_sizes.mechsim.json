@@ -1,0 +1,371 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Демо: масштаб арматуры от OD",
+	"note": "Тройник Ø6, дроссель Ø10, ОК Ø12 — корпус и цанги от типоразмера трубки. Свойства → «Типоразмер (трубка)».",
+	"cabinet_door_open": true,
+	"next_id": 10,
+	"elements": [
+		{
+			"kind": "source",
+			"id": 1,
+			"tag": "КМ1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				40
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				0.35
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "source",
+			"id": 2,
+			"tag": "КМ2",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				100
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				0.0
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "source",
+			"id": 3,
+			"tag": "КМ3",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				160
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				-0.4
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "junction",
+			"id": 4,
+			"tag": "У1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				140,
+				40
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"junction_style": "tee",
+			"junction_ports": 3,
+			"port_name": "G1/8",
+			"fitting_id": "G18_6",
+			"tube_od_mm": 6.0,
+			"world_pos": [
+				0.4,
+				1.35,
+				0.35
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "У"
+		},
+		{
+			"kind": "accessory",
+			"id": 5,
+			"tag": "ДР1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				140,
+				100
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"recipe_id": "throttle",
+			"catalog_id": "throttle",
+			"accessory_class": "throttle",
+			"tag_prefix": "ДР",
+			"opening": 0.45,
+			"valve_cv": 2.5,
+			"port_name": "G3/8",
+			"fitting_id": "G38_10",
+			"tube_od_mm": 10.0,
+			"world_pos": [
+				0.45,
+				1.35,
+				0.0
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false
+		},
+		{
+			"kind": "accessory",
+			"id": 6,
+			"tag": "КО1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				140,
+				160
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"recipe_id": "check",
+			"catalog_id": "check",
+			"accessory_class": "check",
+			"tag_prefix": "КО",
+			"opening": 0.0,
+			"crack_pressure_bar": 0.02,
+			"flow_nl_min": 5800.0,
+			"valve_cv": 4.0,
+			"port_name": "G1/2",
+			"fitting_id": "G12_12",
+			"tube_od_mm": 12.0,
+			"world_pos": [
+				0.5,
+				1.35,
+				-0.4
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false
+		}
+	],
+	"wires": [
+		{
+			"id": 7,
+			"num": 1,
+			"a_id": 1,
+			"a_port": "out",
+			"b_id": 4,
+			"b_port": "1",
+			"od_mm": 6.0,
+			"id_mm": 4.0
+		},
+		{
+			"id": 8,
+			"num": 2,
+			"a_id": 2,
+			"a_port": "out",
+			"b_id": 5,
+			"b_port": "1",
+			"od_mm": 10.0,
+			"id_mm": 7.0
+		},
+		{
+			"id": 9,
+			"num": 3,
+			"a_id": 3,
+			"a_port": "out",
+			"b_id": 6,
+			"b_port": "1",
+			"od_mm": 12.0,
+			"id_mm": 9.0
+		}
+	]
+}

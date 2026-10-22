@@ -1,0 +1,402 @@
+{
+    "source":  {
+                   "extracted_at":  "2026-10-02T21:21:40.9116002+03:00",
+                   "verin_dll":  "C:\\Program Files\\Famic Technologies\\Automation Studio P7.0\\ASCFGVerin.dll",
+                   "main_xml":  "C:\\Program Files\\Famic Technologies\\Automation Studio P7.0\\Main.xml"
+               },
+    "main_library_cylinders":  [
+                                   {
+                                       "name":  "Double-Acting Cylinder",
+                                       "id_atelier":  "1027",
+                                       "id_type":  "917508",
+                                       "id_famille":  "1"
+                                   },
+                                   {
+                                       "name":  "Single-Acting Cylinder With Spring Return",
+                                       "id_atelier":  "1027",
+                                       "id_type":  "917506",
+                                       "id_famille":  "1"
+                                   },
+                                   {
+                                       "name":  "Single-Acting Cylinder With Spring Return",
+                                       "id_atelier":  "1027",
+                                       "id_type":  "917506",
+                                       "id_famille":  "1"
+                                   },
+                                   {
+                                       "name":  "Single-Acting Cylinder With Spring Extend",
+                                       "id_atelier":  "1283",
+                                       "id_type":  "524289",
+                                       "id_famille":  "1"
+                                   },
+                                   {
+                                       "name":  "Double-Acting Cylinder",
+                                       "id_atelier":  "1283",
+                                       "id_type":  "524292",
+                                       "id_famille":  "1"
+                                   },
+                                   {
+                                       "name":  "Single-Acting Cylinder With Spring Return",
+                                       "id_atelier":  "1283",
+                                       "id_type":  "524290",
+                                       "id_famille":  "1"
+                                   },
+                                   {
+                                       "name":  "Double-Acting Cylinder",
+                                       "id_atelier":  "1283",
+                                       "id_type":  "524292",
+                                       "id_famille":  "1"
+                                   },
+                                   {
+                                       "name":  "Double-Acting 2-Cushion Cylinder",
+                                       "id_atelier":  "1283",
+                                       "id_type":  "524293",
+                                       "id_famille":  "1"
+                                   },
+                                   {
+                                       "name":  "Differential Cylinder",
+                                       "id_atelier":  "1283",
+                                       "id_type":  "524294",
+                                       "id_famille":  "1"
+                                   }
+                               ],
+    "assembly":  {
+                     "type_symbol_enum":  {
+                                              "eConnector":  16,
+                                              "eCapteur":  13,
+                                              "ePiston":  2,
+                                              "eEntreeSortie":  6,
+                                              "eAmortissementDroit":  4,
+                                              "eFrein":  10,
+                                              "eTigeGauche":  9,
+                                              "eRessort":  15,
+                                              "eAmortissementGauche":  5,
+                                              "eEmbout":  11,
+                                              "eChariot":  14,
+                                              "eMouvement":  12,
+                                              "eCorps":  1,
+                                              "eEchappement":  7,
+                                              "eAmortissement":  3,
+                                              "eTigeDroite":  8
+                                          },
+                     "draw_methods":  [
+                                          "DessinerCadre",
+                                          "DessinerCapteur",
+                                          "DessinerConnecteurEntreeSortie",
+                                          "DessinerConnecteurFrein",
+                                          "DessinerContactEmbout",
+                                          "DessinerContactPiston",
+                                          "DessinerNomConnecteursEntreeSortie",
+                                          "DrawConnectorText"
+                                      ],
+                     "type_verin_enum":  {
+                                             "eVDoubleTige":  4,
+                                             "eVSansTige":  3,
+                                             "eNull":  -1,
+                                             "eVDoubleEffet":  2,
+                                             "eVSimpleEffetInverse":  0,
+                                             "eVSimpleEffet":  1
+                                         }
+                 },
+    "picker_resource_keys":  [
+                                 "resources/datatemplateresources.baml",
+                                 "resources/icons/amordoubledoublereglage.png",
+                                 "resources/icons/amordoublefixe.png",
+                                 "resources/icons/amordoublereglable.png",
+                                 "resources/icons/amordoubleseuldroitereglable.png",
+                                 "resources/icons/amordoubleseulgauchereglable.png",
+                                 "resources/icons/amordroitefixe.png",
+                                 "resources/icons/amordroitereglable.png",
+                                 "resources/icons/amorgauchefixe.png",
+                                 "resources/icons/amorgauchereglable.png",
+                                 "resources/icons/amorsans.png",
+                                 "resources/icons/chariotmagnetic.png",
+                                 "resources/icons/charioton.png",
+                                 "resources/icons/chariotsans.png",
+                                 "resources/icons/echappementcourt.png",
+                                 "resources/icons/echappementhidden.png",
+                                 "resources/icons/echappementlong.png",
+                                 "resources/icons/emboutfiletageext.png",
+                                 "resources/icons/emboutfiletageint.png",
+                                 "resources/icons/emboutfiletagelongint.png",
+                                 "resources/icons/emboutgalet.png",
+                                 "resources/icons/emboutgaletlong.png",
+                                 "resources/icons/emboutpelle.png",
+                                 "resources/icons/emboutplaque.png",
+                                 "resources/icons/emboutplaqueouverte.png",
+                                 "resources/icons/emboutsans.png",
+                                 "resources/icons/emboutserre.png",
+                                 "resources/icons/essans.png",
+                                 "resources/icons/estriangle.png",
+                                 "resources/icons/freindoubleeffet.png",
+                                 "resources/icons/freinnormalementferme.png",
+                                 "resources/icons/freinnormalementouvert.png",
+                                 "resources/icons/freinsans.png",
+                                 "resources/icons/leftspring.png",
+                                 "resources/icons/leftspring_gris.png",
+                                 "resources/icons/orificemodel.png",
+                                 "resources/icons/orificemodel_gris.png",
+                                 "resources/icons/pistondouble.png",
+                                 "resources/icons/pistonjoint.png",
+                                 "resources/icons/pistonlarge.png",
+                                 "resources/icons/pistonmagnetic.png",
+                                 "resources/icons/pistonsimple.png",
+                                 "resources/icons/pistonsimplifie.png",
+                                 "resources/icons/rightspring.png",
+                                 "resources/icons/rightspring_gris.png",
+                                 "resources/icons/rotationoff.png",
+                                 "resources/icons/rotationon.png",
+                                 "resources/icons/rotationonin.png",
+                                 "resources/icons/rotationonout.png",
+                                 "resources/icons/rotationsans.png",
+                                 "resources/icons/todo.png",
+                                 "resources/icons/verindoubleeffet.png",
+                                 "resources/icons/verindoubletige.png",
+                                 "resources/icons/verinsanstige.png",
+                                 "resources/icons/verinsimpleeffet.png",
+                                 "resources/icons/verinsimpleeffetinverse.png",
+                                 "resources/styles.baml",
+                                 "themes/assets/icons.baml",
+                                 "view/asccfgverinview.baml",
+                                 "view/barreoutils/barreoutilsv.baml",
+                                 "view/component/amortissementv.baml",
+                                 "view/component/capteurv.baml",
+                                 "view/component/chariotv.baml",
+                                 "view/component/connecteurv.baml",
+                                 "view/component/corpsv.baml",
+                                 "view/component/echappementv.baml",
+                                 "view/component/emboutv.baml",
+                                 "view/component/entreesortiev.baml",
+                                 "view/component/freinv.baml",
+                                 "view/component/mouvementv.baml",
+                                 "view/component/pistonv.baml",
+                                 "view/component/ressortv.baml",
+                                 "view/component/souselementv.baml",
+                                 "view/component/tigev.baml",
+                                 "view/component/verinv.baml",
+                                 "view/dialogueselectiongraphiqueverin.baml"
+                             ],
+    "enums":  {
+                  "EAmortissement":  {
+                                         "eADoubleSeulGaucheReglable":  6,
+                                         "eADoubleFixe":  3,
+                                         "eASans":  0,
+                                         "eADroiteFixe":  2,
+                                         "eAGaucheFixe":  1,
+                                         "eAGaucheReglable":  4,
+                                         "eADoubleSeulDroiteReglable":  7,
+                                         "eADoubleReglable":  9,
+                                         "eADroiteReglable":  5,
+                                         "eADoubleDoubleReglage":  8
+                                     },
+                  "EFrein":  {
+                                 "eFNormalementFerme":  1,
+                                 "eFDoubleEffet":  3,
+                                 "eFSans":  0,
+                                 "eFNormalementOuvert":  2
+                             },
+                  "EEchappement":  {
+                                       "eECHCourt":  0,
+                                       "eECHLong":  1,
+                                       "eECHHidden":  2
+                                   },
+                  "EPiston":  {
+                                  "ePDouble":  1,
+                                  "ePJoint":  4,
+                                  "ePMagnetic":  3,
+                                  "ePSimplifie":  5,
+                                  "ePLarge":  2,
+                                  "ePSimple":  0
+                              },
+                  "EEmbout":  {
+                                  "eEPlaqueOuverte":  8,
+                                  "eEFiletageExt":  2,
+                                  "eESans":  0,
+                                  "eEPlaque":  7,
+                                  "eESerre":  4,
+                                  "eEGaletLong":  9,
+                                  "eEPelle":  3,
+                                  "eEFiletageInt":  6,
+                                  "eEGalet":  1,
+                                  "eEFiletageLongInt":  5
+                              },
+                  "EChariot":  {
+                                   "eEMagnetique":  2,
+                                   "eEChariot":  1,
+                                   "eESans":  0
+                               }
+              },
+    "notes":  [
+                  "Picker PNG keys are UI only, not assembled symbol strokes.",
+                  "Assembled UGO is drawn by ASCFGVerin.View.Symbols Dessiner* and SymbolBase.OnRender."
+              ],
+    "mech_sim_mapping":  {
+                             "rod_mode":  {
+                                              "field":  "rod_mode",
+                                              "from_ETypeVerin":  {
+                                                                      "eVDoubleTige":  "through",
+                                                                      "eVSimpleEffet":  "single",
+                                                                      "eVDoubleEffet":  "single",
+                                                                      "eVSimpleEffetInverse":  "single",
+                                                                      "eVSansTige":  "rodless"
+                                                                  }
+                                          },
+                             "brake":  {
+                                           "options":  [
+                                                           {
+                                                               "as":  "eFSans",
+                                                               "id":  "none"
+                                                           },
+                                                           {
+                                                               "as":  "eFNormalementOuvert",
+                                                               "id":  "no"
+                                                           },
+                                                           {
+                                                               "as":  "eFNormalementFerme",
+                                                               "id":  "nc"
+                                                           },
+                                                           {
+                                                               "as":  "eFDoubleEffet",
+                                                               "id":  "double"
+                                                           }
+                                                       ],
+                                           "field":  "brake"
+                                       },
+                             "cush_rod":  {
+                                              "field":  "cush_rod",
+                                              "options":  [
+                                                              {
+                                                                  "as":  "eASans",
+                                                                  "id":  "none"
+                                                              },
+                                                              {
+                                                                  "as":  "eADroiteFixe",
+                                                                  "id":  "fixed"
+                                                              },
+                                                              {
+                                                                  "as":  "eADroiteReglable",
+                                                                  "id":  "adjustable"
+                                                              }
+                                                          ],
+                                              "side":  "rod"
+                                          },
+                             "piston_kind":  {
+                                                 "options":  [
+                                                                 {
+                                                                     "as":  "ePSimple",
+                                                                     "id":  "simple"
+                                                                 },
+                                                                 {
+                                                                     "as":  "ePDouble",
+                                                                     "id":  "double"
+                                                                 },
+                                                                 {
+                                                                     "as":  "ePLarge",
+                                                                     "id":  "wide"
+                                                                 },
+                                                                 {
+                                                                     "as":  "ePMagnetic",
+                                                                     "id":  "magnetic"
+                                                                 },
+                                                                 {
+                                                                     "as":  "ePSimplifie",
+                                                                     "id":  "simplified"
+                                                                 }
+                                                             ],
+                                                 "field":  "piston_kind"
+                                             },
+                             "cush_cap":  {
+                                              "field":  "cush_cap",
+                                              "options":  [
+                                                              {
+                                                                  "as":  "eASans",
+                                                                  "id":  "none"
+                                                              },
+                                                              {
+                                                                  "as":  "eAGaucheFixe",
+                                                                  "id":  "fixed"
+                                                              },
+                                                              {
+                                                                  "as":  "eAGaucheReglable",
+                                                                  "id":  "adjustable"
+                                                              }
+                                                          ],
+                                              "side":  "cap"
+                                          },
+                             "port":  {
+                                          "fields":  [
+                                                         "port_cap",
+                                                         "port_rod"
+                                                     ],
+                                          "options":  [
+                                                          {
+                                                              "as":  "eESSans",
+                                                              "id":  "connect"
+                                                          },
+                                                          {
+                                                              "as":  "eESTriangle",
+                                                              "id":  "exhaust"
+                                                          }
+                                                      ]
+                                      },
+                             "rod_end":  {
+                                             "options":  [
+                                                             {
+                                                                 "as":  "eESans",
+                                                                 "id":  "plain"
+                                                             },
+                                                             {
+                                                                 "as":  "eEFiletageExt",
+                                                                 "id":  "male"
+                                                             },
+                                                             {
+                                                                 "as":  "eEFiletageInt",
+                                                                 "id":  "female"
+                                                             },
+                                                             {
+                                                                 "as":  "eEGalet",
+                                                                 "id":  "roller"
+                                                             },
+                                                             {
+                                                                 "as":  "eEPelle",
+                                                                 "id":  "clevis"
+                                                             }
+                                                         ],
+                                             "field":  "rod_end"
+                                         },
+                             "carriage":  {
+                                              "options":  [
+                                                              {
+                                                                  "as":  "eESans",
+                                                                  "id":  "none"
+                                                              },
+                                                              {
+                                                                  "as":  "eEChariot",
+                                                                  "id":  "plain"
+                                                              },
+                                                              {
+                                                                  "as":  "eEMagnetique",
+                                                                  "id":  "magnetic"
+                                                              }
+                                                          ],
+                                              "field":  "carriage"
+                                          },
+                             "spring":  {
+                                            "options":  [
+                                                            {
+                                                                "as":  "leftspring",
+                                                                "id":  "cap"
+                                                            },
+                                                            {
+                                                                "as":  "rightspring",
+                                                                "id":  "rod"
+                                                            },
+                                                            {
+                                                                "as":  "none",
+                                                                "id":  "none"
+                                                            }
+                                                        ],
+                                            "field":  "spring_side"
+                                        }
+                         }
+}

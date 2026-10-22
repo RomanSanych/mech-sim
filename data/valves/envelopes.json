@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "envelopes": [
+    {
+      "id": "2_closed",
+      "ways": [2],
+      "title": "2/2 закрыто",
+      "paths": [],
+      "glyphs": []
+    },
+    {
+      "id": "2_open_P_A",
+      "ways": [2],
+      "title": "2/2 открыто: 1–2",
+      "paths": [["1", "2"]],
+      "glyphs": []
+    },
+    {
+      "id": "3_work_P_A",
+      "ways": [3],
+      "title": "3/2 рабочая: 1–2",
+      "paths": [["1", "2"]],
+      "glyphs": []
+    },
+    {
+      "id": "3_rest_A_R",
+      "ways": [3],
+      "title": "3/2 покой: 2–3",
+      "paths": [["2", "3"]],
+      "glyphs": []
+    },
+    {
+      "id": "4_work_P_A",
+      "ways": [4],
+      "title": "4/2 левая: 1–2, 4–3",
+      "paths": [["1", "2"], ["4", "3"]],
+      "glyphs": []
+    },
+    {
+      "id": "4_rest_P_B",
+      "ways": [4],
+      "title": "4/2 правая: 1–4, 2–3",
+      "paths": [["1", "4"], ["2", "3"]],
+      "glyphs": []
+    },
+    {
+      "id": "5_2_work_P_A",
+      "ways": [5],
+      "title": "5/2 левая: 1–2, 4–5",
+      "paths": [["1", "2"], ["4", "5"]],
+      "glyphs": []
+    },
+    {
+      "id": "5_2_rest_P_B",
+      "ways": [5],
+      "title": "5/2 правая: 1–4, 2–3",
+      "paths": [["1", "4"], ["2", "3"]],
+      "glyphs": []
+    },
+    {
+      "id": "5_3_center_closed",
+      "ways": [5],
+      "title": "5/3 центр закрытый",
+      "paths": [],
+      "glyphs": []
+    },
+    {
+      "id": "5_3_center_exhausted",
+      "ways": [5],
+      "title": "5/3 центр выхлопной: 2–3, 4–5",
+      "paths": [["2", "3"], ["4", "5"]],
+      "glyphs": []
+    },
+    {
+      "id": "5_3_center_pressurized",
+      "ways": [5],
+      "title": "5/3 центр напорный: 1–2, 1–4",
+      "paths": [["1", "2"], ["1", "4"]],
+      "glyphs": []
+    },
+    {
+      "id": "5_3_center_floating",
+      "ways": [5],
+      "title": "5/3 центр плавающий: 2–4",
+      "paths": [["2", "4"]],
+      "glyphs": []
+    },
+    {
+      "id": "3_3_center_closed",
+      "ways": [3],
+      "title": "3/3 центр закрытый",
+      "paths": [],
+      "glyphs": []
+    },
+    {
+      "id": "3_3_center_exhausted",
+      "ways": [3],
+      "title": "3/3 центр выхлопной: 2–3",
+      "paths": [["2", "3"]],
+      "glyphs": []
+    },
+    {
+      "id": "3_3_center_pressurized",
+      "ways": [3],
+      "title": "3/3 центр напорный: 1–2",
+      "paths": [["1", "2"]],
+      "glyphs": []
+    }
+  ]
+}

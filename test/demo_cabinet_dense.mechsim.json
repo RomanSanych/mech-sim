@@ -1,0 +1,5640 @@
+{
+  "format": "mechsim-scene",
+  "version": 1,
+  "title": "Демо: плотный щит + дверца (клеммники-шины)",
+  "note": "Ревью обрыва/групповой/клеммника: 28 DIN, 10 door. Часть жил broken (2D). Групповая=rail. Пускатель SB0/SB2/SB1+KM1+KK1; HL1–HL5.",
+  "elements": [
+    {
+      "kind": "electro",
+      "id": 1,
+      "tag": "XS1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "supply_1ph",
+      "recipe_id": "supply_1ph",
+      "variant_id": "ppv",
+      "position": [
+        40.0,
+        40.0
+      ],
+      "electro_class": "supply",
+      "electro_mount": "none",
+      "tag_prefix": "XS",
+      "electro_ports": [
+        {
+          "name": "L",
+          "type": "source"
+        },
+        {
+          "name": "N",
+          "type": "source"
+        },
+        {
+          "name": "PE",
+          "type": "source"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 2,
+      "tag": "QF1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_2p",
+      "recipe_id": "mcb_2p",
+      "variant_id": "ppv",
+      "position": [
+        120.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        },
+        {
+          "name": "3",
+          "type": "line"
+        },
+        {
+          "name": "4",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 2,
+      "curve": "C",
+      "rating_a": 25.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 3,
+      "tag": "QD1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "rcd_1pn",
+      "recipe_id": "rcd_1pn",
+      "variant_id": "ppv",
+      "position": [
+        220.0,
+        40.0
+      ],
+      "electro_class": "rcd",
+      "electro_mount": "din",
+      "tag_prefix": "QD",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        },
+        {
+          "name": "3",
+          "type": "line"
+        },
+        {
+          "name": "4",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 5,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 2,
+      "curve": "C",
+      "rating_a": 25.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "AC",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 4,
+      "tag": "QF2",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        320.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 9,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 5,
+      "tag": "QF3",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        380.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 11,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 6,
+      "tag": "QF4",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        440.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 13,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 7,
+      "tag": "QF5",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        500.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 15,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 8,
+      "tag": "QF6",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        560.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 17,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 9,
+      "tag": "QF7",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        620.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 19,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 10,
+      "tag": "QF8",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        680.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 21,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 11,
+      "tag": "QF9",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        740.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 23,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 12,
+      "tag": "QF10",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        800.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 25,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 13,
+      "tag": "QF11",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        860.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 27,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 14,
+      "tag": "G1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "psu_24",
+      "recipe_id": "psu_24",
+      "variant_id": "ppv",
+      "position": [
+        -140.0,
+        280.0
+      ],
+      "electro_class": "psu",
+      "electro_mount": "din",
+      "tag_prefix": "G",
+      "electro_ports": [
+        {
+          "name": "L",
+          "type": "line"
+        },
+        {
+          "name": "N",
+          "type": "line"
+        },
+        {
+          "name": "PE",
+          "type": "line"
+        },
+        {
+          "name": "+24",
+          "type": "source"
+        },
+        {
+          "name": "0",
+          "type": "source"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 39,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 2.5,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 24.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 15,
+      "tag": "XTL1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "term_block_4",
+      "recipe_id": "term_block_4",
+      "variant_id": "ppv",
+      "position": [
+        180.0,
+        180.0
+      ],
+      "electro_class": "terminal",
+      "electro_mount": "din",
+      "tag_prefix": "XT",
+      "electro_ports": [
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 43,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "L",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": true,
+      "color_id": "brown",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 16,
+      "tag": "XTN1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "term_block_4",
+      "recipe_id": "term_block_4",
+      "variant_id": "ppv",
+      "position": [
+        340.0,
+        180.0
+      ],
+      "electro_class": "terminal",
+      "electro_mount": "din",
+      "tag_prefix": "XT",
+      "electro_ports": [
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 51,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "N",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": true,
+      "color_id": "lightblue",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 17,
+      "tag": "XTPE",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "term_block_4",
+      "recipe_id": "term_block_4",
+      "variant_id": "ppv",
+      "position": [
+        500.0,
+        180.0
+      ],
+      "electro_class": "terminal",
+      "electro_mount": "din",
+      "tag_prefix": "XT",
+      "electro_ports": [
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        },
+        {
+          "label": "",
+          "color_id": "",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 59,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "PE",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": true,
+      "color_id": "pe",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 18,
+      "tag": "QF12",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        920.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 63,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 19,
+      "tag": "QF13",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "mcb_1p",
+      "recipe_id": "mcb_1p",
+      "variant_id": "ppv",
+      "position": [
+        980.0,
+        40.0
+      ],
+      "electro_class": "mcb",
+      "electro_mount": "din",
+      "tag_prefix": "QF",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 65,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 6.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 20,
+      "tag": "XT3",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "term_block_4",
+      "recipe_id": "term_block_4",
+      "variant_id": "ppv",
+      "position": [
+        740.0,
+        180.0
+      ],
+      "electro_class": "terminal",
+      "electro_mount": "din",
+      "tag_prefix": "XT",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        },
+        {
+          "name": "3",
+          "type": "line"
+        },
+        {
+          "name": "4",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 67,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 21,
+      "tag": "XT4",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "term_block_4",
+      "recipe_id": "term_block_4",
+      "variant_id": "ppv",
+      "position": [
+        840.0,
+        180.0
+      ],
+      "electro_class": "terminal",
+      "electro_mount": "din",
+      "tag_prefix": "XT",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        },
+        {
+          "name": "3",
+          "type": "line"
+        },
+        {
+          "name": "4",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": 71,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 22,
+      "tag": "KM1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "contactor_3p_aux",
+      "recipe_id": "contactor_3p_aux",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        200.0
+      ],
+      "electro_class": "contactor",
+      "electro_mount": "din",
+      "tag_prefix": "KM",
+      "electro_ports": [],
+      "coil_ports": [
+        "A1",
+        "A2"
+      ],
+      "contact_defs": [
+        {
+          "name": "1",
+          "type": "no"
+        },
+        {
+          "name": "2",
+          "type": "no"
+        },
+        {
+          "name": "3",
+          "type": "no"
+        },
+        {
+          "name": "4",
+          "type": "no"
+        },
+        {
+          "name": "5",
+          "type": "no"
+        },
+        {
+          "name": "6",
+          "type": "no"
+        },
+        {
+          "name": "13",
+          "type": "no"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        },
+        {
+          "name": "21",
+          "type": "nc"
+        },
+        {
+          "name": "22",
+          "type": "nc"
+        }
+      ],
+      "group_template": "contactor_3a",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 22,
+      "group_tag": "KM1",
+      "din_slot": 77,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 25.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": true,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 23,
+      "tag": "KM1.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "contactor_3p_aux",
+      "recipe_id": "contactor_3p_aux",
+      "variant_id": "ppv",
+      "position": [
+        1000.0,
+        320.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KM",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "1",
+          "type": "no"
+        },
+        {
+          "name": "2",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 22,
+      "group_tag": "KM1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 24,
+      "tag": "KM1.2",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "contactor_3p_aux",
+      "recipe_id": "contactor_3p_aux",
+      "variant_id": "ppv",
+      "position": [
+        1000.0,
+        380.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KM",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "3",
+          "type": "no"
+        },
+        {
+          "name": "4",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 2,
+      "group_id": 22,
+      "group_tag": "KM1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 25,
+      "tag": "KM1.3",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "contactor_3p_aux",
+      "recipe_id": "contactor_3p_aux",
+      "variant_id": "ppv",
+      "position": [
+        1000.0,
+        440.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KM",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "5",
+          "type": "no"
+        },
+        {
+          "name": "6",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 3,
+      "group_id": 22,
+      "group_tag": "KM1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 26,
+      "tag": "KM1.4",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "contactor_3p_aux",
+      "recipe_id": "contactor_3p_aux",
+      "variant_id": "ppv",
+      "position": [
+        1000.0,
+        500.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KM",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "13",
+          "type": "no"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 4,
+      "group_id": 22,
+      "group_tag": "KM1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 27,
+      "tag": "KM1.5",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "contactor_3p_aux",
+      "recipe_id": "contactor_3p_aux",
+      "variant_id": "ppv",
+      "position": [
+        1000.0,
+        560.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KM",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "21",
+          "type": "nc"
+        },
+        {
+          "name": "22",
+          "type": "nc"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 5,
+      "group_id": 22,
+      "group_tag": "KM1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 28,
+      "tag": "KK1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "thermal_relay",
+      "recipe_id": "thermal_relay",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        280.0
+      ],
+      "electro_class": "thermal",
+      "electro_mount": "din",
+      "tag_prefix": "KK",
+      "electro_ports": [
+        {
+          "name": "1",
+          "type": "line"
+        },
+        {
+          "name": "2",
+          "type": "line"
+        },
+        {
+          "name": "3",
+          "type": "line"
+        },
+        {
+          "name": "4",
+          "type": "line"
+        },
+        {
+          "name": "5",
+          "type": "line"
+        },
+        {
+          "name": "6",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "95",
+          "type": "nc"
+        },
+        {
+          "name": "96",
+          "type": "nc"
+        },
+        {
+          "name": "97",
+          "type": "no"
+        },
+        {
+          "name": "98",
+          "type": "no"
+        }
+      ],
+      "group_template": "thermal",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 28,
+      "group_tag": "KK1",
+      "din_slot": 82,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 10.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": true,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 29,
+      "tag": "KK1.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "thermal_relay",
+      "recipe_id": "thermal_relay",
+      "variant_id": "ppv",
+      "position": [
+        1070.0,
+        320.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KK",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "95",
+          "type": "nc"
+        },
+        {
+          "name": "96",
+          "type": "nc"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 28,
+      "group_tag": "KK1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 30,
+      "tag": "KK1.2",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "thermal_relay",
+      "recipe_id": "thermal_relay",
+      "variant_id": "ppv",
+      "position": [
+        1070.0,
+        380.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KK",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "97",
+          "type": "no"
+        },
+        {
+          "name": "98",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 2,
+      "group_id": 28,
+      "group_tag": "KK1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 31,
+      "tag": "KL1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        360.0
+      ],
+      "electro_class": "relay",
+      "electro_mount": "din",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [
+        "A1",
+        "A2"
+      ],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "co"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        },
+        {
+          "name": "21",
+          "type": "co"
+        },
+        {
+          "name": "22",
+          "type": "nc"
+        },
+        {
+          "name": "24",
+          "type": "no"
+        }
+      ],
+      "group_template": "relay_2",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 31,
+      "group_tag": "KL1",
+      "din_slot": 88,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 10.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": true,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 32,
+      "tag": "KL1.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        1140.0,
+        320.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "co"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 31,
+      "group_tag": "KL1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 33,
+      "tag": "KL1.2",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        1140.0,
+        380.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "21",
+          "type": "co"
+        },
+        {
+          "name": "22",
+          "type": "nc"
+        },
+        {
+          "name": "24",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 2,
+      "group_id": 31,
+      "group_tag": "KL1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 34,
+      "tag": "KL2",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        440.0
+      ],
+      "electro_class": "relay",
+      "electro_mount": "din",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [
+        "A1",
+        "A2"
+      ],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "co"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        },
+        {
+          "name": "21",
+          "type": "co"
+        },
+        {
+          "name": "22",
+          "type": "nc"
+        },
+        {
+          "name": "24",
+          "type": "no"
+        }
+      ],
+      "group_template": "relay_2",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 34,
+      "group_tag": "KL2",
+      "din_slot": 90,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 10.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": true,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 35,
+      "tag": "KL2.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        1210.0,
+        320.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "co"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 34,
+      "group_tag": "KL2",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 36,
+      "tag": "KL2.2",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        1210.0,
+        380.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "21",
+          "type": "co"
+        },
+        {
+          "name": "22",
+          "type": "nc"
+        },
+        {
+          "name": "24",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 2,
+      "group_id": 34,
+      "group_tag": "KL2",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 37,
+      "tag": "KL3",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        520.0
+      ],
+      "electro_class": "relay",
+      "electro_mount": "din",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [
+        "A1",
+        "A2"
+      ],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "co"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        },
+        {
+          "name": "21",
+          "type": "co"
+        },
+        {
+          "name": "22",
+          "type": "nc"
+        },
+        {
+          "name": "24",
+          "type": "no"
+        }
+      ],
+      "group_template": "relay_2",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 37,
+      "group_tag": "KL3",
+      "din_slot": 92,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 10.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": true,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 38,
+      "tag": "KL3.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        1280.0,
+        320.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "co"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 37,
+      "group_tag": "KL3",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 39,
+      "tag": "KL3.2",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        1280.0,
+        380.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "21",
+          "type": "co"
+        },
+        {
+          "name": "22",
+          "type": "nc"
+        },
+        {
+          "name": "24",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 2,
+      "group_id": 37,
+      "group_tag": "KL3",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 40,
+      "tag": "KL4",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        600.0
+      ],
+      "electro_class": "relay",
+      "electro_mount": "din",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [
+        "A1",
+        "A2"
+      ],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "co"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        },
+        {
+          "name": "21",
+          "type": "co"
+        },
+        {
+          "name": "22",
+          "type": "nc"
+        },
+        {
+          "name": "24",
+          "type": "no"
+        }
+      ],
+      "group_template": "relay_2",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 40,
+      "group_tag": "KL4",
+      "din_slot": 94,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 10.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": true,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 41,
+      "tag": "KL4.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        1350.0,
+        320.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "co"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 40,
+      "group_tag": "KL4",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 42,
+      "tag": "KL4.2",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_2c",
+      "recipe_id": "relay_2c",
+      "variant_id": "ppv",
+      "position": [
+        1350.0,
+        380.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "21",
+          "type": "co"
+        },
+        {
+          "name": "22",
+          "type": "nc"
+        },
+        {
+          "name": "24",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 2,
+      "group_id": 40,
+      "group_tag": "KL4",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 43,
+      "tag": "KL5",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_1c",
+      "recipe_id": "relay_1c",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        680.0
+      ],
+      "electro_class": "relay",
+      "electro_mount": "din",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [
+        "A1",
+        "A2"
+      ],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "co"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        }
+      ],
+      "group_template": "relay_1",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 43,
+      "group_tag": "KL5",
+      "din_slot": 96,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 10.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": true,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 44,
+      "tag": "KL5.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "relay_1c",
+      "recipe_id": "relay_1c",
+      "variant_id": "ppv",
+      "position": [
+        1420.0,
+        320.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KL",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "co"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 43,
+      "group_tag": "KL5",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 45,
+      "tag": "KT1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "timer_relay",
+      "recipe_id": "timer_relay",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        760.0
+      ],
+      "electro_class": "timer_relay",
+      "electro_mount": "din",
+      "tag_prefix": "KT",
+      "electro_ports": [],
+      "coil_ports": [
+        "A1",
+        "A2"
+      ],
+      "contact_defs": [
+        {
+          "name": "COM",
+          "type": "co"
+        },
+        {
+          "name": "NC",
+          "type": "nc"
+        },
+        {
+          "name": "NO",
+          "type": "no"
+        }
+      ],
+      "group_template": "timer",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 45,
+      "group_tag": "KT1",
+      "din_slot": 97,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 8.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": true,
+      "timer_mode": "on",
+      "timer_unit": 1,
+      "timer_value": 2.0,
+      "delay_on": 2.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 46,
+      "tag": "KT1.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "timer_relay",
+      "recipe_id": "timer_relay",
+      "variant_id": "ppv",
+      "position": [
+        1490.0,
+        320.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "KT",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "COM",
+          "type": "co"
+        },
+        {
+          "name": "NC",
+          "type": "nc"
+        },
+        {
+          "name": "NO",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 45,
+      "group_tag": "KT1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": true,
+      "hide_unused_contacts": false,
+      "timer_mode": "on",
+      "timer_unit": 1,
+      "timer_value": 2.0,
+      "delay_on": 2.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 47,
+      "tag": "SB0",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "estop_nc",
+      "recipe_id": "estop_nc",
+      "variant_id": "ppv",
+      "position": [
+        80.0,
+        500.0
+      ],
+      "electro_class": "e_stop",
+      "electro_mount": "door",
+      "tag_prefix": "SB",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "nc"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        }
+      ],
+      "group_template": "estop",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 47,
+      "group_tag": "SB0",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -0.09,
+        0.14
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "red",
+      "caption": "",
+      "latching": true,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 48,
+      "tag": "SB0.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "estop_nc",
+      "recipe_id": "estop_nc",
+      "variant_id": "ppv",
+      "position": [
+        1020.0,
+        500.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "SB",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "nc"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 47,
+      "group_tag": "SB0",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 49,
+      "tag": "SB1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "btn_no",
+      "recipe_id": "btn_no",
+      "variant_id": "ppv",
+      "position": [
+        180.0,
+        500.0
+      ],
+      "electro_class": "button",
+      "electro_mount": "door",
+      "tag_prefix": "SB",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "13",
+          "type": "no"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        }
+      ],
+      "group_template": "button_no",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 49,
+      "group_tag": "SB1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        0.0,
+        0.06
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "green",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 50,
+      "tag": "SB1.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "btn_no",
+      "recipe_id": "btn_no",
+      "variant_id": "ppv",
+      "position": [
+        1020.0,
+        500.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "SB",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "13",
+          "type": "no"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 49,
+      "group_tag": "SB1",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 51,
+      "tag": "SB2",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "btn_nc",
+      "recipe_id": "btn_nc",
+      "variant_id": "ppv",
+      "position": [
+        280.0,
+        500.0
+      ],
+      "electro_class": "button",
+      "electro_mount": "door",
+      "tag_prefix": "SB",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "nc"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        }
+      ],
+      "group_template": "button_nc",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 51,
+      "group_tag": "SB2",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        0.062,
+        0.06
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "red",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 52,
+      "tag": "SB2.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "btn_nc",
+      "recipe_id": "btn_nc",
+      "variant_id": "ppv",
+      "position": [
+        1020.0,
+        500.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "SB",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "11",
+          "type": "nc"
+        },
+        {
+          "name": "12",
+          "type": "nc"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 51,
+      "group_tag": "SB2",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 53,
+      "tag": "SB3",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "btn_no",
+      "recipe_id": "btn_no",
+      "variant_id": "ppv",
+      "position": [
+        380.0,
+        500.0
+      ],
+      "electro_class": "button",
+      "electro_mount": "door",
+      "tag_prefix": "SB",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "13",
+          "type": "no"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        }
+      ],
+      "group_template": "button_no",
+      "member_role": "main",
+      "member_index": 0,
+      "group_id": 53,
+      "group_tag": "SB3",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        0.124,
+        0.06
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 54,
+      "tag": "SB3.1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "btn_no",
+      "recipe_id": "btn_no",
+      "variant_id": "ppv",
+      "position": [
+        1020.0,
+        500.0
+      ],
+      "electro_class": "contact",
+      "electro_mount": "none",
+      "tag_prefix": "SB",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "13",
+          "type": "no"
+        },
+        {
+          "name": "14",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "contact",
+      "member_index": 1,
+      "group_id": 53,
+      "group_tag": "SB3",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -1,
+        -1
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 55,
+      "tag": "SA1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "switch_2pos",
+      "recipe_id": "switch_2pos",
+      "variant_id": "ppv",
+      "position": [
+        480.0,
+        500.0
+      ],
+      "electro_class": "switch",
+      "electro_mount": "door",
+      "tag_prefix": "SA",
+      "electro_ports": [],
+      "coil_ports": [],
+      "contact_defs": [
+        {
+          "name": "1",
+          "type": "no"
+        },
+        {
+          "name": "2",
+          "type": "no"
+        },
+        {
+          "name": "3",
+          "type": "no"
+        },
+        {
+          "name": "4",
+          "type": "no"
+        }
+      ],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -0.09,
+        0.0
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 230.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 56,
+      "tag": "HL1",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "lamp",
+      "recipe_id": "lamp",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        840.0
+      ],
+      "electro_class": "lamp",
+      "electro_mount": "door",
+      "tag_prefix": "HL",
+      "electro_ports": [
+        {
+          "name": "X1",
+          "type": "line"
+        },
+        {
+          "name": "X2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        -0.09,
+        -0.08
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 220.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 57,
+      "tag": "HL2",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "lamp",
+      "recipe_id": "lamp",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        920.0
+      ],
+      "electro_class": "lamp",
+      "electro_mount": "door",
+      "tag_prefix": "HL",
+      "electro_ports": [
+        {
+          "name": "X1",
+          "type": "line"
+        },
+        {
+          "name": "X2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        0.0,
+        -0.08
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 220.0,
+      "lamp_color": "green",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 58,
+      "tag": "HL3",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "lamp",
+      "recipe_id": "lamp",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        1000.0
+      ],
+      "electro_class": "lamp",
+      "electro_mount": "door",
+      "tag_prefix": "HL",
+      "electro_ports": [
+        {
+          "name": "X1",
+          "type": "line"
+        },
+        {
+          "name": "X2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        0.062,
+        -0.08
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 220.0,
+      "lamp_color": "red",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 59,
+      "tag": "HL4",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "lamp",
+      "recipe_id": "lamp",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        1080.0
+      ],
+      "electro_class": "lamp",
+      "electro_mount": "door",
+      "tag_prefix": "HL",
+      "electro_ports": [
+        {
+          "name": "X1",
+          "type": "line"
+        },
+        {
+          "name": "X2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        0.124,
+        -0.08
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 220.0,
+      "lamp_color": "yellow",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    },
+    {
+      "kind": "electro",
+      "id": 60,
+      "tag": "HL5",
+      "tag_offset": [
+        0,
+        0
+      ],
+      "rotation_quad": 0,
+      "catalog_id": "lamp",
+      "recipe_id": "lamp",
+      "variant_id": "ppv",
+      "position": [
+        360.0,
+        1160.0
+      ],
+      "electro_class": "lamp",
+      "electro_mount": "door",
+      "tag_prefix": "HL",
+      "electro_ports": [
+        {
+          "name": "X1",
+          "type": "line"
+        },
+        {
+          "name": "X2",
+          "type": "line"
+        }
+      ],
+      "coil_ports": [],
+      "contact_defs": [],
+      "group_template": "",
+      "member_role": "device",
+      "member_index": 0,
+      "group_id": -1,
+      "group_tag": "",
+      "din_slot": -1,
+      "door_slot": -1,
+      "door_xy": [
+        0.186,
+        -0.08
+      ],
+      "poles": 1,
+      "curve": "C",
+      "rating_a": 16.0,
+      "i_delta_ma": 30.0,
+      "u_min": 180.0,
+      "u_max": 260.0,
+      "phase": "",
+      "voltage": 220.0,
+      "lamp_color": "white",
+      "btn_color": "white",
+      "caption": "",
+      "latching": false,
+      "closed": true,
+      "pressed": false,
+      "energized": false,
+      "lit": false,
+      "detached": false,
+      "hide_unused_contacts": false,
+      "timer_mode": "",
+      "timer_unit": 1,
+      "timer_value": 0.0,
+      "delay_on": 0.0,
+      "delay_off": 0.0,
+      "switch_positions": 2,
+      "terminal_port_scheme": 2,
+      "terminal_bus": false,
+      "color_id": "",
+      "link_valve": false
+    }
+  ],
+  "wires": [
+    {
+      "id": 1000,
+      "a_id": 1,
+      "a_port": "L",
+      "b_id": 2,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1001,
+      "a_id": 1,
+      "a_port": "N",
+      "b_id": 2,
+      "b_port": "3",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1002,
+      "a_id": 1,
+      "a_port": "PE",
+      "b_id": 17,
+      "b_port": "1",
+      "id_mm": 2.5,
+      "color_id": "green",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1003,
+      "a_id": 2,
+      "a_port": "2",
+      "b_id": 3,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1004,
+      "a_id": 2,
+      "a_port": "4",
+      "b_id": 3,
+      "b_port": "3",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1005,
+      "a_id": 3,
+      "a_port": "4",
+      "b_id": 16,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1006,
+      "a_id": 3,
+      "a_port": "2",
+      "b_id": 4,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1007,
+      "a_id": 4,
+      "a_port": "1",
+      "b_id": 5,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1008,
+      "a_id": 5,
+      "a_port": "1",
+      "b_id": 6,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1009,
+      "a_id": 6,
+      "a_port": "1",
+      "b_id": 7,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1010,
+      "a_id": 7,
+      "a_port": "1",
+      "b_id": 8,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1011,
+      "a_id": 8,
+      "a_port": "1",
+      "b_id": 9,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1012,
+      "a_id": 9,
+      "a_port": "1",
+      "b_id": 10,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1013,
+      "a_id": 10,
+      "a_port": "1",
+      "b_id": 11,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1014,
+      "a_id": 11,
+      "a_port": "1",
+      "b_id": 12,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1015,
+      "a_id": 12,
+      "a_port": "1",
+      "b_id": 13,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1016,
+      "a_id": 13,
+      "a_port": "1",
+      "b_id": 18,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1017,
+      "a_id": 18,
+      "a_port": "1",
+      "b_id": 19,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1018,
+      "a_id": 17,
+      "a_port": "3",
+      "b_id": 14,
+      "b_port": "PE",
+      "id_mm": 2.5,
+      "color_id": "green",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1019,
+      "a_id": 5,
+      "a_port": "2",
+      "b_id": 14,
+      "b_port": "L",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1020,
+      "a_id": 16,
+      "a_port": "3",
+      "b_id": 14,
+      "b_port": "N",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1021,
+      "a_id": 4,
+      "a_port": "2",
+      "b_id": 15,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1022,
+      "a_id": 15,
+      "a_port": "3",
+      "b_id": 48,
+      "b_port": "11",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1023,
+      "a_id": 48,
+      "a_port": "12",
+      "b_id": 52,
+      "b_port": "11",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1024,
+      "a_id": 52,
+      "a_port": "12",
+      "b_id": 29,
+      "b_port": "95",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1025,
+      "a_id": 29,
+      "a_port": "96",
+      "b_id": 50,
+      "b_port": "13",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1026,
+      "a_id": 50,
+      "a_port": "14",
+      "b_id": 22,
+      "b_port": "A1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1027,
+      "a_id": 22,
+      "a_port": "A2",
+      "b_id": 16,
+      "b_port": "5",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1028,
+      "a_id": 26,
+      "a_port": "13",
+      "b_id": 50,
+      "b_port": "13",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1029,
+      "a_id": 26,
+      "a_port": "14",
+      "b_id": 50,
+      "b_port": "14",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1030,
+      "a_id": 11,
+      "a_port": "2",
+      "b_id": 23,
+      "b_port": "1",
+      "id_mm": 2.5,
+      "color_id": "black",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1031,
+      "a_id": 23,
+      "a_port": "2",
+      "b_id": 28,
+      "b_port": "1",
+      "id_mm": 2.5,
+      "color_id": "black",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1032,
+      "a_id": 28,
+      "a_port": "2",
+      "b_id": 20,
+      "b_port": "1",
+      "id_mm": 2.5,
+      "color_id": "black",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1033,
+      "a_id": 16,
+      "a_port": "7",
+      "b_id": 20,
+      "b_port": "2",
+      "id_mm": 2.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1034,
+      "a_id": 15,
+      "a_port": "5",
+      "b_id": 56,
+      "b_port": "X1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1035,
+      "a_id": 56,
+      "a_port": "X2",
+      "b_id": 16,
+      "b_port": "9",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1036,
+      "a_id": 15,
+      "a_port": "7",
+      "b_id": 31,
+      "b_port": "A1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1037,
+      "a_id": 31,
+      "a_port": "A2",
+      "b_id": 16,
+      "b_port": "11",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1038,
+      "a_id": 15,
+      "a_port": "9",
+      "b_id": 32,
+      "b_port": "11",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1039,
+      "a_id": 32,
+      "a_port": "14",
+      "b_id": 57,
+      "b_port": "X1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "broken": true,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": []
+    },
+    {
+      "id": 1040,
+      "a_id": 57,
+      "a_port": "X2",
+      "b_id": 16,
+      "b_port": "13",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1041,
+      "a_id": 15,
+      "a_port": "11",
+      "b_id": 30,
+      "b_port": "97",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1042,
+      "a_id": 30,
+      "a_port": "98",
+      "b_id": 58,
+      "b_port": "X1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "broken": true,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": []
+    },
+    {
+      "id": 1043,
+      "a_id": 58,
+      "a_port": "X2",
+      "b_id": 16,
+      "b_port": "15",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1044,
+      "a_id": 15,
+      "a_port": "13",
+      "b_id": 55,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1045,
+      "a_id": 55,
+      "a_port": "2",
+      "b_id": 34,
+      "b_port": "A1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1046,
+      "a_id": 34,
+      "a_port": "A2",
+      "b_id": 16,
+      "b_port": "2",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1047,
+      "a_id": 15,
+      "a_port": "15",
+      "b_id": 35,
+      "b_port": "11",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "broken": true,
+      "group_id": 1,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": []
+    },
+    {
+      "id": 1048,
+      "a_id": 35,
+      "a_port": "14",
+      "b_id": 59,
+      "b_port": "X1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1049,
+      "a_id": 59,
+      "a_port": "X2",
+      "b_id": 16,
+      "b_port": "4",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1050,
+      "a_id": 15,
+      "a_port": "2",
+      "b_id": 54,
+      "b_port": "13",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "broken": true,
+      "group_id": 1,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": []
+    },
+    {
+      "id": 1051,
+      "a_id": 54,
+      "a_port": "14",
+      "b_id": 45,
+      "b_port": "A1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1052,
+      "a_id": 45,
+      "a_port": "A2",
+      "b_id": 16,
+      "b_port": "6",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1053,
+      "a_id": 15,
+      "a_port": "4",
+      "b_id": 46,
+      "b_port": "COM",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "broken": true,
+      "group_id": 1,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": []
+    },
+    {
+      "id": 1054,
+      "a_id": 46,
+      "a_port": "NO",
+      "b_id": 37,
+      "b_port": "A1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1055,
+      "a_id": 37,
+      "a_port": "A2",
+      "b_id": 16,
+      "b_port": "8",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1056,
+      "a_id": 15,
+      "a_port": "6",
+      "b_id": 38,
+      "b_port": "11",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1057,
+      "a_id": 38,
+      "a_port": "14",
+      "b_id": 60,
+      "b_port": "X1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1058,
+      "a_id": 60,
+      "a_port": "X2",
+      "b_id": 16,
+      "b_port": "10",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1059,
+      "a_id": 6,
+      "a_port": "2",
+      "b_id": 20,
+      "b_port": "3",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1060,
+      "a_id": 7,
+      "a_port": "2",
+      "b_id": 21,
+      "b_port": "1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1061,
+      "a_id": 17,
+      "a_port": "5",
+      "b_id": 20,
+      "b_port": "4",
+      "id_mm": 1.5,
+      "color_id": "green",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1062,
+      "a_id": 16,
+      "a_port": "12",
+      "b_id": 21,
+      "b_port": "2",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1063,
+      "a_id": 12,
+      "a_port": "2",
+      "b_id": 40,
+      "b_port": "A1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1064,
+      "a_id": 40,
+      "a_port": "A2",
+      "b_id": 21,
+      "b_port": "3",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1065,
+      "a_id": 18,
+      "a_port": "2",
+      "b_id": 41,
+      "b_port": "11",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1066,
+      "a_id": 41,
+      "a_port": "14",
+      "b_id": 20,
+      "b_port": "5",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1067,
+      "a_id": 13,
+      "a_port": "2",
+      "b_id": 43,
+      "b_port": "A1",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1068,
+      "a_id": 43,
+      "a_port": "A2",
+      "b_id": 21,
+      "b_port": "4",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1069,
+      "a_id": 19,
+      "a_port": "2",
+      "b_id": 44,
+      "b_port": "11",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1070,
+      "a_id": 44,
+      "a_port": "14",
+      "b_id": 21,
+      "b_port": "5",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1071,
+      "a_id": 8,
+      "a_port": "2",
+      "b_id": 15,
+      "b_port": "8",
+      "id_mm": 1.5,
+      "color_id": "brown",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1072,
+      "a_id": 9,
+      "a_port": "2",
+      "b_id": 16,
+      "b_port": "14",
+      "id_mm": 1.5,
+      "color_id": "blue",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    },
+    {
+      "id": 1073,
+      "a_id": 10,
+      "a_port": "2",
+      "b_id": 17,
+      "b_port": "7",
+      "id_mm": 1.5,
+      "color_id": "green",
+      "num": 0,
+      "sleeve_yaw_a": 0.0,
+      "sleeve_yaw_b": 0.0,
+      "joints": [],
+      "broken": true
+    }
+  ],
+  "next_id": 1075
+}

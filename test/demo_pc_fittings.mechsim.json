@@ -1,0 +1,360 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Демо: фитинги ПЦ по диаметру",
+	"note": "Три ПЦ: ∅16→M5·Ø4, ∅32→G1/8·Ø6, ∅63→G3/8·Ø10. Свойства ПЦ → «Фитинг (цанга)». Трубка берёт OD; 3D штуцеры масштабируются.",
+	"cabinet_door_open": true,
+	"next_id": 7,
+	"elements": [
+		{
+			"kind": "source",
+			"id": 1,
+			"tag": "КМ1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				40
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				0.4
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "source",
+			"id": 2,
+			"tag": "КМ2",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				100
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				0.0
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "source",
+			"id": 3,
+			"tag": "КМ3",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				160
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				-0.4
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "cylinder",
+			"id": 4,
+			"tag": "Ц1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				180,
+				40
+			],
+			"rotation_quad": 0,
+			"action": "double",
+			"bore_mm": 16.0,
+			"rod_mm": 6.0,
+			"stroke_mm": 50.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 0.4,
+			"friction_n": 3.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.75,
+				1.35,
+				0.4
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"catalog_id": "da_basic",
+			"port_name": "M5",
+			"fitting_id": "M5_4",
+			"tube_od_mm": 4.0,
+			"auto_ground": false,
+			"tag_prefix": "Ц"
+		},
+		{
+			"kind": "cylinder",
+			"id": 5,
+			"tag": "Ц2",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				180,
+				100
+			],
+			"rotation_quad": 0,
+			"action": "double",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.75,
+				1.35,
+				0.0
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"catalog_id": "da_basic",
+			"port_name": "G1/8",
+			"fitting_id": "G1/8_6",
+			"tube_od_mm": 6.0,
+			"auto_ground": false,
+			"tag_prefix": "Ц"
+		},
+		{
+			"kind": "cylinder",
+			"id": 6,
+			"tag": "Ц3",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				180,
+				160
+			],
+			"rotation_quad": 0,
+			"action": "double",
+			"bore_mm": 63.0,
+			"rod_mm": 20.0,
+			"stroke_mm": 150.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 2.5,
+			"friction_n": 8.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.75,
+				1.35,
+				-0.4
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"catalog_id": "da_basic",
+			"port_name": "G3/8",
+			"fitting_id": "G3/8_10",
+			"tube_od_mm": 10.0,
+			"auto_ground": false,
+			"tag_prefix": "Ц"
+		}
+	],
+	"wires": [
+		{
+			"id": 1,
+			"num": 1,
+			"a_id": 1,
+			"a_port": "out",
+			"b_id": 4,
+			"b_port": "cap",
+			"od_mm": 4.0,
+			"id_mm": 2.5
+		},
+		{
+			"id": 2,
+			"num": 2,
+			"a_id": 2,
+			"a_port": "out",
+			"b_id": 5,
+			"b_port": "cap",
+			"od_mm": 6.0,
+			"id_mm": 4.0
+		},
+		{
+			"id": 3,
+			"num": 3,
+			"a_id": 3,
+			"a_port": "out",
+			"b_id": 6,
+			"b_port": "cap",
+			"od_mm": 10.0,
+			"id_mm": 7.0
+		}
+	]
+}

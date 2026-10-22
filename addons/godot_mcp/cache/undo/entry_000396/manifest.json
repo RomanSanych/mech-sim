@@ -1,0 +1,13 @@
+{
+  "args_summary": "edit_script",
+  "files": [
+    {
+      "backup": "res://addons/godot_mcp/cache/undo/entry_000396/files/scripts/view3d/iso_valve.gd",
+      "kind": "snapshot",
+      "path": "res://scripts/view3d/iso_valve.gd"
+    }
+  ],
+  "id": "000396",
+  "timestamp": 1791468675.0,
+  "tool": "edit_script"
+}

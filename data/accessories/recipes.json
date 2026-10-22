@@ -1,0 +1,157 @@
+{
+	"version": 1,
+	"recipes": [
+		{
+			"id": "throttle",
+			"title": "Дроссель регулируемый",
+			"category": "flow",
+			"accessory_class": "throttle",
+			"tag_prefix": "ДР",
+			"ports": ["1", "2"],
+			"opening": 0.5,
+			"valve_cv": 1.0
+		},
+		{
+			"id": "throttle_fixed",
+			"title": "Дроссель нерегулируемый",
+			"category": "flow",
+			"accessory_class": "throttle_fixed",
+			"tag_prefix": "ДР",
+			"ports": ["1", "2"],
+			"opening": 0.45,
+			"valve_cv": 0.8
+		},
+		{
+			"id": "check",
+			"title": "Обратный клапан",
+			"category": "flow",
+			"accessory_class": "check",
+			"tag_prefix": "КО",
+			"ports": ["1", "2"],
+			"opening": 0.0,
+			"crack_pressure_bar": 0.2,
+			"flow_nl_min": 600.0,
+			"valve_cv": 1.0,
+			"note": "ISO 228 G1/8: давление открытия 0.2 бар, Qn 600 Nl/мин @6→5 бар"
+		},
+		{
+			"id": "throttle_check",
+			"title": "Дроссель с обратным клапаном",
+			"category": "flow",
+			"accessory_class": "throttle_check",
+			"tag_prefix": "ДР",
+			"ports": ["1", "2"],
+			"opening": 0.5,
+			"crack_pressure_bar": 0.2,
+			"flow_nl_min": 600.0,
+			"valve_cv": 1.0,
+			"note": "1→2 дроссель (винт); 2→1 обводной КО. G1/8: crack 0.2 бар, Qn 600 Nl/мин"
+		},
+		{
+			"id": "throttle_check_fixed",
+			"title": "Дроссель с ОК (нерегулируемый)",
+			"category": "flow",
+			"accessory_class": "throttle_check_fixed",
+			"tag_prefix": "ДР",
+			"ports": ["1", "2"],
+			"opening": 0.45,
+			"crack_pressure_bar": 0.2,
+			"flow_nl_min": 600.0,
+			"valve_cv": 0.8,
+			"note": "Как throttle_check, без винта — фиксированное сечение 1→2"
+		},
+		{
+			"id": "reservoir",
+			"title": "Пневмоаккумулятор (ресивер)",
+			"category": "storage",
+			"accessory_class": "reservoir",
+			"tag_prefix": "РС",
+			"ports": ["1"],
+			"volume_l": 2.0,
+			"reservoir_ports": 1,
+			"valve_cv": 1.6,
+			"open_ports": false,
+			"note": "Воздухосборник; отводы сверху (1…5); свободный отвод → атмосфера"
+		},
+		{
+			"id": "regulator",
+			"title": "Редукционный клапан",
+			"category": "prep",
+			"accessory_class": "regulator",
+			"tag_prefix": "КР",
+			"ports": ["1", "2"],
+			"set_pressure_bar": 4.0,
+			"valve_cv": 1.4,
+			"note": "Уставка 0.5…10 бар; 3D: клик по колпачку = lock/unlock, вращение = уставка; УГО с каналом сброса (пунктир) и треугольником выхлопа"
+		},
+		{
+			"id": "frl",
+			"title": "Блок подготовки воздуха (FRL)",
+			"category": "prep",
+			"accessory_class": "frl",
+			"tag_prefix": "У",
+			"ports": ["1", "2"],
+			"set_pressure_bar": 6.0,
+			"valve_cv": 1.2
+		},
+		{
+			"id": "shuttle",
+			"title": "Клапан «ИЛИ» (shuttle)",
+			"category": "flow",
+			"accessory_class": "shuttle",
+			"tag_prefix": "КЛ",
+			"ports": ["1", "2", "3"],
+			"flow_nl_min": 1170.0,
+			"valve_cv": 1.2,
+			"note": "Festo OS-класс: входы 1/2, выход 3; проходит большее давление, меньшее блокируется. Qn G1/4 ≈ 1170 Nl/мин"
+		},
+		{
+			"id": "and_valve",
+			"title": "Клапан «И» (dual-pressure)",
+			"category": "flow",
+			"accessory_class": "and_valve",
+			"tag_prefix": "КЛ",
+			"ports": ["1", "2", "3"],
+			"opening": 0.5,
+			"flow_nl_min": 1000.0,
+			"valve_cv": 1.1,
+			"note": "Логическое И: выход 3 только при давлении на 1 и 2; гантель с конусами. Qn G1/4 ≈ 1000 Nl/мин @6→5 бар"
+		},
+		{
+			"id": "quick_exhaust",
+			"title": "Клапан быстрого выхлопа",
+			"category": "flow",
+			"accessory_class": "quick_exhaust",
+			"tag_prefix": "КВ",
+			"ports": ["1", "2", "3"],
+			"flow_nl_min": 960.0,
+			"valve_cv": 1.2,
+			"note": "Festo SE: 1=вход, 2=ПЦ, 3=выхлоп (глушитель/линия). SE-1/4-B: 1→2 960 / 2→3 1200 Nl/мин @6→5 бар"
+		},
+		{
+			"id": "shutoff",
+			"title": "Отсечной кран (шаровой)",
+			"category": "flow",
+			"accessory_class": "shutoff",
+			"tag_prefix": "ЗК",
+			"ports": ["1", "2"],
+			"opening": 0.0,
+			"flow_nl_min": 533.0,
+			"valve_cv": 0.9,
+			"note": "Festo QH 2/2 bistable NC: рукоятка 90°, шар с каналом. QH-QS-6: Qn 533 Nl/мин @6→5 бар. УГО как 2/2 NC, ручное с двух сторон"
+		},
+		{
+			"id": "relief",
+			"title": "Предохранительный клапан",
+			"category": "flow",
+			"accessory_class": "relief",
+			"tag_prefix": "КП",
+			"ports": ["1", "2"],
+			"opening": 0.0,
+			"set_pressure_bar": 6.0,
+			"flow_nl_min": 700.0,
+			"valve_cv": 1.0,
+			"note": "Camozzi VMR-класс: вход 1, сброс 2 (штуцер/глушитель). Уставка пружины 0.5…10 бар; рукоятка — ручной подъём тарелки. Qn G1/4 ≈ 700 Nl/мин @6→5 бар"
+		}
+	]
+}

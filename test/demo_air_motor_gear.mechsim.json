@@ -1,0 +1,64 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Демо: шестерённый пневмомотор",
+	"note": "КМ1 → ПМ1 (stall 3.05 Н·м @6 бар). Выхлоп — глушитель. Реверсивный шестерённый: поток на зацепление → вращение по направлению потока.",
+	"cabinet_door_open": false,
+	"next_id": 10,
+	"schematic": {
+		"zoom": 1.15,
+		"pan": [20, 10]
+	},
+	"elements": [
+		{
+			"kind": "source",
+			"id": 1,
+			"tag": "КМ1",
+			"tag_offset": [0, 0],
+			"position": [60, 100],
+			"rotation_quad": 0,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [0.20, 1.32, 1.35],
+			"world_basis": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "air_motor",
+			"id": 2,
+			"tag": "ПМ1",
+			"tag_offset": [0, -34],
+			"position": [230, 100],
+			"rotation_quad": 0,
+			"recipe_id": "gear_2am",
+			"rotary_class": "gear",
+			"free_rpm": 3000.0,
+			"torque_nm_at_6bar": 3.05,
+			"flow_nl_min": 825.0,
+			"port_name": "G1/4",
+			"tube_od_mm": 8.0,
+			"fitting_id": "G1/4_8",
+			"port_3": "muffler",
+			"mass_kg": 0.85,
+			"friction_n": 1.2,
+			"order_code": "ПМ-GEAR-2AM",
+			"world_pos": [0.75, 1.32, 1.35],
+			"world_basis": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+			"auto_ground": false,
+			"tag_prefix": "ПМ"
+		}
+	],
+	"wires": [
+		{
+			"id": 3,
+			"num": 1,
+			"a_id": 1,
+			"a_port": "out",
+			"b_id": 2,
+			"b_port": "in",
+			"id_mm": 5.0,
+			"od_mm": 8.0
+		}
+	]
+}

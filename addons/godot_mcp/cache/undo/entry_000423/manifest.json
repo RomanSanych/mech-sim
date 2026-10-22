@@ -1,0 +1,13 @@
+{
+  "args_summary": "edit_script",
+  "files": [
+    {
+      "backup": "res://addons/godot_mcp/cache/undo/entry_000423/files/scripts/domain/sim_vis.gd",
+      "kind": "snapshot",
+      "path": "res://scripts/domain/sim_vis.gd"
+    }
+  ],
+  "id": "000423",
+  "timestamp": 1791471243.0,
+  "tool": "edit_script"
+}

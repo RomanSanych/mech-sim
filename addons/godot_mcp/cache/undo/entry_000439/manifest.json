@@ -1,0 +1,12 @@
+{
+  "args_summary": "write_file(path=res://test/demo_shuttle_or.mechsim.json)",
+  "files": [
+    {
+      "kind": "created",
+      "path": "res://test/demo_shuttle_or.mechsim.json"
+    }
+  ],
+  "id": "000439",
+  "timestamp": 1791530159.0,
+  "tool": "write_file"
+}

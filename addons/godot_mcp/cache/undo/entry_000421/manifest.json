@@ -1,0 +1,13 @@
+{
+  "args_summary": "edit_script",
+  "files": [
+    {
+      "backup": "res://addons/godot_mcp/cache/undo/entry_000421/files/scripts/domain/circuit.gd",
+      "kind": "snapshot",
+      "path": "res://scripts/domain/circuit.gd"
+    }
+  ],
+  "id": "000421",
+  "timestamp": 1791471235.0,
+  "tool": "edit_script"
+}

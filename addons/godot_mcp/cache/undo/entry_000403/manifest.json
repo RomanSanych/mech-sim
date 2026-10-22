@@ -1,0 +1,13 @@
+{
+  "args_summary": "edit_script",
+  "files": [
+    {
+      "backup": "res://addons/godot_mcp/cache/undo/entry_000403/files/scripts/domain/symbol_geom.gd",
+      "kind": "snapshot",
+      "path": "res://scripts/domain/symbol_geom.gd"
+    }
+  ],
+  "id": "000403",
+  "timestamp": 1791468769.0,
+  "tool": "edit_script"
+}

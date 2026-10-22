@@ -1,0 +1,25 @@
+{
+  "id": "cylinder.iso1219.spring_return",
+  "norm": "ISO1219-1",
+  "source": {
+    "geometry": "Wikimedia Commons SVG Single acting cylinder (symbol,RS,ISO1219).svg — Marton Kiss-Albert, CC-BY-SA",
+    "commons": "https://commons.wikimedia.org/wiki/File:Single_acting_cylinder_(symbol,RS,ISO1219).svg"
+  },
+  "layout": {
+    "body_l": -80,
+    "body_r": 80,
+    "body_t": -26.67,
+    "body_b": 26.67,
+    "rod_x": 90.67,
+    "piston_a": -48,
+    "piston_b": 50,
+    "piston_gap": 10.67,
+    "port_cap_x": -69.33,
+    "port_rod_x": 69.34,
+    "port_drop": 10.66,
+    "rod_gap": 5.33
+  },
+  "notes": [
+    "Single-acting spring return: one connect port (cap), zigzag spring in rod chamber, exhaust triangle at rod end (ISO)."
+  ]
+}

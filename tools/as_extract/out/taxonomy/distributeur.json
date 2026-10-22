@@ -1,0 +1,276 @@
+﻿{
+    "source":  {
+                   "spool_db":  "ValveConfigurator/ASSpoolPosition.db (not parsed — locked BD)",
+                   "port_configuration":  "ValveConfigurator/PortConfiguration.xml",
+                   "note":  "AS composes UGO from concrete tiroir + commande symbols (catalog). Port grid from PortConfiguration Pneumatique. Library also ships ~138 prebuilt n/m-way recipes in Main.xml.",
+                   "configurator":  [
+                                        "CFGDistributeur.dll",
+                                        "CFGDistributeur2.dll",
+                                        "CFGDistributeur3.dll"
+                                    ],
+                   "as_root":  "C:\\Program Files\\Famic Technologies\\Automation Studio P7.0",
+                   "extracted_at":  "2026-10-03T10:55:48.3479201+03:00"
+               },
+    "pneumatique_families_raw":  [
+                                     {
+                                         "taille_tiroir":  4,
+                                         "ports":  [
+                                                       {
+                                                           "xml_nom":  "1",
+                                                           "side":  "BAS",
+                                                           "slot":  2
+                                                       },
+                                                       {
+                                                           "xml_nom":  "2",
+                                                           "side":  "HAUT",
+                                                           "slot":  2
+                                                       }
+                                                   ],
+                                         "nom_tiroir":  "2",
+                                         "id_famille_iso":  "VDT2"
+                                     },
+                                     {
+                                         "taille_tiroir":  4,
+                                         "ports":  [
+                                                       {
+                                                           "xml_nom":  "1",
+                                                           "side":  "BAS",
+                                                           "slot":  1
+                                                       },
+                                                       {
+                                                           "xml_nom":  "2",
+                                                           "side":  "HAUT",
+                                                           "slot":  1
+                                                       },
+                                                       {
+                                                           "xml_nom":  "3",
+                                                           "side":  "BAS",
+                                                           "slot":  3
+                                                       }
+                                                   ],
+                                         "nom_tiroir":  "3",
+                                         "id_famille_iso":  "VDT3"
+                                     },
+                                     {
+                                         "taille_tiroir":  4,
+                                         "ports":  [
+                                                       {
+                                                           "xml_nom":  "1",
+                                                           "side":  "BAS",
+                                                           "slot":  1
+                                                       },
+                                                       {
+                                                           "xml_nom":  "2",
+                                                           "side":  "HAUT",
+                                                           "slot":  1
+                                                       },
+                                                       {
+                                                           "xml_nom":  "3",
+                                                           "side":  "HAUT",
+                                                           "slot":  3
+                                                       },
+                                                       {
+                                                           "xml_nom":  "4",
+                                                           "side":  "BAS",
+                                                           "slot":  3
+                                                       }
+                                                   ],
+                                         "nom_tiroir":  "4",
+                                         "id_famille_iso":  "VDT4"
+                                     },
+                                     {
+                                         "taille_tiroir":  6,
+                                         "ports":  [
+                                                       {
+                                                           "xml_nom":  "1",
+                                                           "side":  "BAS",
+                                                           "slot":  1
+                                                       },
+                                                       {
+                                                           "xml_nom":  "2",
+                                                           "side":  "HAUT",
+                                                           "slot":  1
+                                                       },
+                                                       {
+                                                           "xml_nom":  "3",
+                                                           "side":  "HAUT",
+                                                           "slot":  5
+                                                       },
+                                                       {
+                                                           "xml_nom":  "4",
+                                                           "side":  "BAS",
+                                                           "slot":  5
+                                                       },
+                                                       {
+                                                           "xml_nom":  "5",
+                                                           "side":  "BAS",
+                                                           "slot":  3
+                                                       }
+                                                   ],
+                                         "nom_tiroir":  "5",
+                                         "id_famille_iso":  "VDT5"
+                                     },
+                                     {
+                                         "taille_tiroir":  6,
+                                         "ports":  [
+                                                       {
+                                                           "xml_nom":  "1",
+                                                           "side":  "BAS",
+                                                           "slot":  1
+                                                       },
+                                                       {
+                                                           "xml_nom":  "2",
+                                                           "side":  "HAUT",
+                                                           "slot":  1
+                                                       },
+                                                       {
+                                                           "xml_nom":  "3",
+                                                           "side":  "HAUT",
+                                                           "slot":  3
+                                                       },
+                                                       {
+                                                           "xml_nom":  "4",
+                                                           "side":  "HAUT",
+                                                           "slot":  5
+                                                       },
+                                                       {
+                                                           "xml_nom":  "5",
+                                                           "side":  "BAS",
+                                                           "slot":  5
+                                                       },
+                                                       {
+                                                           "xml_nom":  "6",
+                                                           "side":  "BAS",
+                                                           "slot":  3
+                                                       }
+                                                   ],
+                                         "nom_tiroir":  "6",
+                                         "id_famille_iso":  "VDT6"
+                                     }
+                                 ],
+    "pneumatique_iso_ports":  {
+                                  "VDT5":  [
+                                               {
+                                                   "side":  "BAS",
+                                                   "iso":  "3",
+                                                   "slot":  1
+                                               },
+                                               {
+                                                   "side":  "HAUT",
+                                                   "iso":  "2",
+                                                   "slot":  1
+                                               },
+                                               {
+                                                   "side":  "HAUT",
+                                                   "iso":  "4",
+                                                   "slot":  5
+                                               },
+                                               {
+                                                   "side":  "BAS",
+                                                   "iso":  "5",
+                                                   "slot":  5
+                                               },
+                                               {
+                                                   "side":  "BAS",
+                                                   "iso":  "1",
+                                                   "slot":  3
+                                               }
+                                           ],
+                                  "VDT2":  [
+                                               {
+                                                   "side":  "BAS",
+                                                   "iso":  "1",
+                                                   "slot":  2
+                                               },
+                                               {
+                                                   "side":  "HAUT",
+                                                   "iso":  "2",
+                                                   "slot":  2
+                                               }
+                                           ],
+                                  "VDT4":  [
+                                               {
+                                                   "side":  "BAS",
+                                                   "iso":  "1",
+                                                   "slot":  1
+                                               },
+                                               {
+                                                   "side":  "HAUT",
+                                                   "iso":  "2",
+                                                   "slot":  1
+                                               },
+                                               {
+                                                   "side":  "HAUT",
+                                                   "iso":  "4",
+                                                   "slot":  3
+                                               },
+                                               {
+                                                   "side":  "BAS",
+                                                   "iso":  "3",
+                                                   "slot":  3
+                                               }
+                                           ],
+                                  "VDT6":  [
+                                               {
+                                                   "side":  "BAS",
+                                                   "iso":  "1",
+                                                   "slot":  1
+                                               },
+                                               {
+                                                   "side":  "HAUT",
+                                                   "iso":  "2",
+                                                   "slot":  1
+                                               },
+                                               {
+                                                   "side":  "HAUT",
+                                                   "iso":  "3",
+                                                   "slot":  3
+                                               },
+                                               {
+                                                   "side":  "HAUT",
+                                                   "iso":  "4",
+                                                   "slot":  5
+                                               },
+                                               {
+                                                   "side":  "BAS",
+                                                   "iso":  "5",
+                                                   "slot":  5
+                                               },
+                                               {
+                                                   "side":  "BAS",
+                                                   "iso":  "6",
+                                                   "slot":  3
+                                               }
+                                           ],
+                                  "VDT3":  [
+                                               {
+                                                   "side":  "BAS",
+                                                   "iso":  "1",
+                                                   "slot":  1
+                                               },
+                                               {
+                                                   "side":  "HAUT",
+                                                   "iso":  "2",
+                                                   "slot":  1
+                                               },
+                                               {
+                                                   "side":  "BAS",
+                                                   "iso":  "3",
+                                                   "slot":  3
+                                               }
+                                           ]
+                              },
+    "slot_formula":  "x = xa + (slot / taille_tiroir) * square_w ; slot is 1..taille; taille=4 for 2/3/4-way, 6 for 5/6-way",
+    "center_types_as":  [
+                            "NC",
+                            "Float Type",
+                            "Open Type",
+                            "Tandem Type"
+                        ],
+    "center_map_mechsim":  {
+                               "NC":  "closed",
+                               "Tandem Type":  "pressurized",
+                               "Float Type":  "floating",
+                               "Open Type":  "exhausted"
+                           }
+}

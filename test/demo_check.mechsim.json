@@ -1,0 +1,259 @@
+{
+	"format": "mechsim-scene",
+	"version": 1,
+	"title": "Демо: обратный клапан",
+	"note": "Разветвление только через тройник (1 трубка на порт). Z1: питание на порт 1 (седло), порт 2 свободен (=атм) — открывается. Z2: питание на порт 2 — закрыт.",
+	"cabinet_door_open": true,
+	"next_id": 5,
+	"elements": [
+		{
+			"kind": "source",
+			"id": 1,
+			"tag": "КМ1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				40,
+				40
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.0,
+				1.35,
+				0.2
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"auto_ground": false,
+			"tag_prefix": "КМ"
+		},
+		{
+			"kind": "junction",
+			"id": 4,
+			"tag": "У1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				100,
+				40
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.2,
+				1.35,
+				0.1
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"junction_style": "tee",
+			"junction_ports": 3,
+			"auto_ground": false,
+			"tag_prefix": "У"
+		},
+		{
+			"kind": "accessory",
+			"id": 2,
+			"tag": "КО1",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				160,
+				40
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.4,
+				1.35,
+				0.0
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"recipe_id": "check",
+			"catalog_id": "check",
+			"accessory_class": "check",
+			"tag_prefix": "КО",
+			"opening": 0.0,
+			"crack_pressure_bar": 0.2,
+			"flow_nl_min": 600.0,
+			"valve_cv": 1.0,
+			"auto_ground": false
+		},
+		{
+			"kind": "accessory",
+			"id": 3,
+			"tag": "КО2",
+			"tag_offset": [
+				0,
+				0
+			],
+			"position": [
+				160,
+				100
+			],
+			"rotation_quad": 0,
+			"action": "none",
+			"bore_mm": 32.0,
+			"rod_mm": 12.0,
+			"stroke_mm": 100.0,
+			"spring_rate": 0.0,
+			"spring_preload": 0.0,
+			"mass_kg": 1.0,
+			"friction_n": 5.0,
+			"load_n": 0.0,
+			"open_ports": false,
+			"cushion": false,
+			"pressure_bar": 6.0,
+			"temperature_c": 20.0,
+			"world_pos": [
+				0.4,
+				1.35,
+				-0.28
+			],
+			"world_basis": [
+				[
+					1,
+					0,
+					0
+				],
+				[
+					0,
+					1,
+					0
+				],
+				[
+					0,
+					0,
+					1
+				]
+			],
+			"recipe_id": "check",
+			"catalog_id": "check",
+			"accessory_class": "check",
+			"tag_prefix": "КО",
+			"opening": 0.0,
+			"crack_pressure_bar": 0.2,
+			"flow_nl_min": 600.0,
+			"valve_cv": 1.0,
+			"auto_ground": false
+		}
+	],
+	"wires": [
+		{
+			"id": 1,
+			"num": 1,
+			"a_id": 1,
+			"a_port": "out",
+			"b_id": 4,
+			"b_port": "1",
+			"id_mm": 4.0
+		},
+		{
+			"id": 2,
+			"num": 2,
+			"a_id": 4,
+			"a_port": "2",
+			"b_id": 2,
+			"b_port": "1",
+			"id_mm": 4.0
+		},
+		{
+			"id": 3,
+			"num": 3,
+			"a_id": 4,
+			"a_port": "3",
+			"b_id": 3,
+			"b_port": "2",
+			"id_mm": 4.0
+		}
+	]
+}

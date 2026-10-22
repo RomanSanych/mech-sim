@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "recipes": [
+    {
+      "id": "rack_pinion_90",
+      "title": "Поворотный поршневой 90°",
+      "category": "rack_pinion",
+      "rotary_class": "rack_pinion",
+      "bore_mm": 40,
+      "angle_max_deg": 90,
+      "torque_nm_at_6bar": 9.0
+    },
+    {
+      "id": "rack_pinion_180",
+      "title": "Поворотный поршневой 180°",
+      "category": "rack_pinion",
+      "rotary_class": "rack_pinion",
+      "bore_mm": 40,
+      "angle_max_deg": 180,
+      "torque_nm_at_6bar": 9.0
+    },
+    {
+      "id": "rack_pinion_270",
+      "title": "Поворотный поршневой 270°",
+      "category": "rack_pinion",
+      "rotary_class": "rack_pinion",
+      "bore_mm": 50,
+      "angle_max_deg": 270,
+      "torque_nm_at_6bar": 15.0
+    },
+    {
+      "id": "rack_pinion_360",
+      "title": "Поворотный поршневой 360°",
+      "category": "rack_pinion",
+      "rotary_class": "rack_pinion",
+      "bore_mm": 63,
+      "angle_max_deg": 360,
+      "torque_nm_at_6bar": 25.0
+    },
+    {
+      "id": "vane_90",
+      "title": "Лопастной 90° (DSM)",
+      "category": "vane",
+      "rotary_class": "vane",
+      "bore_mm": 32,
+      "angle_max_deg": 90,
+      "torque_nm_at_6bar": 10.0
+    },
+    {
+      "id": "vane_180",
+      "title": "Лопастной 180° (DSM)",
+      "category": "vane",
+      "rotary_class": "vane",
+      "bore_mm": 32,
+      "angle_max_deg": 180,
+      "torque_nm_at_6bar": 10.0
+    },
+    {
+      "id": "vane_270",
+      "title": "Лопастной 270° (DSM)",
+      "category": "vane",
+      "rotary_class": "vane",
+      "bore_mm": 32,
+      "angle_max_deg": 270,
+      "torque_nm_at_6bar": 10.0
+    }
+  ]
+}

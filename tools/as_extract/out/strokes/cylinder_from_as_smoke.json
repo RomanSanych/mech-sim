@@ -1,0 +1,175 @@
+{
+    "strokes":  [
+                    {
+                        "polyline":  [
+                                         [
+                                             -80,
+                                             40
+                                         ],
+                                         [
+                                             80,
+                                             40
+                                         ]
+                                     ],
+                        "part":  "line"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             80,
+                                             40
+                                         ],
+                                         [
+                                             80,
+                                             -40
+                                         ]
+                                     ],
+                        "part":  "line"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             80,
+                                             -40
+                                         ],
+                                         [
+                                             -80,
+                                             -40
+                                         ]
+                                     ],
+                        "part":  "line"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             -80,
+                                             -40
+                                         ],
+                                         [
+                                             -80,
+                                             40
+                                         ]
+                                     ],
+                        "part":  "line"
+                    }
+                ],
+    "id":  "cylinder.from_as_smoke",
+    "source":  {
+                   "raw_stroke_count":  4,
+                   "imported_at":  "2026-10-02T21:44:31.7641407+03:00",
+                   "dxf":  "D:\\mech-sim\\tools\\as_extract\\out\\captures\\smoke_box.dxf"
+               },
+    "layout":  {
+                   "rod_x":  132,
+                   "body_b":  40,
+                   "body_t":  -40,
+                   "body_l":  -80,
+                   "rod_gap":  9,
+                   "piston_b":  50,
+                   "port_cap_x":  -71,
+                   "piston_gap":  35,
+                   "body_r":  80,
+                   "port_rod_x":  70,
+                   "port_drop":  36,
+                   "piston_a":  -27
+               },
+    "hit_zones":  [
+                      {
+                          "id":  "piston",
+                          "rect":  [
+                                       -66,
+                                       -36,
+                                       47,
+                                       72
+                                   ]
+                      },
+                      {
+                          "id":  "cush_cap",
+                          "rect":  [
+                                       -80,
+                                       -36,
+                                       22,
+                                       72
+                                   ]
+                      },
+                      {
+                          "id":  "cush_rod",
+                          "rect":  [
+                                       58,
+                                       -36,
+                                       22,
+                                       72
+                                   ]
+                      },
+                      {
+                          "id":  "spring",
+                          "rect":  [
+                                       -20,
+                                       -36,
+                                       78,
+                                       72
+                                   ]
+                      },
+                      {
+                          "id":  "port_cap",
+                          "rect":  [
+                                       -85,
+                                       36,
+                                       28,
+                                       42
+                                   ]
+                      },
+                      {
+                          "id":  "port_rod",
+                          "rect":  [
+                                       56,
+                                       36,
+                                       28,
+                                       42
+                                   ]
+                      },
+                      {
+                          "id":  "rod",
+                          "rect":  [
+                                       80,
+                                       -11,
+                                       52,
+                                       22
+                                   ]
+                      },
+                      {
+                          "id":  "tip",
+                          "rect":  [
+                                       124,
+                                       -14,
+                                       28,
+                                       28
+                                   ]
+                      },
+                      {
+                          "id":  "brake",
+                          "rect":  [
+                                       84,
+                                       -56,
+                                       50,
+                                       36
+                                   ]
+                      },
+                      {
+                          "id":  "carriage",
+                          "rect":  [
+                                       -80,
+                                       -64,
+                                       70,
+                                       26
+                                   ]
+                      }
+                  ],
+    "notes":  [
+                  "Promoted from AS DXF/EMF import. Label strokes into layers.* when classifying parts."
+              ],
+    "norm":  "ISO1219-1-2012",
+    "layers":  {
+
+               }
+}

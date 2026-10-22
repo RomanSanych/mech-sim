@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ccig5uhiadhg0"]
+
+[ext_resource type="Script" uid="uid://bjlbss0hexxbq" path="res://test/preview_relay_side.gd" id="1_682v7"]
+
+[node name="PreviewRelaySide" type="Node3D" unique_id=1522205394]
+script = ExtResource("1_682v7")

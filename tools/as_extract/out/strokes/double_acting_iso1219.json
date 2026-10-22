@@ -1,0 +1,165 @@
+{
+    "id":  "cylinder.iso1219.double_acting",
+    "source":  {
+                   "imported_at":  "2026-10-02T22:25:28.5757137+03:00",
+                   "attribution":  "Geometry derived from Wikimedia Commons ISO 1219 SVGs (Marton Kiss-Albert), CC-BY-SA 2.5/3.0",
+                   "svg":  "D:\\mech-sim\\tools\\as_extract\\out\\iso1219_svg\\double_acting.svg",
+                   "commons_category":  "https://commons.wikimedia.org/wiki/Category:ISO_1219"
+               },
+    "layout":  {
+                   "body_l":  -80,
+                   "body_r":  80,
+                   "body_b":  26.67,
+                   "body_t":  -26.67
+               },
+    "notes":  [
+                  "ISO 1219 fluid-power graphical symbol (same family Automation Studio declares: ISO 1219-1 / 1219-2).",
+                  "Related: ISO 14617 (general), GOST 2.782-96 (cylinders), GOST 2.781-96 (valves, ISO 1219-91 based)."
+              ],
+    "strokes":  [
+                    {
+                        "polyline":  [
+                                         [
+                                             -80,
+                                             -26.67
+                                         ],
+                                         [
+                                             -80,
+                                             26.67
+                                         ]
+                                     ],
+                        "part":  "iso"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             -58.67,
+                                             -26.67
+                                         ],
+                                         [
+                                             -58.67,
+                                             26.67
+                                         ]
+                                     ],
+                        "part":  "iso"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             -48,
+                                             -26.67
+                                         ],
+                                         [
+                                             -48,
+                                             26.67
+                                         ]
+                                     ],
+                        "part":  "iso"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             -80,
+                                             26.67
+                                         ],
+                                         [
+                                             80,
+                                             26.67
+                                         ]
+                                     ],
+                        "part":  "iso"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             80,
+                                             26.67
+                                         ],
+                                         [
+                                             80,
+                                             5.33
+                                         ]
+                                     ],
+                        "part":  "iso"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             80,
+                                             -5.33
+                                         ],
+                                         [
+                                             80,
+                                             -26.67
+                                         ]
+                                     ],
+                        "part":  "iso"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             80,
+                                             -26.67
+                                         ],
+                                         [
+                                             -80,
+                                             -26.67
+                                         ]
+                                     ],
+                        "part":  "iso"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             -48,
+                                             5.33
+                                         ],
+                                         [
+                                             90.67,
+                                             5.33
+                                         ]
+                                     ],
+                        "part":  "iso"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             -48,
+                                             -5.33
+                                         ],
+                                         [
+                                             90.67,
+                                             -5.33
+                                         ]
+                                     ],
+                        "part":  "iso"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             -69.33,
+                                             26.67
+                                         ],
+                                         [
+                                             -69.33,
+                                             37.33
+                                         ]
+                                     ],
+                        "part":  "iso"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             69.34,
+                                             26.67
+                                         ],
+                                         [
+                                             69.34,
+                                             37.33
+                                         ]
+                                     ],
+                        "part":  "iso"
+                    }
+                ],
+    "norm":  "ISO1219-1"
+}

@@ -1,0 +1,23 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+exports/
+*.translation
+
+# Local / temp
+tmp_*/
+tmp_*.py
+*.tmp
+.DS_Store
+Thumbs.db
+
+# AS extract raw IL / captures (committed: out/taxonomy, out/strokes, data/symbols)
+tools/as_extract/out/il/
+tools/as_extract/out/captures/
+tools/as_extract/out/db_probe/
+tools/as_extract/il_dump/bin/
+tools/as_extract/il_dump/obj/
+
+# Agent runtime markers (local only)
+test/.agent_review_scene
+test/.agent_autoroute

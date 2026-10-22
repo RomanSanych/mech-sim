@@ -1,0 +1,13 @@
+{
+  "args_summary": "delete_file(path=res://test/_cmp_qf1.py)",
+  "files": [
+    {
+      "backup": "res://addons/godot_mcp/cache/undo/entry_000515/files/test/_cmp_qf1.py",
+      "kind": "deleted",
+      "path": "res://test/_cmp_qf1.py"
+    }
+  ],
+  "id": "000515",
+  "timestamp": 1792140305.0,
+  "tool": "delete_file"
+}

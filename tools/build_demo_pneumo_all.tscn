@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://k25jqyl60r3b"]
+
+[ext_resource type="Script" uid="uid://50qsmyxfyrmf" path="res://tools/build_demo_pneumo_all.gd" id="1_6mutb"]
+
+[node name="BuildDemoPneumoAll" type="Node" unique_id=2107396591]
+script = ExtResource("1_6mutb")

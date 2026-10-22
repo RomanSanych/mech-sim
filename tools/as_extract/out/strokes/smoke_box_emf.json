@@ -1,0 +1,87 @@
+{
+    "id":  "cylinder.from_as_emf",
+    "source":  {
+                   "raw_stroke_count":  5,
+                   "imported_at":  "2026-10-02T21:50:42.4682529+03:00",
+                   "emr_records":  27,
+                   "emf":  "D:\\mech-sim\\tools\\as_extract\\out\\captures\\smoke_box_emfonly.emf"
+               },
+    "layout":  {
+                   "body_l":  -80,
+                   "body_r":  80,
+                   "body_b":  36.36,
+                   "body_t":  -36.36
+               },
+    "notes":  [
+                  "Imported from AS diagram EMF export (File \u003e Export diagram \u003e EMF).",
+                  "AS drawing IL is Sec-protected; DXF/EMF export is the extraction path."
+              ],
+    "strokes":  [
+                    {
+                        "polyline":  [
+                                         [
+                                             -65.45,
+                                             -36.36
+                                         ],
+                                         [
+                                             80,
+                                             -36.36
+                                         ]
+                                     ],
+                        "part":  "poly"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             80,
+                                             -36.36
+                                         ],
+                                         [
+                                             80,
+                                             36.36
+                                         ]
+                                     ],
+                        "part":  "poly"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             80,
+                                             36.36
+                                         ],
+                                         [
+                                             -65.45,
+                                             36.36
+                                         ]
+                                     ],
+                        "part":  "poly"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             -65.45,
+                                             36.36
+                                         ],
+                                         [
+                                             -65.45,
+                                             -36.36
+                                         ]
+                                     ],
+                        "part":  "poly"
+                    },
+                    {
+                        "polyline":  [
+                                         [
+                                             -80,
+                                             -14.55
+                                         ],
+                                         [
+                                             80,
+                                             -14.55
+                                         ]
+                                     ],
+                        "part":  "poly"
+                    }
+                ],
+    "norm":  "ISO1219-1-2012"
+}
