@@ -3805,8 +3805,8 @@ func _sync_hoses() -> void:
 				nshvi_flags |= 2
 		# Якоря гофры НЕ в geom_sig жил: иначе open/close дверцы → remesh всех электро-жил.
 		# Гофра — отдельный меш (_sync_door_harness_flex).
-		# route53: door-local мостик на глубине пеньков (не сквозь кнопки).
-		var sig := "%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.5f|%d|%d|%s|route53duct|%d|%s|%d" % [
+		# route54: door↔датчик (sensor mount="") тоже через дверной КК + НШВИ.
+		var sig := "%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.4f,%.4f,%.4f|%.5f|%d|%d|%s|route54duct|%d|%s|%d" % [
 			a.x, a.y, a.z, b.x, b.y, b.z, da.x, da.y, da.z, db.x, db.y, db.z, radius, 1 if is_elec else 0, 1 if pe else 0, color_id, lane, qtag, nshvi_flags,
 		]
 		var door_span: bool = is_elec and _wire_is_door_cabinet_span(wire)
@@ -7139,11 +7139,11 @@ func _wire_is_door_cabinet_span(wire) -> bool:
 		return false
 	var ma: String = _electro_mount_of(int(wire.a_id))
 	var mb: String = _electro_mount_of(int(wire.b_id))
-	if ma == "door" and mb != "door" and mb != "":
-		return true
-	if mb == "door" and ma != "door" and ma != "":
-		return true
-	return false
+	# Дверца ↔ не-дверца: DIN, gland полевого датчика (mount="") и т.п.
+	# Раньше mb!="" отсекал датчик → жила шла напрямую в воздухе без КК/НШВИ.
+	var a_door: bool = ma == "door"
+	var b_door: bool = mb == "door"
+	return a_door != b_door
 
 
 func _wire_is_door_local(wire) -> bool:

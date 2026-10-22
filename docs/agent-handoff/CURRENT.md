@@ -22,11 +22,13 @@
 - Тепловизор/КЗ, моторы, ППЦ — в STATUS как `qa_not_done`.
 - **B4 термопара** — следующий на `dev` (не в первом QA).
 - Правило wipe: `.cursor/rules/no-full-file-wipe.mdc`.
+- **Issue #3** (линия дверца↔датчик мимо КК/НШВИ): фикс `_wire_is_door_cabinet_span` на `main` — ждём визуальный фидбек. Демо: `res://test/bug3_door_wire.mechsim.json`.
 
 ## Следующий шаг
 
-1. Roman: `dev` → MVP B4 (промпт оркестратора ранее).  
-2. QA: clone → `qa/pass-1` → [`docs/qa/README.md`](../qa/README.md) + Codex [`PROMPT_CODEX.md`](../qa/PROMPT_CODEX.md).
+1. Roman: подтвердить #3 в 3D → закрыть issue.  
+2. Roman: `dev` → MVP B4 (промпт оркестратора ранее).  
+3. QA: clone → `qa/pass-1` → [`docs/qa/README.md`](../qa/README.md) + Codex [`PROMPT_CODEX.md`](../qa/PROMPT_CODEX.md).
 
 ## Не трогать без запроса
 
