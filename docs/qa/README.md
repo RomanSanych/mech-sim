@@ -39,7 +39,8 @@
 
 ## Smoke
 
-Чеклист демо: [`SMOKE.md`](SMOKE.md). Открывать сцены через Godot / маркер `test/.agent_review_scene` или CLI проекта.
+- Демо элементов: [`SMOKE.md`](SMOKE.md).
+- Сама схема веток/PR (раз в начале): [`PROCESS_SMOKE.md`](PROCESS_SMOKE.md).
 
 ## Правила кода (обязательно)
 
