@@ -874,6 +874,8 @@ func _tick_amp_btn_hold(dt: float) -> void:
 
 ## Камера в движении: мышь (orbit/look/pan) или WASD/пролёт — 3D SubViewport должен быть ALWAYS.
 func is_camera_navigating() -> bool:
+	if circuit != null and bool(circuit.block_3d_keys):
+		return false
 	if _drag in ["orbit", "look", "pan"]:
 		return true
 	if _orbit_anim_t > 0.0:
@@ -2235,6 +2237,9 @@ func _fpv_settle_height(dt: float) -> void:
 
 
 func _fpv_move(dt: float) -> void:
+	if circuit != null and bool(circuit.block_3d_keys):
+		_move_vel = Vector3.ZERO
+		return
 	var wish := Vector3.ZERO
 	if Input.is_key_pressed(KEY_W) or Input.is_key_pressed(KEY_UP):
 		wish += _look_flat()
@@ -2263,6 +2268,9 @@ func _clamp_fpv_pos() -> void:
 
 ## Пролёт: свободная камера (WASD + Q/E), без привязки к фокусу и без высоты глаз.
 func _fly_move(dt: float) -> bool:
+	if circuit != null and bool(circuit.block_3d_keys):
+		_move_vel = Vector3.ZERO
+		return false
 	var wish := Vector3.ZERO
 	var fwd: Vector3 = _look_dir()
 	var right: Vector3 = fwd.cross(Vector3.UP)

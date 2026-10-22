@@ -26,6 +26,8 @@ class _BugReportRunner extends Node:
 		_circuit = circuit
 		_get_screenshot = get_screenshot
 		_save_scene_tmp = save_scene_tmp
+		if _circuit != null:
+			_circuit.block_3d_keys = true
 		_win = Window.new()
 		_win.title = "Сообщить об ошибке"
 		_win.unresizable = true
@@ -85,9 +87,14 @@ class _BugReportRunner extends Node:
 		_edit.grab_focus()
 
 	func _on_cancel() -> void:
+		_release_3d_keys()
 		if is_instance_valid(_win):
 			_win.hide()
 		queue_free()
+
+	func _release_3d_keys() -> void:
+		if _circuit != null:
+			_circuit.block_3d_keys = false
 
 	func _on_send() -> void:
 		var text: String = _edit.text.strip_edges()
@@ -97,11 +104,17 @@ class _BugReportRunner extends Node:
 		_send_btn.disabled = true
 		_cancel_btn.disabled = true
 		_status.text = "Готовлю скриншот и сцену…"
+		# Скрыть окно репорта, иначе оно попадает на скрин.
+		if is_instance_valid(_win):
+			_win.hide()
+		await get_tree().process_frame
 		await get_tree().process_frame
 		await RenderingServer.frame_post_draw
 		var img: Image = _get_screenshot.call()
 		if img == null or img.is_empty():
 			_status.text = "Не удалось сделать скриншот."
+			if is_instance_valid(_win):
+				_win.popup_centered_clamped(Vector2i(460, 280), 0.1)
 			_send_btn.disabled = false
 			_cancel_btn.disabled = false
 			return
@@ -115,6 +128,8 @@ class _BugReportRunner extends Node:
 		var serr: String = str(_save_scene_tmp.call(scene_path))
 		if serr != "":
 			_status.text = "Не удалось сохранить сцену: %s" % serr
+			if is_instance_valid(_win):
+				_win.popup_centered_clamped(Vector2i(460, 280), 0.1)
 			_send_btn.disabled = false
 			_cancel_btn.disabled = false
 			return
@@ -122,6 +137,9 @@ class _BugReportRunner extends Node:
 		if df:
 			df.store_string(text)
 			df.close()
+		# Показать окно снова на время статуса отправки (скрин уже без него).
+		if is_instance_valid(_win):
+			_win.popup_centered_clamped(Vector2i(460, 280), 0.1)
 		_status.text = "Отправка на GitHub…"
 		await get_tree().process_frame
 		var result: Dictionary = BugReport.submit_pack(text, stamp, shot_path, scene_path)
@@ -138,7 +156,6 @@ class _BugReportRunner extends Node:
 			]
 			_send_btn.disabled = false
 			_cancel_btn.disabled = false
-
 	func _apply_window_theme(win: Window) -> void:
 		var panel := StyleBoxFlat.new()
 		panel.bg_color = UiTheme.panel_bg()

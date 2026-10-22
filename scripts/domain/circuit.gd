@@ -60,6 +60,8 @@ var pressure_viz := false
 var sensor_field_viz := false
 ## Режим «Тепловизор»: окраска 3D по условной температуре (°C).
 var thermal_viz := false
+## Модальные окна UI (багрепорт и т.п.): не двигать 3D-камеру WASD.
+var block_3d_keys := false
 var speed := 1.0
 var sim_time := 0.0
 var gas_t := 293.15
