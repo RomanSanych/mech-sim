@@ -717,6 +717,8 @@ func _menu_action(action: String) -> void:
 			get_window().mode = Window.MODE_WINDOWED
 		"minimize":
 			get_window().mode = Window.MODE_MINIMIZED
+		"bug_report":
+			_open_bug_report()
 		"perf_hud":
 			_perf_hud = not _perf_hud
 			if workshop != null and is_instance_valid(workshop) and workshop.has_method("set_perf_hud"):
@@ -1142,6 +1144,28 @@ func agent_relay_layout_probe() -> Dictionary:
 		"before": head,
 		"after": head2,
 	}
+
+func _open_bug_report() -> void:
+	var BugRep = preload("res://scripts/app/bug_report.gd")
+	BugRep.show_dialog(
+		self,
+		circuit,
+		func() -> Image:
+			var tex: ViewportTexture = get_viewport().get_texture()
+			if tex == null:
+				return null
+			return tex.get_image()
+		,
+		func(path: String) -> String:
+			var extra := {}
+			if schematic:
+				extra["schematic"] = {
+					"zoom": schematic.zoom,
+					"pan": [schematic.pan.x, schematic.pan.y],
+				}
+			return circuit.save_scene_file(path, extra)
+	)
+
 
 func _save_scene(force_dialog: bool) -> void:
 	if force_dialog or _scene_path == "":
@@ -2359,6 +2383,9 @@ func _toolbar() -> Control:
 		["Свернуть", "minimize", 0],
 		["-", "", 0],
 		["Показать FPS / нагрузку", "perf_hud", 0],
+	]))
+	left.add_child(_menu_button("Помощь", [
+		["Сообщить об ошибке…", "bug_report", 0],
 	]))
 	row.add_child(left)
 

@@ -1,10 +1,10 @@
 # CURRENT — точка продолжения
 
 **Обновлено:** 2026-10-22  
-**Этап плана:** датчики — **B4 термопара** (разработка на `dev`) + **QA pass-1** параллельно  
-**GitHub:** https://github.com/RomanSanych/mech-sim (public)  
+**Этап плана:** датчики — **B4 термопара** (`dev`) + **QA pass-1** параллельно  
+**GitHub:** https://github.com/RomanSanych/mech-sim (public) · Issues · ветка `bug-inbox`  
 **Активный handoff:** `docs/agent-handoff/sensors.md`  
-**QA:** `docs/qa/` — STATUS / SMOKE / README / PROMPT_CODEX  
+**QA:** `docs/qa/` — полный STATUS (все recipes) · SMOKE · bug-report in-app  
 **Пауза:** электро автотрасса — `docs/agent-handoff/electro-autoroute.md`
 
 ## Ветки
