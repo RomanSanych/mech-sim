@@ -11,6 +11,9 @@ tmp_*.py
 .DS_Store
 Thumbs.db
 
+# Godot MCP plugin undo cache (local, was committed by mistake)
+addons/godot_mcp/cache/
+
 # AS extract raw IL / captures (committed: out/taxonomy, out/strokes, data/symbols)
 tools/as_extract/out/il/
 tools/as_extract/out/captures/
