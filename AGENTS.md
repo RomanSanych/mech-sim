@@ -9,6 +9,8 @@
 
 Работаем **только в этом репозитории**. Не начинай этап «с нуля» игнорируя handoff.
 
+Новый разработчик в команде — краткая инструкция (git, запуск, безопасный workflow, промт для нейросети): [`docs/ONBOARDING.md`](docs/ONBOARDING.md).
+
 ## Как стартовать задачу
 
 В первом ответе, если цель неочевидна, спроси коротко:
@@ -43,6 +45,7 @@
 | `gdscript-typed-vars.mdc` | Явные типы из Variant |
 | `ask-before-searching.mdc` | УГО: as-extract / taxonomy; не гадать |
 | `no-full-file-wipe.mdc` | **Запрет** `Write` целиком/пустым на существующие ядра (инцидент symbol_geom) |
+| `bug-fix-close-issue.mdc` | Фикс бага → сразу close Issue (Completed), не ждать фидбек |
 
 Skill УГО: `.cursor/skills/as-extract/SKILL.md`.
 

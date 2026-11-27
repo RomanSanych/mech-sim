@@ -13,3 +13,4 @@
 
 - Да: Issues можно разбирать и чинить (PR в `main` / `qa/pass-1`).
 - Код: `scripts/app/bug_report.gd`, пункт меню в `main_shell.gd`.
+- **После фикса:** комментарий в Issue + **сразу `gh issue close`** (Completed) — не ждать визуального OK. Правило: `.cursor/rules/bug-fix-close-issue.mdc`.
