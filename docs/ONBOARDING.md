@@ -48,11 +48,11 @@ git remote add upstream https://github.com/RomanSanych/mech-sim.git
 
 ## 4. Как работать, чтобы не уронить проект
 
-Ветки: `main` — интеграция (**только через PR**), `dev` — разработка новых элементов, `qa/pass-1` — QA-фиксы принятого, `bug-inbox` — вложения баг-репортов из приложения.
+Ветки (main-only): `main` — единственная рабочая линия (**только через PR**), `bug-inbox` — вложения баг-репортов из приложения. Бывшие `dev` и `qa/pass-1` удалены — не использовать.
 
 Жёсткие правила:
 
-1. **Никогда не пушь в `main`.** Одна задача/баг = одна ветка (фичи — от `dev`, QA-фиксы — от `qa/pass-1`) → PR в `main`.
+1. **Никогда не пушь в `main`.** Одна задача = одна свежая ветка от `main` (`feature/<кратко>` или `qa/fix-<кратко>`) → PR в `main` → после мержа ветка удаляется.
 2. Перед пушем: `git fetch` и подтяни базу (`git pull` / merge `origin/main`). Никакого force-push в общие ветки.
 3. Не коммить служебное: `.godot/`, `exports/`, `tmp_*`, кэш `addons/godot_mcp/cache/` (он уже вычищается из репо).
 4. Перед коммитом — `git status`: не должно быть логов, скриншотов, локальных маркеров (`test/.agent_review_scene` уже в `.gitignore`).
@@ -75,12 +75,11 @@ git remote add upstream https://github.com/RomanSanych/mech-sim.git
 Код пока НЕ меняем.
 
 Шаги:
-1. Спроси у меня: имя и email для git (настрой git config), папку для клона
-   и моё короткое имя для ветки (согласуй с Roman, по умолчанию dev-<имя>).
+1. Спроси у меня: имя и email для git (настрой git config) и папку для клона.
 2. Склонируй https://github.com/RomanSanych/mech-sim.git — у меня есть доступ
    collaborator. Проверь git status и ветки.
-3. Создай мою ветку от dev: git checkout -b dev-<имя> origin/dev и запушь её
-   (git push -u origin dev-<имя>). Работаем только в ней.
+3. Ветки заранее не создаём: под каждую задачу ты будешь делать свежую ветку
+   от main (feature/<кратко>) и удалять её после мержа.
 4. Проверь, что установлен Godot 4.7 (godot --version или спроси меня).
    Если нет — скажи установить с https://godotengine.org/download и жди.
 5. Прочитай: AGENTS.md, docs/ONBOARDING.md, docs/agent-handoff/CURRENT.md,
@@ -92,7 +91,7 @@ git remote add upstream https://github.com/RomanSanych/mech-sim.git
 7. В конце напиши: что развернуто, какая ветка активна, какие правила усвоены.
 
 Жёсткие правила с первого дня:
-- Никогда не пушить в main. Одна задача = одна ветка от dev-<имя> → PR в main.
+- Никогда не пушить в main. Одна задача = одна свежая ветка от main → PR в main.
 - Перед пушем: git fetch + merge origin/main, без force-push.
 - Не затирать целиком scripts/domain/circuit.gd, scripts/view3d/workshop_view.gd,
   scripts/domain/symbol_geom.gd, scripts/app/main_shell.gd — только точечные правки.

@@ -1,7 +1,7 @@
 # CURRENT — точка продолжения
 
 **Обновлено:** 2026-10-22  
-**Этап плана:** датчики — **B4 термопара** (`dev`) + **QA pass-1** параллельно  
+**Этап плана:** датчики — **B4 термопара** + **QA pass-1** параллельно  
 **GitHub:** https://github.com/RomanSanych/mech-sim (public) · Issues · ветка `bug-inbox`  
 **Активный handoff:** `docs/agent-handoff/sensors.md`  
 **QA:** `docs/qa/` — полный STATUS (все recipes) · SMOKE · bug-report in-app  
@@ -11,10 +11,11 @@
 
 | Ветка / tag | Назначение |
 |-------------|------------|
-| `main` | интеграция |
-| `dev` | разработка (Roman), сейчас B4+ |
-| `qa/pass-1` | QA + Codex по принятому |
+| `main` | единственная рабочая линия (main-only), только PR |
+| `bug-inbox` | вложения баг-репортов из приложения |
 | `qa-baseline-2026-10-22` | tag старта QA |
+
+Бывшие `dev` и `qa/pass-1` удалены (2026-11-27, переход на main-only). Фичи и фиксы — свежие ветки от `main` → PR в `main`.
 
 ## Сейчас
 
@@ -27,8 +28,8 @@
 
 ## Следующий шаг
 
-1. Roman: `dev` → MVP B4 (промпт оркестратора ранее).  
-2. QA: clone → `qa/pass-1` → [`docs/qa/README.md`](../qa/README.md) + Codex [`PROMPT_CODEX.md`](../qa/PROMPT_CODEX.md).
+1. Roman: ветка от `main` → MVP B4 (промпт оркестратора ранее).  
+2. QA: clone → свежий `main` → [`docs/qa/README.md`](../qa/README.md) + Codex [`PROMPT_CODEX.md`](../qa/PROMPT_CODEX.md).
 
 ## Не трогать без запроса
 

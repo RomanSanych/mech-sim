@@ -1,6 +1,6 @@
 # QA status registry
 
-**Ветка QA:** qa/pass-1 · **tag старта:** qa-baseline-2026-10-22
+**Ветки:** main-only (фиксы — ветки `qa/fix-<id>` от `main`) · **tag старта:** qa-baseline-2026-10-22
 **Легенда:** qa_not_done | in_progress | passed | ailed
 
 Полный перечень элементов из data/*/recipes.json + системные функции. Старт: **qa_not_done**.
